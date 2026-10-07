@@ -159,7 +159,7 @@ export function pythonStoreAdapterSelfTest() {
  * turn real falsification evidence into a warning.
  */
 const PY_AVAILABILITY_SELFTEST = `
-import contextlib, io, json, sys
+import contextlib, io, json, os, sys, tempfile
 sys.path.insert(0, "fetch")
 import play_availability as pa
 from store_adapters import ADAPTERS
@@ -197,19 +197,52 @@ def usage(argv):
     try:
         pa.main(argv)
     except SystemExit as exc:
-        return exc.code
+        # SystemExit("message") means: print the message to stderr, exit 1.
+        code = exc.code
+        return 1 if isinstance(code, str) else code
     return 0
 
+
+# A store that is authoritative only for IR: the verdict must call itself
+# authoritative for IR and merely available elsewhere (myket passed for TR
+# used to over-claim).
+def ir_only(status):
+    def check(package, country):
+        return CheckResult(
+            package=package, store="myket", country=country.upper(),
+            status=status, scope="country", evidence="https://example.test/y",
+        )
+    ADAPTERS["myket"].check = check
+
+
+def authority(country):
+    ir_only(STATUS_AVAILABLE)
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        pa.main(["--country", country, "--package", "ir.divar",
+                 "--store", "myket", "--json"])
+    verdict = json.loads(buf.getvalue())["verdicts"][0]
+    return {"status": verdict["status"], "authoritative": verdict["authoritative"]}
+
+
+catalog = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False)
+catalog.write('{"country": "RU", "apps": []}')
+catalog.close()
 
 print(json.dumps({
     "resolved": [run(s) for s in (STATUS_AVAILABLE, STATUS_UNAVAILABLE)],
     "inconclusive": [run(s) for s in (STATUS_UNKNOWN, STATUS_ERROR)],
+    "authority": {"home": authority("IR"), "away": authority("TR")},
     "usage": {
         "unknown-store": usage(["--country", "RU", "--store", "nope", "--package", "a.b"]),
         "no-package": usage(["--country", "RU"]),
         "no-country": usage(["--package", "a.b"]),
+        "only-verified-without-catalog": usage(["--only-verified", "--package", "a.b", "--country", "RU"]),
+        "missing-catalog": usage(["--from-catalog", "/nope.json", "--country", "RU"]),
+        "verified-filter-checks-nothing": usage(["--from-catalog", catalog.name, "--only-verified"]),
     },
 }))
+os.unlink(catalog.name)
 `;
 
 /** Exit codes and verdicts of fetch/play_availability.py with a stubbed store. */
@@ -224,6 +257,7 @@ export function pythonAvailabilitySelfTest() {
 /** The discovery planner is pure: ask it what jobs it would run, offline. */
 const PY_DISCOVER_SELFTEST = `
 import json, sys
+from types import SimpleNamespace
 sys.path.insert(0, "fetch")
 import discover as d
 from store_adapters import ADAPTERS
@@ -233,9 +267,26 @@ matrix = {
     "IR": {"banking": ["bank"]},
 }
 jobs = d.build_jobs(matrix, ["TR", "IR"], ["banking", "rideshare"])
+
+# --country and --countries used to override each other silently.
+merged = d.selected_countries(SimpleNamespace(country="tr", countries="IR, tr"))
+merged_categories = d.selected_categories(
+    SimpleNamespace(category=["banking"], categories=" wallet ,banking")
+)
+default_categories = d.selected_categories(SimpleNamespace(category=[], categories=None))
+
+# --all is the intersection with the registry, not the union: a query-matrix
+# key outside data/index.json would nominate candidates no consumer reads.
+registry = {"countries": {"TR", "IR"}, "categories": {"banking", "rideshare"}}
+planned = d.plan_all({**matrix, "XX": {"banking": ["x"]}}, registry)
+
 print(json.dumps({
     "jobs": [list(j) for j in jobs],
     "search_capable": sorted(i for i, a in ADAPTERS.items() if hasattr(a, "search")),
+    "merged_countries": merged,
+    "merged_categories": merged_categories,
+    "default_categories": default_categories,
+    "plan_all": list(planned),
 }))
 `;
 

@@ -57,10 +57,19 @@ from store_adapters import (  # noqa: E402
 
 
 def load_catalog_entries(path: str) -> tuple[dict, list[dict]]:
-    with open(path, encoding="utf-8") as fh:
-        doc = json.load(fh)
-    if not isinstance(doc, dict) or "apps" not in doc:
-        raise SystemExit(f"{path}: not a catalog file (missing 'apps')")
+    """Fail closed with a readable message: a typo in --from-catalog used to
+    surface as a FileNotFoundError traceback instead of an argument error."""
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except FileNotFoundError:
+        raise SystemExit(
+            f"{path}: no such file; --from-catalog must point at a catalog file"
+        ) from None
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"{path}: not valid JSON ({exc})") from None
+    if not isinstance(doc, dict) or not isinstance(doc.get("apps"), list):
+        raise SystemExit(f"{path}: not a catalog file (missing 'apps' array)")
     return doc, doc["apps"]
 
 
@@ -110,8 +119,15 @@ def main(argv: list[str] | None = None) -> int:
         country = country or doc.get("country")
         if args.only_verified:
             entries = [e for e in entries if e.get("confidence") == "verified"]
+        if not entries and args.only_verified:
+            ap.error(
+                f"{args.from_catalog}: no confidence=verified entries; "
+                f"--only-verified would check nothing"
+            )
         packages = [e["package"] for e in entries]
     else:
+        if args.only_verified:
+            ap.error("--only-verified only applies with --from-catalog")
         packages = args.package
 
     if not packages:
@@ -141,23 +157,47 @@ def main(argv: list[str] | None = None) -> int:
     verdicts = []
     for package, rs in by_package.items():
         available = [r for r in rs if r["status"] == STATUS_AVAILABLE]
-        authoritative = [r for r in available if ADAPTERS[r["store"]].authoritative]
-        if authoritative:
-            status, deciding = STATUS_AVAILABLE, authoritative[0]
+        # Authoritative for THIS country, not merely authoritative somewhere:
+        # a store only vouches for locality inside the countries it serves, so
+        # `myket` passed explicitly for TR is a hint, never a verification.
+        # Preference order: authoritative-here > non-authoritative > other
+        # countries' authority (treated as a plain hint).
+        authoritative_here = [
+            r
+            for r in available
+            if ADAPTERS[r["store"]].authoritative and ADAPTERS[r["store"]].supports_country(country)
+        ]
+        authoritative_elsewhere = [
+            r
+            for r in available
+            if ADAPTERS[r["store"]].authoritative and not ADAPTERS[r["store"]].supports_country(country)
+        ]
+        if authoritative_here:
+            status, deciding, is_authoritative = STATUS_AVAILABLE, authoritative_here[0], True
         elif available:
-            status, deciding = STATUS_AVAILABLE, available[0]
+            status, deciding, is_authoritative = STATUS_AVAILABLE, available[0], False
+        elif authoritative_elsewhere:
+            status, deciding, is_authoritative = STATUS_AVAILABLE, authoritative_elsewhere[0], False
         elif any(r["status"] == STATUS_UNAVAILABLE for r in rs):
-            status, deciding = STATUS_UNAVAILABLE, next(r for r in rs if r["status"] == STATUS_UNAVAILABLE)
+            status, deciding, is_authoritative = (
+                STATUS_UNAVAILABLE,
+                next(r for r in rs if r["status"] == STATUS_UNAVAILABLE),
+                False,
+            )
         elif any(r["status"] == STATUS_ERROR for r in rs):
-            status, deciding = STATUS_ERROR, next(r for r in rs if r["status"] == STATUS_ERROR)
+            status, deciding, is_authoritative = (
+                STATUS_ERROR,
+                next(r for r in rs if r["status"] == STATUS_ERROR),
+                False,
+            )
         else:
-            status, deciding = STATUS_UNKNOWN, rs[0]
+            status, deciding, is_authoritative = STATUS_UNKNOWN, rs[0], False
         verdicts.append(
             {
                 "package": package,
                 "country": country,
                 "status": status,
-                "authoritative": any(ADAPTERS[r["store"]].authoritative for r in available),
+                "authoritative": is_authoritative,
                 "confirmed_by": deciding["store"],
                 "evidence": deciding.get("evidence"),
                 "detail": deciding.get("detail"),

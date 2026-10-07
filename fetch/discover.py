@@ -37,6 +37,8 @@ from store_adapters import ADAPTERS  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUERIES = os.path.join(ROOT, "fetch", "queries.json")
 GLOBAL = os.path.join(ROOT, "data", "global.json")
+INDEX = os.path.join(ROOT, "data", "index.json")
+DEFAULT_CATEGORIES = ["banking", "government", "rideshare", "messaging"]
 
 
 def load_global_packages() -> set[str]:
@@ -45,6 +47,68 @@ def load_global_packages() -> set[str]:
             return {p["package"] for p in json.load(fh).get("packages", [])}
     except FileNotFoundError:
         return set()
+
+
+def load_registry() -> dict:
+    """The catalog registry (data/index.json): the set of countries and
+    categories the catalog is contracted to carry.
+
+    Fail closed with a readable message: a missing or broken index is a broken
+    checkout, and a traceback from deep inside json is not a diagnosis.
+    """
+    try:
+        with open(INDEX, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        return {"countries": set(doc["countries"]), "categories": set(doc["categories"])}
+    except FileNotFoundError:
+        raise SystemExit(f"{INDEX}: not found; run from a full checkout of the repo") from None
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        raise SystemExit(f"{INDEX}: not a usable catalog registry ({exc})") from None
+
+
+def selected_countries(args) -> list[str]:
+    """Merge --country and --countries.
+
+    They used to override each other silently: ``--countries IR --country TR``
+    ran only IR and nobody could tell from the output. Both flags now add up;
+    duplicates are dropped, first spelling wins.
+    """
+    out: list[str] = []
+    tokens = [args.country]
+    if args.countries:
+        tokens.extend(args.countries.split(","))
+    for token in tokens:
+        if not token or not token.strip():
+            continue
+        code = token.strip().upper()
+        if code not in out:
+            out.append(code)
+    return out
+
+
+def selected_categories(args) -> list[str]:
+    """Merge --category (repeatable) and --categories, defaulting to DEFAULT_CATEGORIES."""
+    out: list[str] = []
+    tokens = list(args.category)
+    if args.categories:
+        tokens.extend(args.categories.split(","))
+    for token in tokens:
+        name = token.strip()
+        if name and name not in out:
+            out.append(name)
+    return out or list(DEFAULT_CATEGORIES)
+
+
+def plan_all(matrix: dict, registry: dict) -> tuple[list[str], list[str]]:
+    """Scope of --all: every query-matrix key the registry actually knows.
+
+    The matrix is a discovery input, the registry is the catalog contract; a
+    query key outside the registry would produce candidates no consumer reads,
+    so --all is the intersection, not the union.
+    """
+    countries = sorted(set(matrix) & registry["countries"])
+    categories = sorted({c for v in matrix.values() for c in v} & registry["categories"])
+    return countries, categories
 
 
 def build_jobs(matrix: dict, countries: list[str], categories: list[str]) -> list[tuple]:
@@ -62,11 +126,15 @@ def build_jobs(matrix: dict, countries: list[str], categories: list[str]) -> lis
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--country", help="one ISO country code")
-    ap.add_argument("--category", action="append", default=[], help="category (repeatable)")
-    ap.add_argument("--countries", help="comma-separated country codes")
-    ap.add_argument("--categories", help="comma-separated categories")
-    ap.add_argument("--all", action="store_true", help="every country/category in fetch/queries.json")
+    ap.add_argument("--country", help="one ISO country code (merged with --countries)")
+    ap.add_argument("--category", action="append", default=[], help="category (repeatable; merged with --categories)")
+    ap.add_argument("--countries", help="comma-separated country codes (merged with --country)")
+    ap.add_argument("--categories", help="comma-separated categories (merged with --category)")
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="every query-matrix country/category that is also in data/index.json",
+    )
     ap.add_argument("--out", help="write candidates JSON here (default: stdout)")
     ap.add_argument("--store", default="google_play", help="search-capable adapter id")
     ap.add_argument("--workers", type=int, default=6)
@@ -74,21 +142,25 @@ def main(argv: list[str] | None = None) -> int:
 
     with open(QUERIES, encoding="utf-8") as fh:
         matrix = json.load(fh)["queries"]
+    registry = load_registry()
 
+    # The registry, not the query matrix, is the contract: a country or
+    # category that data/index.json does not carry has no catalog to feed, so
+    # accepting it here would be the G20 bug again on the Python side.
     if args.all:
-        countries = sorted(matrix)
-        categories = sorted({c for v in matrix.values() for c in v})
+        countries, categories = plan_all(matrix, registry)
+        unknown = sorted(set(matrix) - set(countries))
+        if unknown:
+            print(f"warn: query-matrix countries not in data/index.json, skipped: {', '.join(unknown)}", file=sys.stderr)
     else:
-        countries = (
-            [c.strip().upper() for c in args.countries.split(",") if c.strip()]
-            if args.countries
-            else ([args.country.upper()] if args.country else [])
-        )
-        categories = (
-            [c.strip() for c in args.categories.split(",") if c.strip()]
-            if args.categories
-            else (args.category or ["banking", "government", "rideshare", "messaging"])
-        )
+        countries = selected_countries(args)
+        categories = selected_categories(args)
+        for code in countries:
+            if code not in registry["countries"]:
+                ap.error(f"unknown country: {code} (registered: {', '.join(sorted(registry['countries']))})")
+        for name in categories:
+            if name not in registry["categories"]:
+                ap.error(f"unknown category: {name} (registered: {', '.join(sorted(registry['categories']))})")
     if not countries:
         ap.error("nothing to do: pass --country, --countries, or --all")
 

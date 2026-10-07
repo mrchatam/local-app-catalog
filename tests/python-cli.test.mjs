@@ -57,13 +57,35 @@ test("the availability verdict mirrors what the store said", () => {
   }
 });
 
+test("authority is scoped to the countries the store serves", () => {
+  // myket vouches for IR only. For IR the verdict may claim authority; for TR
+  // the same positive answer is a hint, never a verification.
+  assert.deepEqual(AVAILABILITY.authority.home, { status: "available", authoritative: true });
+  assert.deepEqual(AVAILABILITY.authority.away, { status: "available", authoritative: false });
+});
+
 test("play_availability.py rejects bad usage with exit 1, not the inconclusive code", () => {
   // 2 is meaningful here ("nothing was proven"), so argparse's default must be
   // overridden: a typo is not an inconclusive store result.
+  // The in-process harness sees the message text where the OS sees an exit
+  // code, so pin the real process exit and its wording through a subprocess.
+  const missingCatalog = runPython("play_availability.py", [
+    "--from-catalog",
+    "/nope.json",
+    "--country",
+    "RU",
+  ]);
+  assert.equal(missingCatalog.status, 1, missingCatalog.stderr);
+  assert.match(missingCatalog.stderr, /no such file; --from-catalog must point at a catalog file/);
+  assert.doesNotMatch(missingCatalog.stderr, /Traceback/);
+
   assert.deepEqual(AVAILABILITY.usage, {
     "unknown-store": 1,
     "no-package": 1,
     "no-country": 1,
+    "only-verified-without-catalog": 1,
+    "missing-catalog": 1,
+    "verified-filter-checks-nothing": 1,
   });
 });
 
@@ -79,6 +101,12 @@ test("the discovery planner issues one job per country/category/query and skips 
     ["IR", "banking", "bank"],
     // IR has no rideshare queries, so no job is invented for it
   ]);
+  // --country and --countries merge instead of overriding each other.
+  assert.deepEqual(PLAN.merged_countries, ["TR", "IR"]);
+  assert.deepEqual(PLAN.merged_categories, ["banking", "wallet"]);
+  assert.deepEqual(PLAN.default_categories, ["banking", "government", "rideshare", "messaging"]);
+  // --all is the registry intersection: XX is in the matrix but not registered.
+  assert.deepEqual(PLAN.plan_all, [["IR", "TR"], ["banking", "rideshare"]]);
 });
 
 test("the store named as the discovery source really can search", () => {
@@ -101,6 +129,17 @@ test("discover.py reports a usage error instead of a traceback", () => {
   const nothingToDo = runPython("discover.py", []);
   assert.equal(nothingToDo.status, 2);
   assert.match(nothingToDo.stderr, /nothing to do/);
+
+  // The registry, not the query matrix, is the contract (the G20 bug again,
+  // on the Python side).
+  const unknownCountry = runPython("discover.py", ["--country", "XX"]);
+  assert.equal(unknownCountry.status, 2, unknownCountry.stderr);
+  assert.match(unknownCountry.stderr, /unknown country: XX \(registered: BD/);
+  assert.doesNotMatch(unknownCountry.stderr, /Traceback/);
+
+  const unknownCategory = runPython("discover.py", ["--country", "IR", "--category", "nope"]);
+  assert.equal(unknownCategory.status, 2, unknownCategory.stderr);
+  assert.match(unknownCategory.stderr, /unknown category: nope \(registered: /);
 });
 
 test("every discovery country has at least one query for the categories it claims", () => {
