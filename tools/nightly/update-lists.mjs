@@ -153,7 +153,12 @@ export function runAvailability({ python, country, packages, withGlobal }) {
   const args = availabilityArgs({ country, packages, withGlobal });
   const result = spawnSync(python, args, { cwd: REPO_ROOT, encoding: "utf8" });
   if (result.error) throw new Error(`availability check could not start: ${result.error.message}`);
-  if (result.status !== 0) {
+  // Exit 2 = "some checks were inconclusive" (throttled/blocked store) - the
+  // documented daily-runner condition. The definite answers in the same payload
+  // are still valid; the per-verdict statuses below skip the rest. Only a
+  // contract failure (usage error, crash, non-JSON) aborts the run, the same
+  // tolerance the other workflows pin.
+  if (result.status !== 0 && result.status !== 2) {
     const detail = `${result.stderr ?? ""}${result.stdout ?? ""}`.trim().slice(0, 400);
     throw new Error(`availability check for ${country} failed (exit ${result.status}): ${detail}`);
   }

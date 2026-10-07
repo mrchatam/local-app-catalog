@@ -326,12 +326,25 @@ test("runAvailability fails loudly on a broken subprocess", () => {
   try {
     const bin = makePythonStub(dir, {});
     const bad = path.join(bin, "python3");
-    writeFileSync(bad, "#!/bin/sh\necho 'not json' >&2\nexit 2\n");
+    // Exit 2 with a JSON payload is the documented inconclusive-store
+    // condition: the definite answers in it stay usable, so no throw.
+    writeFileSync(bad, "#!/bin/sh\necho '{\"verdicts\": []}'\nexit 2\n");
+    chmodSync(bad, 0o755);
+    assert.equal(
+      runAvailability({ python: bad, country: "IR", packages: ["a.b"], withGlobal: false }).size,
+      0,
+      "exit 2 (inconclusive stores) must not abort the nightly run",
+    );
+
+    // A usage error / crash (exit 1) IS a contract failure.
+    writeFileSync(bad, "#!/bin/sh\necho 'boom' >&2\nexit 1\n");
     chmodSync(bad, 0o755);
     assert.throws(
       () => runAvailability({ python: bad, country: "IR", packages: ["a.b"], withGlobal: false }),
-      /availability check for IR failed \(exit 2\)/,
+      /availability check for IR failed \(exit 1\)/,
     );
+
+    // And so is a payload that is not JSON.
     writeFileSync(bad, "#!/bin/sh\necho 'not json'\n");
     chmodSync(bad, 0o755);
     assert.throws(
