@@ -46,6 +46,20 @@ jobs:
           fi
           echo "reproducible: dist and dist-check are byte-identical"
 
+      - name: Seed proof (gen_seed.py reproduces data/ byte-for-byte)
+        # tools/seed/gen_seed.py regenerates data/ in place from the recorded
+        # probe results, so it runs in a throwaway worktree, never on the job's
+        # tree; a drift there must fail the gate, because it would mean the
+        # tracked data no longer matches its recorded provenance.
+        run: |
+          git worktree add "$RUNNER_TEMP/seed-check" HEAD
+          python3 "$RUNNER_TEMP/seed-check/tools/seed/gen_seed.py" >/dev/null
+          diff -r "$RUNNER_TEMP/seed-check/data" data || {
+            echo "::error::tools/seed/gen_seed.py no longer reproduces data/ byte-for-byte"
+            exit 1
+          }
+          echo "seed proof: regenerated data/ is byte-identical to the tracked data"
+
   store-check:
     # Best-effort liveness of the store listings a `verified` entry cites.
     # This job is intentionally NOT required: runners live in datacenters, and

@@ -29,14 +29,13 @@ The definition of "clean" after any loop:
 
 ## Open items
 
-| # | Gap | Why it matters | Status |
-|---|-----|----------------|--------|
-| G35 | No `tools/seed/` verification in CI | The seed proof (`gen_seed.py` reproduces `data/` byte-for-byte) ran once by hand during G11. | open |
+*(none — the audit loop is empty; every enumerated gap is closed below)*
 
 ## Done items
 
 | # | Gap | Closed by |
 |---|-----|-----------|
+| G35 | No `tools/seed/` verification in CI | `validate.yml` gained a **Seed proof** step: a throwaway `git worktree` regenerates `data/` with `tools/seed/gen_seed.py` and `diff -r` must be byte-identical to the tracked data, so drift between the data and its recorded provenance fails the same gate as a schema break. Verified locally through the exact worktree flow. |
 | G10 | No trace evidence entities / reviews / seed export | The trace graph now carries what the CLI can verify: a PASS review and a DONE transition on each of the ten tasks (the PENDING→DONE edge is illegal, so each task was walked through IN_PROGRESS), one evidence entity backing one claim via `claim-evidence`, and `trace seed export --strict -o trace/graph.json` (exported at `efa1fd4`) committed as the durable copy. The graph's D1–D4 cover availability-vs-locality, Play search, the negative global catalog, and the single-Python-implementation contract. |
 | G36 | `discover.py` accepted a country or category the catalog registry does not carry | The Node validator got this in G20 (`needCountry` checks `data/index.json`), but the Python nominator was still the union of whatever a contributor typed. `--country XX` now exits 2 naming the registered set, and so does an unregistered `--category`. |
 | G37 | `discover.py --all` was a union with the query matrix, not the catalog contract | A stray query-matrix key (a country not in `data/index.json`) would nominate candidates no consumer reads. `--all` is now the intersection with the registry and warns on the keys it skips. |
