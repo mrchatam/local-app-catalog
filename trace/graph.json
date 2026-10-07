@@ -1,0 +1,699 @@
+{
+  "version": 1,
+  "goals": [
+    {
+      "id": "dd86a2ed-469b-49de-8291-26524170319e",
+      "title": "LocalAppCatalog v1: per-country local-app dataset + curation tooling for VPN split-tunneling",
+      "body": "Open-source global-first dataset of per-country local apps (banking, government, rideshare, messaging, streaming, shopping, wallet) consumed by split-tunnel VPN clients. Deliverables: data/schema.json + data/index.json + data/\u003ccc\u003e/\u003ccategory\u003e.json; tools/validate CI validator; tools/curate PR workflow; fetch/play_availability.py + fetch/store_adapters (Play, Cafe Bazaar, RuStore, AppGallery, APKPure, OneStore, Myket); checksummed GitHub Releases catalog-all.json + per-country bundles tagged vYYYY.MM.DD; CI + issue templates + nightly recheck; ODbL data / MIT tooling. DoD: consumer fetches catalog-\u003ccountry\u003e.json at a pinned version with zero false positives on global confusables (Google Wallet, PayPal, Telegram, WhatsApp, MiniChat, Amazon) for \u003e=3 countries beyond the seed set."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "3bedf3c2-53d7-4565-8f38-2e4ccff361a0",
+      "title": "Build bundler with checksums",
+      "body": "tools/build/cli.mjs emitting dist/catalog-all.json, dist/catalog-\u003ccc\u003e.json and SHA-256 checksum manifests for GitHub Releases.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "545335fc-1334-4a4b-bbbb-2336adbb567d",
+      "title": "GitHub CI, nightly recheck, issue templates",
+      "body": ".github/workflows CI on PRs + nightly availability recheck that demotes dead verified entries to legacy; per-country and per-category issue templates.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "58ca3349-b05b-4083-9210-1d9a90b05bfb",
+      "title": "Validator CLI for CI",
+      "body": "tools/validate/cli.mjs: schema + semantic rules (dupes, package-id regex, global conflicts, stale verified_at) and --check-stores shelling out to the Python availability CLI.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "6ae6d686-a9ea-49b9-8fc0-a9e78a5a475a",
+      "title": "Seed country catalogs",
+      "body": "data/\u003ccc\u003e/\u003ccategory\u003e.json per country with real, store-verified package ids; only country-scoped stores (Cafe Bazaar, Myket, RuStore) can promote to verified.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "92bad6bc-db54-482d-807e-3aefe3582b6b",
+      "title": "Release publishing pipeline",
+      "body": "Tag vYYYY.MM.DD, publish checksummed catalog-all.json plus per-country bundles, document pinning.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a",
+      "title": "Store adapters + availability CLI",
+      "body": "fetch/store_adapters/ one interface for Google Play, Cafe Bazaar, RuStore, AppGallery, APKPure, OneStore, Myket, F-Droid. fetch/play_availability.py is the single source of truth for availability.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "dcf08108-8c30-4425-914a-df9994886819",
+      "title": "Tests including the confusable false-positive gate",
+      "body": "node --test suite proving zero false positives on Google Wallet, PayPal, Telegram, WhatsApp, MiniChat, Amazon and the validator catches every rule violation.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "e2ee9280-9846-42b3-bb8e-29c13a48f4ef",
+      "title": "License and README consumption contract",
+      "body": "ODbL for data, MIT for tooling, README documenting the fetch-a-pinned-release contract and per-country bundle format.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "f39bf1df-0d0b-4449-b0bf-9a1f9c6dc5dd",
+      "title": "Curation UI / PR workflow",
+      "body": "tools/curate/: local web UI to add, review and export catalog entries as a ready-to-open PR diff.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    },
+    {
+      "id": "f454ad91-e677-447b-bf3b-753f69268dd8",
+      "title": "Schema, country/category index, negative global catalog",
+      "body": "data/schema.json (draft 2020-12 bundle), data/index.json registry, data/global.json negative catalog of 20 worldwide packages driving the GLOBAL_CONFLICT rule.",
+      "goal_id": "dd86a2ed-469b-49de-8291-26524170319e"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "13499674-b965-47d1-bc3c-5c633eb9c76b",
+      "title": "Global apps are modelled as a negative catalog, not as a positive allowlist",
+      "body": "A positive allowlist cannot enumerate every global app and would silently miss new ones. data/global.json lists 20 worldwide packages and the validator raises GLOBAL_CONFLICT if any country file contains one, so a popular global app can never be marked local by mistake; discovery drops those packages before a reviewer ever sees them."
+    },
+    {
+      "id": "1b2d57b0-d65e-4f69-8fc0-d14f067e5e8f",
+      "title": "Availability is not locality: only country-scoped stores may promote an entry to verified",
+      "body": "Measured: Google Play detail pages return 200 regardless of the gl= parameter (Telegram, WhatsApp, Google Wallet and TikTok all 200 at gl=IR), so Play, AppGallery, APKPure and F-Droid prove that a package merely exists, never that it belongs to a country. Only Cafe Bazaar, Myket and RuStore are country-scoped, so only they may promote community -\u003e verified. Consequence: a Play detail 404 is a positive signal that an app is store-isolated (genuinely local) rather than a negative one."
+    },
+    {
+      "id": "59f8ebbd-ec3c-41f2-a6f7-e1996e6a30e2",
+      "title": "Store availability logic lives in one Python implementation; the Node validator shells out",
+      "body": "The adapters already exist in Python and the heuristics (soft-404 guards, per-store URL shapes, authoritative flags) are subtle. Duplicating them in Node would drift, so tools/validate/cli.mjs calls fetch/play_availability.py --json and consumes its status codes instead of reimplementing store probing."
+    },
+    {
+      "id": "f58c1d6f-3822-4b69-8558-b99f13067ae5",
+      "title": "Google Play search is the discovery source because it is country-gated",
+      "body": "Measured: GET /store/search?q=\u003cq\u003e\u0026c=apps\u0026gl=\u003cCC\u003e\u0026hl=en returns locale-specific results (bank queries in Cyrillic, Turkish and Arabic return different apps per country), whereas detail pages are not gated. Discovery therefore uses Play search as a nomination channel only; every nomination still needs a curator plus, where possible, a country-scoped store confirmation."
+    }
+  ],
+  "assumptions": [],
+  "discoveries": [],
+  "plan_changes": [],
+  "claims": [
+    {
+      "id": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
+      "title": "Audit loops 1-5c complete with a green gate",
+      "body": "All 10 graph tasks are delivered and verified: 99/99 tests, validate 0/0, reproducible builds; loop 5b (9f0e2a0) and loop 5c (bafbbce) closed G29-G40."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "c83066e8-136e-471a-97b0-bd08dd6d0b95",
+      "title": "Loop 5b-5c gate evidence",
+      "body": "npm test 99/99 pass; npm run validate 0 errors 0 warnings; two pinned builds byte-identical and SHA256SUMS verified; loop 5b commit 9f0e2a0, loop 5c commit bafbbce."
+    }
+  ],
+  "links": [
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "3bedf3c2-53d7-4565-8f38-2e4ccff361a0"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "545335fc-1334-4a4b-bbbb-2336adbb567d"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "58ca3349-b05b-4083-9210-1d9a90b05bfb"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "6ae6d686-a9ea-49b9-8fc0-a9e78a5a475a"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "92bad6bc-db54-482d-807e-3aefe3582b6b"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "dcf08108-8c30-4425-914a-df9994886819"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "e2ee9280-9846-42b3-bb8e-29c13a48f4ef"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "f39bf1df-0d0b-4449-b0bf-9a1f9c6dc5dd"
+    },
+    {
+      "rel": "goal_has_task",
+      "from": "dd86a2ed-469b-49de-8291-26524170319e",
+      "to": "f454ad91-e677-447b-bf3b-753f69268dd8"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "13499674-b965-47d1-bc3c-5c633eb9c76b",
+      "to": "f454ad91-e677-447b-bf3b-753f69268dd8",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "13499674-b965-47d1-bc3c-5c633eb9c76b",
+      "to": "6ae6d686-a9ea-49b9-8fc0-a9e78a5a475a",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "13499674-b965-47d1-bc3c-5c633eb9c76b",
+      "to": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "59f8ebbd-ec3c-41f2-a6f7-e1996e6a30e2",
+      "to": "58ca3349-b05b-4083-9210-1d9a90b05bfb",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "1b2d57b0-d65e-4f69-8fc0-d14f067e5e8f",
+      "to": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "decision_affects_task",
+      "from": "f58c1d6f-3822-4b69-8558-b99f13067ae5",
+      "to": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "claim_has_evidence",
+      "from": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
+      "to": "c83066e8-136e-471a-97b0-bd08dd6d0b95",
+      "source_type": "USER_ASSERTED"
+    }
+  ],
+  "findings": [],
+  "alternatives": [],
+  "plan_phases": [],
+  "plan_scopes": [],
+  "scope_deep_plans": [],
+  "goal_plan_state": [],
+  "changes": [
+    {
+      "id": "229eee64-446b-4ced-8dad-8f77ea466a30",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "4043b63eb0f02a991d7b0091736cd8aa65bf411d",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Make release builds reproducible and pin CI to the commit clock",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:00Z",
+      "updated_at": "2026-10-07T15:16:00Z",
+      "paths": [
+        {
+          "path": "tests/bundle.test.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/build/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/bundle.mjs",
+          "status": "M",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "5fcc4c95-e95c-4e9b-be06-f860c31b0f61",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "4b787e0194c427baf654881db39477182501eabf",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Bootstrap the LocalAppCatalog dataset, validator, and curation tooling",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:00Z",
+      "updated_at": "2026-10-07T15:16:00Z",
+      "paths": [
+        {
+          "path": ".scratch/gen_seed.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/probe_more.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/seed_spec.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/verify_seeds.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/discover.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/play_availability.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/__init__.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/apkpure.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/appgallery.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/base.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/cafe_bazaar.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/fdroid.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/google_play.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/http.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/myket.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/onestore.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/store_adapters/rustore.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/bundle.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/confusables.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/curate.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/helpers.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/rules.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/schema.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/store-adapters.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/build/cli.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/cli.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/lib.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/server.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/availability.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/bundle.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/diff.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/load.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/paths.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/rules.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/schema.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/recheck/cli.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/validate/cli.mjs",
+          "status": "A",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "b783a5ab-1c55-4566-8a59-aaa0e0bddb3a",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "799b9f6d90fcbb5a670da790323dd7c4024e30d5",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Document the dataset contract and give the CLIs tested exit codes",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:00Z",
+      "updated_at": "2026-10-07T15:16:00Z",
+      "paths": [
+        {
+          "path": ".scratch/gen_seed.py",
+          "status": "D",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/probe_more.py",
+          "status": "D",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/seed_spec.py",
+          "status": "D",
+          "symbol_id": ""
+        },
+        {
+          "path": ".scratch/verify_seeds.py",
+          "status": "D",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/cli.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/load.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/recheck/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/seed/gen_seed.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/seed/probe_more.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/seed/seed_spec.py",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/seed/verify_seeds.py",
+          "status": "A",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "45031186-9443-46cb-bf3a-2b1b973ae466",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "b68f71719925b50d3b71aeda6b6c19c407564c23",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Harden the Python entry points and close the packaging and policy gaps",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:01Z",
+      "updated_at": "2026-10-07T15:16:01Z",
+      "paths": [
+        {
+          "path": "fetch/discover.py",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/play_availability.py",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/helpers.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/python-cli.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "7039cf48-b6d1-41e4-a1a0-24dd5480475d",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "bafbbce7197c2f59c3d85f495b385ddba092dcf5",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Validate the fetch CLIs against the registry and scope store authority",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:01Z",
+      "updated_at": "2026-10-07T15:16:01Z",
+      "paths": [
+        {
+          "path": "fetch/discover.py",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "fetch/play_availability.py",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/helpers.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/python-cli.test.mjs",
+          "status": "M",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "7cf4c8ba-47df-4245-a263-8892903219dc",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "2fd75e1a06155925b584e68a5dbedcbe509d7496",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Close the curator server's traversal, binding and body-size holes (loop 5: G24-G28)",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:01Z",
+      "updated_at": "2026-10-07T15:16:01Z",
+      "paths": [
+        {
+          "path": "tests/curate-server.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/lib.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/server.mjs",
+          "status": "M",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "e52716c7-1940-4a36-977c-9b8eed96f592",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "3943d3a15f16fab20f7e390ef248dca00da19e19",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Reject flag-swallowing arguments and unify CLI usage errors (loop 4: G19-G23)",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:01Z",
+      "updated_at": "2026-10-07T15:16:01Z",
+      "paths": [
+        {
+          "path": "tests/cli.test.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/build/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/curate/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/lib/args.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/recheck/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/validate/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        }
+      ]
+    },
+    {
+      "id": "ff31c6ee-b215-413b-afc1-7404e3d86eb2",
+      "task_id": "trace:vcs-capture",
+      "git_commit": "9f0e2a0253b0cc6a1d9f655026832f9582c7c343",
+      "parent_change_id": "",
+      "actor": "",
+      "reason": "Publish nightly demotions from the recorded report, not a re-probe",
+      "status": "RECORDED",
+      "source_type": "VCS",
+      "confidence": 0,
+      "created_at": "2026-10-07T15:16:01Z",
+      "updated_at": "2026-10-07T15:16:01Z",
+      "paths": [
+        {
+          "path": "tests/cli.test.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/curate.test.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tests/recheck-pr.test.mjs",
+          "status": "A",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/recheck/cli.mjs",
+          "status": "M",
+          "symbol_id": ""
+        },
+        {
+          "path": "tools/recheck/open-pr.mjs",
+          "status": "A",
+          "symbol_id": ""
+        }
+      ]
+    }
+  ],
+  "exported_at_commit": "efa1fd4edf6914d65c4584d2f031ac5d74f1fc95"
+}
