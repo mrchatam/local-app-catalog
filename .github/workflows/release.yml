@@ -39,12 +39,19 @@ jobs:
 
       - name: Determine tag
         id: tag
+        env:
+          # A dispatch input is a string a maintainer typed. Interpolating it
+          # into a `run:` block with ${{ }} would let it execute as shell, so it
+          # only ever arrives as an environment variable.
+          INPUT_TAG: ${{ inputs.tag }}
         run: |
-          if [ -n "${{ inputs.tag }}" ]; then
-            echo "tag=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "tag=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          tag="${INPUT_TAG:-$GITHUB_REF_NAME}"
+          if [[ ! "$tag" =~ ^v[0-9]{4}\.[0-9]{2}\.[0-9]{2}$ ]]; then
+            echo "::error::tag must look like vYYYY.MM.DD, got '$tag'"
+            exit 1
           fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "publishing $tag"
 
       - name: Pin the build clock to the commit
         id: clock
@@ -55,7 +62,8 @@ jobs:
           # Reproducible-builds convention: the timestamp in manifest.json comes
           # from the commit, not from when the runner happened to execute.
           SOURCE_DATE_EPOCH: ${{ steps.clock.outputs.epoch }}
-        run: npm run build -- --tag "${{ steps.tag.outputs.tag }}" --validate
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: npm run --silent build -- --tag "$TAG" --validate
 
       - name: Verify checksums
         working-directory: dist
@@ -78,6 +86,10 @@ jobs:
             'from the `packages` map - do not re-enable them.' \
             '' \
             'Data is ODbL. Tooling is MIT.' > /tmp/notes.md
+          # --verify-tag: publishing must not be able to invent a tag. Without
+          # it, a dispatch whose tag is mistyped would create that tag at the
+          # current default branch and ship a release for a commit nobody chose.
           gh release create "$TAG" dist/* \
+            --verify-tag \
             --title "$TAG" \
             --notes-file /tmp/notes.md

@@ -177,7 +177,7 @@ test("planDemotions rewrites only the affected files and is idempotent", () => {
       // a package the file does not contain must be ignored, not crash
       { level: "error", code: "STORE_UNAVAILABLE", where: "ir/banking.json#ir.gone", message: "404" },
     ];
-    const plan = planDemotions({ findings, date: "2026-11-01", root: repo.dir });
+    const plan = planDemotions({ findings, date: "2026-11-01", dataDir: repo.dir });
     assert.equal(plan.size, 1);
     const file = plan.get("ir/banking.json");
     assert.deepEqual(file.packages, ["ir.tgbs.peccharge"]);
@@ -192,7 +192,7 @@ test("planDemotions rewrites only the affected files and is idempotent", () => {
     const again = planDemotions({
       findings: findings.slice(0, 1),
       date: "2026-11-02",
-      root: repo.dir,
+      dataDir: repo.dir,
       readFile: () => file.after,
     });
     assert.deepEqual(again.get("ir/banking.json").packages, []);

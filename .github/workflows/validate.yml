@@ -71,7 +71,10 @@ jobs:
       - name: Store availability (warnings are not failures)
         run: |
           set +e
-          npm run validate:stores -- --json --quiet > store-check.json
+          # --silent is load-bearing: plain `npm run` prints its "$ package"
+          # banner to *stdout*, which would land in store-check.json and leave
+          # the summary step below parsing a file that is not JSON.
+          npm run --silent validate:stores -- --json --quiet > store-check.json
           status=$?
           cat store-check.json
           # 0 = every listing resolved; 2 = some were inconclusive (throttled).
@@ -86,7 +89,15 @@ jobs:
         run: |
           if [ -f store-check.json ]; then
             node -e '
-              const r = JSON.parse(require("fs").readFileSync("store-check.json","utf8"));
+              let r;
+              try {
+                r = JSON.parse(require("fs").readFileSync("store-check.json","utf8"));
+              } catch (err) {
+                // A summary is a nicety; never let it be the thing that fails
+                // the job. An unparsable file means the capture is broken.
+                console.log(`::warning::store-check.json is not JSON (${err.message}); see the store check step log`);
+                process.exit(0);
+              }
               const lines = [
                 "### Store availability (best effort)",
                 "",

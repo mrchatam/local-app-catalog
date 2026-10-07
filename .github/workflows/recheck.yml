@@ -65,7 +65,13 @@ jobs:
       - name: Report inconclusive entries
         run: |
           node -e '
-            const r = JSON.parse(require("fs").readFileSync("recheck.json","utf8"));
+            let r;
+            try {
+              r = JSON.parse(require("fs").readFileSync("recheck.json","utf8"));
+            } catch (err) {
+              console.log(`::warning::recheck.json is not JSON (${err.message}); see the recheck step log`);
+              process.exit(0);
+            }
             if (!r.inconclusive_count) process.exit(0);
             const lines = [
               "### " + r.inconclusive_count + " entr(ies) could not be re-verified",
@@ -78,7 +84,11 @@ jobs:
 
       - name: Apply demotions
         if: steps.recheck.outputs.status == '1'
-        run: node tools/recheck/cli.mjs --apply --quiet
+        # Apply exactly the findings the report above announced. Running the
+        # probe a second time would re-ask every store: a throttled retry could
+        # then apply a different (or empty) set than the PR describes, while
+        # the PR title still quoted the first run.
+        run: node tools/recheck/cli.mjs --apply --quiet --plan recheck.json
 
       - name: Re-validate the demoted tree
         if: steps.recheck.outputs.status == '1'
@@ -86,45 +96,17 @@ jobs:
           npm test
           npm run validate
 
+      # Committing, pushing and opening the PR is one script rather than inline
+      # shell: it is the part that regressed (a fresh checkout has no
+      # remote-tracking ref for the nightly branch, so --force-with-lease failed
+      # with "stale info" on a same-day re-run), and tests/recheck-pr.test.mjs
+      # drives it against a real bare remote.
       - name: Open or update the demotion PR
         if: steps.recheck.outputs.status == '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet; then
-            echo "no diff after --apply; nothing to do"
-            exit 0
-          fi
-          branch=nightly/recheck-$(date -u +%Y-%m-%d)
-          git config user.name  "local-app-catalog bot"
-          git config user.email "bot@users.noreply.github.com"
-          git checkout -b "$branch"
-          git add data
-          printf '%s\n' \
-            'Nightly recheck: demote entries no longer available' \
-            '' \
-            'Entries whose country-scoped store returned a definite not-available' \
-            'answer move from verified to legacy. legacy rows are kept for history' \
-            'and excluded from consumer defaults.' \
-            '' \
-            'Generated with Codebuff' \
-            'Co-Authored-By: Codebuff <noreply@codebuff.com>' > /tmp/commit-msg.txt
-          git commit -F /tmp/commit-msg.txt
-          count=$(node -e 'try{const r=JSON.parse(require("fs").readFileSync("recheck.json","utf8"));process.stdout.write(String(r.demotions.length))}catch{process.stdout.write("some")}')
-          git push --force-with-lease origin "$branch"
-          printf '%s\n' \
-            'Daily automated re-verification of `verified` entries.' \
-            '' \
-            'Each demotion below is backed by a definite "not available" answer from' \
-            'the country-scoped store that originally vouched for the entry. Rows move' \
-            '`verified` -> `legacy`; they are not deleted.' \
-            '' \
-            'Please review the diff. A maintainer should spot-check anything surprising' \
-            'before merging.' \
-            '' \
-            'Generated with Codebuff.' > /tmp/pr-body.md
-          gh pr create \
-            --title "Nightly recheck: demote $count entries" \
-            --body-file /tmp/pr-body.md \
-            --base "${GITHUB_REF_NAME}" \
-            --head "$branch" || echo "PR already open for $branch"
+          node tools/recheck/open-pr.mjs \
+            --branch "nightly/recheck-$(date -u +%Y-%m-%d)" \
+            --base "$GITHUB_REF_NAME" \
+            --report recheck.json
