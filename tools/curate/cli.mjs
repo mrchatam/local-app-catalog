@@ -22,10 +22,11 @@
  * Exit codes
  *   0  proposal is valid (staged or applied)
  *   1  proposal is invalid, or a staged entry introduced a repo-level error
- *   2  usage error / unreadable proposal
+ *   3  usage error / unreadable proposal
  */
 
 import { readFileSync } from "node:fs";
+import { UsageError, need, usageGuard } from "../lib/args.mjs";
 import {
   normalizeEntry,
   orderEntry,
@@ -60,20 +61,30 @@ output:
   --quiet                suppress the diff, keep the verdict
   -h, --help`;
 
-class UsageError extends Error {}
+/** `--file` and the entry fields all take a value; `need` refuses to eat the next flag. */
+const VALUE_FLAGS = {
+  "--file": (opts, value) => (opts.file = value),
+  "--country": (opts, value) => (opts.fields.country = value),
+  "--category": (opts, value) => (opts.fields.category = value),
+  "--package": (opts, value) => (opts.fields.package = value),
+  "--label": (opts, value) => (opts.fields.label = value),
+  "--evidence": (opts, value) => (opts.fields.evidence = value),
+  "--confidence": (opts, value) => (opts.fields.confidence = value),
+  "--store": (opts, value) => (opts.fields.store = value),
+  "--verified-at": (opts, value) => (opts.fields.verified_at = value),
+  "--added-by": (opts, value) => (opts.fields.added_by = value),
+  "--added-at": (opts, value) => (opts.fields.added_at = value),
+};
 
 function parseArgs(argv) {
   const opts = { apply: false, checkStores: false, json: false, quiet: false, stdin: false, file: null, fields: {} };
-  const takeValue = (arg, next) => {
-    if (next === undefined || next.startsWith("--")) throw new UsageError(`${arg} needs a value`);
-    return next;
-  };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
+    if (Object.hasOwn(VALUE_FLAGS, arg)) {
+      VALUE_FLAGS[arg](opts, need(arg, argv[++i]));
+      continue;
+    }
     switch (arg) {
-      case "--file":
-        opts.file = takeValue(arg, argv[++i]);
-        break;
       case "--stdin":
         opts.stdin = true;
         break;
@@ -88,36 +99,6 @@ function parseArgs(argv) {
         break;
       case "--quiet":
         opts.quiet = true;
-        break;
-      case "--country":
-        opts.fields.country = takeValue(arg, argv[++i]);
-        break;
-      case "--category":
-        opts.fields.category = takeValue(arg, argv[++i]);
-        break;
-      case "--package":
-        opts.fields.package = takeValue(arg, argv[++i]);
-        break;
-      case "--label":
-        opts.fields.label = takeValue(arg, argv[++i]);
-        break;
-      case "--evidence":
-        opts.fields.evidence = takeValue(arg, argv[++i]);
-        break;
-      case "--confidence":
-        opts.fields.confidence = takeValue(arg, argv[++i]);
-        break;
-      case "--store":
-        opts.fields.store = takeValue(arg, argv[++i]);
-        break;
-      case "--verified-at":
-        opts.fields.verified_at = takeValue(arg, argv[++i]);
-        break;
-      case "--added-by":
-        opts.fields.added_by = takeValue(arg, argv[++i]);
-        break;
-      case "--added-at":
-        opts.fields.added_at = takeValue(arg, argv[++i]);
         break;
       case "-h":
       case "--help":
@@ -182,51 +163,47 @@ function printVerdict(entry, verdict) {
 }
 
 async function main() {
-  let opts;
-  try {
-    opts = parseArgs(process.argv.slice(2));
-  } catch (err) {
-    if (err instanceof UsageError) {
-      console.error(`${USAGE}\n${err.message}`);
-      process.exit(2);
-    }
-    throw err;
-  }
+  const opts = usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2)));
 
-  let entry;
-  try {
-    entry = withDefaults(normalizeEntry(readProposal(opts)));
-  } catch (err) {
-    if (err instanceof UsageError) {
-      console.error(`${USAGE}\n${err.message}`);
-      process.exit(2);
-    }
-    throw err;
-  }
+  const entry = usageGuard(USAGE, 3, () => withDefaults(normalizeEntry(readProposal(opts))));
 
   if (!entry.country || !entry.category || !entry.package) {
-    console.error(`${USAGE}\nmissing required field(s): ${["country", "category", "package"].filter((k) => !entry[k]).join(", ")}`);
-    process.exit(2);
+    usageGuard(USAGE, 3, () => {
+      throw new UsageError(
+        `missing required field(s): ${["country", "category", "package"].filter((k) => !entry[k]).join(", ")}`,
+      );
+    });
   }
 
   const repo = loadRepo();
   const verdict = validateEntry(entry, { repo });
 
-  if (opts.json) {
-    console.log(
-      JSON.stringify(
-        { ok: verdict.ok, stageable: verdict.ok, entries: [entry], errors: verdict.errors, warnings: verdict.warnings },
-        null,
-        2,
-      ),
-    );
-    process.exit(verdict.ok ? 0 : 1);
-  }
-
+  // A proposal that fails the entry rules is rejected before anything is
+  // staged or any store is contacted. The JSON and human paths must agree on
+  // that verdict, so both are printed from here.
   if (!verdict.ok) {
-    console.error(`rejected ${entry.package} for ${entry.country}/${entry.category}`);
-    printVerdict(entry, verdict);
-    console.error("\nnothing was written.");
+    if (opts.json) {
+      console.log(
+        JSON.stringify(
+          {
+            ok: false,
+            changed: false,
+            applied: false,
+            entries: [entry],
+            errors: verdict.errors,
+            warnings: verdict.warnings,
+            repo_errors: [],
+            availability: null,
+          },
+          null,
+          2,
+        ),
+      );
+    } else {
+      console.error(`rejected ${entry.package} for ${entry.country}/${entry.category}`);
+      printVerdict(entry, verdict);
+      console.error("\nnothing was written.");
+    }
     process.exit(1);
   }
 
@@ -234,9 +211,49 @@ async function main() {
   const diff = unifiedDiff({ before: staged.before, after: staged.after, from: `a/${staged.file}`, to: `b/${staged.file}` });
 
   // Re-run the full repo validation: a locally valid entry can still collide
-  // with something else in the tree, and CI will notice.
+  // with something else in the tree, and CI will notice. The `--json` report has
+  // to see this too - reporting `ok: true` on a proposal that breaks the repo
+  // would let an automation merge through a check a human would have failed.
   const result = validateRepo(loadRepo());
   const newErrors = result.errors.filter((f) => f.where === staged.file && f.level === "error");
+  const ok = newErrors.length === 0;
+
+  // Availability is asked for explicitly and reported by both paths; it used to
+  // be silently skipped whenever --json was passed.
+  let availability = null;
+  if (opts.checkStores) {
+    availability = await checkAvailability(loadRepo(), {
+      country: entry.country,
+      onProgress: (code, count) =>
+        opts.quiet || opts.json ? undefined : console.error(`checking ${code} (${count} packages) ...`),
+    });
+  }
+
+  if (opts.json) {
+    console.log(
+      JSON.stringify(
+        {
+          ok,
+          changed: diff !== "",
+          applied: Boolean(opts.apply) && diff !== "",
+          file: staged.file,
+          entries: [entry],
+          errors: verdict.errors,
+          warnings: verdict.warnings,
+          repo_errors: newErrors,
+          availability: availability
+            ? {
+                verdicts: [...availability.verdicts.values()],
+                findings: availability.findings,
+              }
+            : null,
+        },
+        null,
+        2,
+      ),
+    );
+    process.exit(ok ? 0 : 1);
+  }
 
   if (!opts.quiet) {
     printVerdict(entry, verdict);
@@ -252,12 +269,7 @@ async function main() {
     }
   }
 
-  let availability = null;
-  if (opts.checkStores) {
-    availability = await checkAvailability(loadRepo(), {
-      country: entry.country,
-      onProgress: (code, count) => (opts.quiet ? undefined : console.error(`checking ${code} (${count} packages) ...`)),
-    });
+  if (availability) {
     for (const finding of availability.findings) {
       console.log(`${finding.level === "error" ? "error" : "warn "} ${finding.code.padEnd(22)} ${finding.where}\n      ${finding.message}`);
     }

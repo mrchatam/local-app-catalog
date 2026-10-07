@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, rmSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -32,6 +32,7 @@ function tempDir() {
 const BUILD = "tools/build/cli.mjs";
 const VALIDATE = "tools/validate/cli.mjs";
 const RECHECK = "tools/recheck/cli.mjs";
+const CURATE = "tools/curate/cli.mjs";
 
 // ---------------------------------------------------------------- build clock
 
@@ -102,11 +103,12 @@ test("a non-numeric SOURCE_DATE_EPOCH is rejected rather than silently ignored",
   }
 });
 
-test("the build CLI rejects a malformed release tag", () => {
+test("the build CLI rejects a malformed release tag as a usage error", () => {
   const out = tempDir();
   try {
     const result = runCli(BUILD, ["--tag", "2026.10.07", "--out", out.dir, "--quiet"]);
-    assert.equal(result.status, 1);
+    // 3, not 1: a bad flag must never be reported as a build/data failure.
+    assert.equal(result.status, 3);
     assert.match(result.stderr, /vYYYY\.MM\.DD/);
   } finally {
     out.cleanup();
@@ -165,19 +167,74 @@ test("validate exits 1 when the catalog has a semantic error", () => {
   }
 });
 
-test("validate exits 1 on an unknown argument instead of guessing", () => {
+test("validate exits 3 on an unknown argument instead of guessing", () => {
   const result = runCli(VALIDATE, ["--nope"]);
-  assert.equal(result.status, 1);
+  // Exit 3 is reserved for "the command line was wrong", so a typo can never
+  // masquerade as a catalog error (exit 1) in CI.
+  assert.equal(result.status, 3);
   assert.match(result.stderr, /unknown argument/);
+});
+
+// --------------------------------------------------- flag values are not flags
+
+/**
+ * `--flag value` parsing is hand-rolled in every CLI, and the classic failure
+ * is a flag eating the *next* flag as its value. Both of these used to exit 0:
+ * `validate --country --json` validated the country "--json" and printed the
+ * human report, and `build --out --quiet` wrote a whole release into a working
+ * tree directory literally named `--quiet`.
+ */
+test("no CLI lets a value-taking flag swallow the next flag", () => {
+  const out = tempDir();
+  try {
+    const cases = [
+      [VALIDATE, ["--country", "--json"], /--country needs a value/],
+      [VALIDATE, ["--max-messages", "--quiet"], /--max-messages needs a value/],
+      [BUILD, ["--out", "--quiet"], /--out needs a value/],
+      [BUILD, ["--tag", "--out", out.dir], /--tag needs a value/],
+      [RECHECK, ["--country", "--json"], /--country needs a value/],
+      [CURATE, ["--package", "--label"], /--package needs a value/],
+    ];
+    for (const [script, args, expected] of cases) {
+      const result = runCli(script, args);
+      assert.equal(result.status, 3, `${script} ${args.join(" ")} must be a usage error`);
+      assert.match(result.stderr, expected);
+    }
+    assert.equal(
+      existsSync(path.join(REPO_ROOT, "--quiet")),
+      false,
+      "the build must never create a directory named after a flag",
+    );
+  } finally {
+    out.cleanup();
+  }
+});
+
+test("an unregistered --country is a usage error, but a country with no folder is fine", () => {
+  const unknown = runCli(VALIDATE, ["--country", "XX", "--quiet"]);
+  assert.equal(unknown.status, 3);
+  assert.match(unknown.stderr, /unknown country: XX/);
+  assert.equal(runCli(RECHECK, ["--country", "XX"]).status, 3);
+
+  // SA is registered in data/index.json and deliberately ships no data/sa/:
+  // every candidate was dropped, which is a data decision, not a typo.
+  assert.equal(runCli(VALIDATE, ["--country", "SA", "--quiet"]).status, 0);
+});
+
+test("a non-numeric --max-messages is a usage error, not a silently disabled cap", () => {
+  const result = runCli(VALIDATE, ["--max-messages", "abc", "--quiet"]);
+  assert.equal(result.status, 3);
+  assert.match(result.stderr, /--max-messages needs an integer/);
+  assert.equal(runCli(VALIDATE, ["--max-messages", "10", "--quiet"]).status, 0);
 });
 
 // ---------------------------------------------------------- recheck exit codes
 
 test("recheck exits 3 on a usage error, before any network work", () => {
-  for (const args of [["--bogus"], ["--country"], ["--max-demotions", "-1"]]) {
+  for (const args of [["--bogus"], ["--country"], ["--max-demotions", "-1"], ["--max-demotions", "many"]]) {
     const result = runCli(RECHECK, args);
     assert.equal(result.status, 3, `expected usage error for ${args.join(" ")}`);
-    assert.match(result.stderr, /usage:|needs a value|non-negative/);
+    assert.match(result.stderr, /usage:|needs a value|needs an integer/);
   }
 });
 

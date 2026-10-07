@@ -26,6 +26,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { REPO_ROOT } from "../lib/paths.mjs";
+import { UsageError, need, needInt, needCountry, usageGuard } from "../lib/args.mjs";
 import { loadRepo } from "../lib/load.mjs";
 import { validateRepo } from "../lib/rules.mjs";
 import { checkAvailability } from "../lib/availability.mjs";
@@ -55,8 +56,6 @@ export const DEMOTING_CODES = new Set(["VERIFIED_NOT_LOCAL", "STORE_UNAVAILABLE"
 /** Default guard: more than this many demotions in one night smells like an adapter bug. */
 const DEFAULT_MAX_DEMOTIONS = 25;
 
-class UsageError extends Error {}
-
 function parseArgs(argv) {
   const opts = {
     apply: false,
@@ -66,10 +65,6 @@ function parseArgs(argv) {
     force: false,
     maxDemotions: DEFAULT_MAX_DEMOTIONS,
     python: "python3",
-  };
-  const value = (arg, next) => {
-    if (next === undefined || next.startsWith("--")) throw new UsageError(`${arg} needs a value`);
-    return next;
   };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -87,16 +82,13 @@ function parseArgs(argv) {
         opts.quiet = true;
         break;
       case "--country":
-        opts.country = value(arg, argv[++i]).toUpperCase();
+        opts.country = need(arg, argv[++i]).toUpperCase();
         break;
       case "--python":
-        opts.python = value(arg, argv[++i]);
+        opts.python = need(arg, argv[++i]);
         break;
       case "--max-demotions":
-        opts.maxDemotions = Number.parseInt(value(arg, argv[++i]), 10);
-        if (!Number.isInteger(opts.maxDemotions) || opts.maxDemotions < 0) {
-          throw new UsageError("--max-demotions needs a non-negative integer");
-        }
+        opts.maxDemotions = needInt(arg, argv[++i], { min: 0 });
         break;
       case "-h":
       case "--help":
@@ -149,18 +141,16 @@ export function planDemotions({ findings, date, root = REPO_ROOT, readFile = rea
 }
 
 async function main() {
-  let opts;
-  try {
-    opts = parseArgs(process.argv.slice(2));
-  } catch (err) {
-    if (err instanceof UsageError) {
-      console.error(`${USAGE}\n${err.message}`);
-      process.exit(3);
-    }
-    throw err;
-  }
+  const opts = usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2)));
 
   const repo = loadRepo();
+  if (opts.country) {
+    // `--country XX` used to check nothing and exit 0, which reads as "the
+    // catalog is clean". A country nobody registered is a typo, not a result.
+    opts.country = usageGuard(USAGE, 3, () =>
+      needCountry("--country", opts.country, repo.index.countries),
+    );
+  }
   const availability = await checkAvailability(repo, {
     confidence: "verified",
     country: opts.country,

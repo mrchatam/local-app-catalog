@@ -12,13 +12,18 @@
  *   1  validation errors (schema, duplicate package, global conflict, dead listing)
  *   2  no errors, but at least one store check was inconclusive (blocked or
  *      rate-limited runner). Advisory: the network-free pass is the merge gate.
+ *   3  usage error (bad flag, missing value, unregistered country)
  */
 
+import { UsageError, need, needInt, needCountry, usageGuard } from "../lib/args.mjs";
 import { loadRepo } from "../lib/load.mjs";
 import { validateRepo } from "../lib/rules.mjs";
 import { checkAvailability } from "../lib/availability.mjs";
 
-const USAGE = `usage: node tools/validate/cli.mjs [--check-stores] [--country CC] [--json] [--quiet]`;
+const USAGE = `usage: node tools/validate/cli.mjs [--check-stores] [--country CC] [--json] [--quiet]
+       [--max-messages N]
+
+Exit codes: 0 clean, 1 validation errors, 2 store check inconclusive, 3 usage error.`;
 
 function parseArgs(argv) {
   const opts = {
@@ -41,10 +46,12 @@ function parseArgs(argv) {
         opts.quiet = true;
         break;
       case "--country":
-        opts.country = (argv[++i] ?? "").toUpperCase() || null;
+        // Shape-checked here, registration-checked against data/index.json once
+        // the repo is loaded: `--country XX` must not look like a clean run.
+        opts.country = need(arg, argv[++i]).toUpperCase();
         break;
       case "--max-messages":
-        opts.maxMessages = Number.parseInt(argv[++i] ?? "200", 10);
+        opts.maxMessages = needInt(arg, argv[++i], { min: 0 });
         break;
       case "-h":
       case "--help":
@@ -52,8 +59,7 @@ function parseArgs(argv) {
         process.exit(0);
         break;
       default:
-        console.error(`${USAGE}\nunknown argument: ${arg}`);
-        process.exit(1);
+        throw new UsageError(`unknown argument: ${arg}`);
     }
   }
   return opts;
@@ -83,8 +89,13 @@ function report(findings, opts) {
 }
 
 async function main() {
-  const opts = parseArgs(process.argv.slice(2));
+  const opts = usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2)));
   const repo = loadRepo();
+  if (opts.country) {
+    opts.country = usageGuard(USAGE, 3, () =>
+      needCountry("--country", opts.country, repo.index.countries),
+    );
+  }
   const result = validateRepo(repo);
   let findings = result.findings.filter((f) => inScope(f, opts.country));
 

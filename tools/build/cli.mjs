@@ -14,17 +14,26 @@
  *
  * The build is deterministic: the same commit and tag produce byte-identical
  * bundles, so a consumer that pins a release URL can verify the checksum.
+ *
+ * Exit codes
+ *   0  built
+ *   1  build failure (validation refused, unusable SOURCE_DATE_EPOCH)
+ *   3  usage error (bad flag, missing value, malformed tag)
  */
 
 import { createHash } from "node:crypto";
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { DIST_DIR } from "../lib/paths.mjs";
+import { UsageError, need, usageGuard } from "../lib/args.mjs";
 import { loadRepo } from "../lib/load.mjs";
 import { validateRepo } from "../lib/rules.mjs";
 import { buildAllBundle, buildCountryBundle, buildManifest, renderChecksums } from "../lib/bundle.mjs";
 
 const USAGE = `usage: node tools/build/cli.mjs [--tag vYYYY.MM.DD] [--out dist] [--validate] [--quiet]
+       --release is an alias for --tag.
+
+Exit codes: 0 built, 1 build failure, 3 usage error.
 
 Deterministic by default: pass SOURCE_DATE_EPOCH (seconds since the Unix epoch,
 as git log -1 --format=%ct gives) to stamp manifest.json's generated_at. Without
@@ -55,10 +64,14 @@ function parseArgs(argv) {
     switch (argv[i]) {
       case "--tag":
       case "--release":
-        opts.tag = argv[++i] ?? opts.tag;
+        // Both are aliases; `need` stops `--tag --out dist` from naming the
+        // release "--out" and then treating "dist" as a stray argument.
+        opts.tag = need(argv[i], argv[++i]);
         break;
       case "--out":
-        opts.out = path.resolve(argv[++i] ?? opts.out);
+        // `--out --quiet` used to write a whole release into a directory
+        // literally named `--quiet` in the working tree.
+        opts.out = path.resolve(need(argv[i], argv[++i]));
         break;
       case "--validate":
         opts.validate = true;
@@ -72,13 +85,11 @@ function parseArgs(argv) {
         process.exit(0);
         break;
       default:
-        console.error(`${USAGE}\nunknown argument: ${argv[i]}`);
-        process.exit(1);
+        throw new UsageError(`unknown argument: ${argv[i]}`);
     }
   }
   if (!/^v\d{4}\.\d{2}\.\d{2}$/.test(opts.tag)) {
-    console.error(`release tag must look like vYYYY.MM.DD, got "${opts.tag}"`);
-    process.exit(1);
+    throw new UsageError(`release tag must look like vYYYY.MM.DD, got "${opts.tag}"`);
   }
   return opts;
 }
@@ -99,7 +110,7 @@ function write(outDir, name, contents) {
 }
 
 function main() {
-  const opts = parseArgs(process.argv.slice(2));
+  const opts = usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2)));
   const repo = loadRepo();
 
   const result = validateRepo(repo);
