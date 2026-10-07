@@ -22,7 +22,7 @@ The definition of "clean" after any loop:
 | 2 | `4043b63` | Non-reproducible builds, broken CI summary, tracked scratch output. | D1–D3 |
 | 3 | `799b9f6` | No README/license/code-of-conduct, untested CLI exit codes, seed scripts buried in ignored scratch. | G1–G9, G11 |
 | 4 | `b68f717` | npm package ships ODbL data without its licence text; `discover.py` crashes on bad flags; the availability exit-code contract was documented backwards; missing PR template, security policy, editor config. | G12–G18 |
-| 4 | *(this commit)* | Value-taking flags swallowed the next flag (and `build --out --quiet` wrote a release into a directory literally named `--quiet`); an unregistered `--country` passed silently as clean; a non-numeric `--max-messages` silently disabled the cap; usage errors disagreed on their exit code; `curate --json` returned a weaker verdict than the human path. | G19–G23 |
+| 4 | `3943d3a` | Value-taking flags swallowed the next flag (and `build --out --quiet` wrote a release into a directory literally named `--quiet`); an unregistered `--country` passed silently as clean; a non-numeric `--max-messages` silently disabled the cap; usage errors disagreed on their exit code; `curate --json` returned a weaker verdict than the human path. | G19–G23 |
 
 ## Open items
 
