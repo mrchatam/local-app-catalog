@@ -23,13 +23,16 @@ The definition of "clean" after any loop:
 | 3 | `799b9f6` | No README/license/code-of-conduct, untested CLI exit codes, seed scripts buried in ignored scratch. | G1–G9, G11 |
 | 4 | `b68f717` | npm package ships ODbL data without its licence text; `discover.py` crashes on bad flags; the availability exit-code contract was documented backwards; missing PR template, security policy, editor config. | G12–G18 |
 | 4 | `3943d3a` | Value-taking flags swallowed the next flag (and `build --out --quiet` wrote a release into a directory literally named `--quiet`); an unregistered `--country` passed silently as clean; a non-numeric `--max-messages` silently disabled the cap; usage errors disagreed on their exit code; `curate --json` returned a weaker verdict than the human path. | G19–G23 |
-| 5a | `2fd75e1` | The curator server read any JSON file on disk through a traversing `category`; its own flags swallowed each other and it exited 2 for usage errors; it could be bound to `0.0.0.0` despite documenting loopback-only; an oversized body killed the socket instead of answering 413; a missing catalog was reported as an empty one. | G24–G27 |
+| 5a | `2fd75e1` | The curator server read any JSON file on disk through a traversing `category`; its own flags swallowed each other and it exited 2 for usage errors; it could be bound to `0.0.0.0` despite documenting loopback-only; an oversized body killed the socket instead of answering 413; a missing catalog was reported as an empty one. | G24–G28 |
+| 5b | `9f0e2a0` | `validate.yml` shipped a banner-prefixed "JSON" file because `npm run` prints its banner to stdout; the nightly push always failed with `--force-with-lease` "stale info" on any same-day re-run; a dispatch `inputs.tag` reached the shell unvalidated; two report parsers died on a broken file (one producing a PR titled "demote some entries"); the demotion PR would have re-probed stores, applying a different set than the report describes; and `checkout -B` + a forced push replaced the previous night's commit instead of extending it. | G29–G34 |
 
 ## Open items
 
 | # | Gap | Why it matters | Status |
 |---|-----|----------------|--------|
-| G10 | No trace evidence entities / reviews / seed export | The user required the trace graph; goals/tasks/decisions exist but findings and review records do not. | open |
+| G35 | No `tools/seed/` verification in CI | The seed proof (`gen_seed.py` reproduces `data/` byte-for-byte) ran once by hand during G11. | open |
+
+## Done items
 
 ## Done items
 
@@ -61,6 +64,12 @@ The definition of "clean" after any loop:
 | G25 | The curator server's own flags had the G19 bug and the old exit code | `--host` stored the next token whatever it was, `--port`/unknown-argument errors exited 2 while the rest of the CLI family exits 3, and the usage line advertised a `--open` flag that was never implemented. Now routed through `tools/lib/args.mjs` and `usageGuard(USAGE, 3, ...)`; the stale flag is gone from the usage text. |
 | G26 | The curator could be bound to a non-loopback address | `--host 0.0.0.0` started normally, publishing an unauthenticated writer to `data/` to the whole network — while the docstring and `SECURITY.md` both promise a loopback-only server. Non-loopback hosts are now a usage error, enforced in both `parseArgs` and `start()`. |
 | G27 | An oversized body broke the connection, and a missing catalog looked empty | The 64 KiB guard called `req.destroy()` before answering, so a client saw only a broken pipe; it now replies **413** and closes cleanly. `GET /api/catalog` returned 200 with `apps: []` for a country/category that has no file, indistinguishable from a real empty catalog; it is now **404**. |
+| G29 | `validate.yml` saved a banner-prefixed "JSON" report | `npm run` prints its `> local-app-catalog@… validate` banner to **stdout**, so `npm run validate:stores -- --json --quiet > store-check.json` produced a file whose `JSON.parse` died with `SyntaxError: Unexpected token '>'`. Reproduced by hand (793 vs 711 bytes). Every CI step that reads JSON now uses `npm run --silent`, and the `Summarize` step answers a non-JSON file with an annotated warning instead of dying. |
+| G30 | The nightly push could only ever create its branch, never update it | `git push --force-with-lease` without an expected value reads the local remote-tracking ref, and a fresh CI checkout has none for `nightly/recheck-<date>` — reproduced with a throwaway bare remote + clone (`! [rejected] … (stale info)`). Publishing logic is now [tools/recheck/open-pr.mjs](tools/recheck/open-pr.mjs), which interpolates the SHA `git ls-remote` reports into `--force-with-lease=<ref>:<sha>`, and `tests/recheck-pr.test.mjs` drives it against a real bare remote — including the same-day re-run from a brand-new clone. Commit `9f0e2a0`. |
+| G31 | The "already-open PR" second run would have *discarded* the first night's demotions | Found by the G30 rig: `git checkout -B` starts the branch at the default branch's HEAD, so the forced push replaced the earlier commit instead of extending it. The tool now fetches the branch and `reset --soft FETCH_HEAD` before committing, so the push is a genuine fast-forward; `-is-ancestor` in the rig proves history is preserved. Commit `9f0e2a0`. |
+| G32 | The release workflow reached the shell with an unvalidated tag | `run:` interpolated `${{ inputs.tag }}` verbatim. The tag is now resolved through an env var and must match `^v[0-9]{4}\.[0-9]{2}\.[0-9]{2}$` before any step runs, and `gh release create` passes `--verify-tag`. |
+| G33 | Two report parsers died on a broken file, one printing a reassurance | `validate.yml`'s `JSON.parse` had no guard; `recheck.yml`'s PR count fell back to `catch { "some" }`, so a broken report produced a PR titled "demote some entries" that a reviewer could not check against anything. Both reads now fail loudly (the summarizer as an annotated warning, the count as a hard `--report` error pinned by the rig). |
+| G34 | The demotion PR re-probed the stores it was supposed to publish findings from | The inline workflow re-ran `recheck --apply`; a flaky store answer between probe and apply would make the PR's diff disagree with its own report. The PR now replays the recorded report (`recheck --apply --plan recheck.json`), which pins `--plan` as the mechanism: findings are re-validated against the demotion code set and resolved through the same `LOCAL_APP_CATALOG_DATA` override that decided what was checked, and `open-pr.mjs` further publishes only if `git add data` actually stages something. |
 | G28 | `tools/curate/server.mjs` had no tests at all | [tests/curate-server.test.mjs](tests/curate-server.test.mjs) (8 tests) covering traversal refusal, the 404/200 split, 413, malformed JSON, that a rejected `/api/apply` leaves `data/` byte-identical, that a non-loopback bind throws, and the exit-3 usage contract with no stack trace. |
 | D1 | Build was not reproducible (`generated_at` read the wall clock) | `tools/lib/bundle.mjs` + `tools/build/cli.mjs`; regression test in `tests/bundle.test.mjs`; commit `4043b63`. |
 | D2 | `validate.yml` summary read non-existent keys (`counts.errors`) | Rewritten to `r.errors` / `r.warnings` / `r.store_inconclusive`. |
@@ -77,12 +86,13 @@ The definition of "clean" after any loop:
 - **`recheck` exit 0/1/2 and `validate` exit 2 require network.** Their offline
   halves (usage errors, `--help`, the demotion code set) are tested; the
   network halves are not.
-- **The three GitHub workflows have never been executed.** `gh` is unavailable
-  here, so `.github/workflows/*.yml` are only YAML-parsed and their shell steps
-  read by hand. Their exit-code branching is written to tolerate the usage-error
-  code 3 explicitly (`validate.yml` fails on any status other than 0 or 2;
-  `recheck.yml` on any status other than 0, 1 or 2) so a future CLI change
-  cannot turn a usage error into a silent pass.
+- **The three GitHub workflows have never been executed on a real runner.**
+  Their YAML is parse-checked, their shell steps are read by hand, and the
+  nightly publish logic — the part that had already regressed once — is now
+  extracted into `tools/recheck/open-pr.mjs` and driven against a real bare
+  remote by `tests/recheck-pr.test.mjs` with a recording `gh` stub. What
+  remains unverified is everything that needs GitHub itself: runner execution,
+  real `gh` auth, and Actions secrets.
 - `.scratch/candidates.json` is regenerable via `fetch/discover.py --all`.
 - **The npm package is not published.** `private: true` blocks it; the `files`
   allow-list is kept correct so that the first publish is not a licensing
