@@ -19,8 +19,18 @@ Examples
     # nightly: recheck only entries currently marked verified
     python3 fetch/play_availability.py --from-catalog data/ir/banking.json --only-verified --json
 
-Exit codes: 0 = all requested checks resolved, 1 = usage error,
-            2 = at least one check was unavailable or errored (network/block).
+Exit codes
+----------
+    0  every requested check resolved to a definite answer -- available OR
+       unavailable. A confirmed 404 is a result, not an inconclusive one.
+    1  usage error
+    2  at least one check came back unknown or errored: the store was blocked,
+       rate-limited, or failed at the transport layer, so nothing was proven.
+
+A definite "unavailable" therefore exits 0 by design. The Node validator
+(tools/lib/availability.mjs) treats exit 2 as "inconclusive" and downgrades it
+to a warning, so folding a confirmed 404 into exit 2 would silently turn real
+falsification evidence into an advisory note.
 """
 
 from __future__ import annotations

@@ -1,0 +1,19 @@
+# Keep contributions byte-stable across editors: the data files and the
+# generated bundles are compared byte-for-byte in CI, so a stray CRLF or a
+# tab-vs-space flip must not be able to show up as a spurious diff.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.md]
+# Two trailing spaces are a hard line break; leave them for prose authors.
+trim_trailing_whitespace = false

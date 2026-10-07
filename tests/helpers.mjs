@@ -151,3 +151,99 @@ export function pythonStoreAdapterSelfTest() {
   });
   return JSON.parse(stdout).cases;
 }
+
+/**
+ * The availability checker's exit-code contract, driven offline by stubbing the
+ * adapter's check(). A definite 404 must be a *resolved* answer (exit 0),
+ * because the Node validator reads exit 2 as "inconclusive" and would otherwise
+ * turn real falsification evidence into a warning.
+ */
+const PY_AVAILABILITY_SELFTEST = `
+import contextlib, io, json, sys
+sys.path.insert(0, "fetch")
+import play_availability as pa
+from store_adapters import ADAPTERS
+from store_adapters.base import (
+    STATUS_AVAILABLE, STATUS_ERROR, STATUS_UNAVAILABLE, STATUS_UNKNOWN, CheckResult,
+)
+
+
+def stub(status):
+    def check(package, country):
+        return CheckResult(
+            package=package, store="rustore", country=country.upper(),
+            status=status, scope="country", evidence="https://example.test/x",
+        )
+    ADAPTERS["rustore"].check = check
+
+
+def run(status):
+    stub(status)
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        rc = pa.main(["--country", "ru", "--package", "ru.sberbankmobile",
+                      "--store", "rustore", "--json"])
+    payload = json.loads(buf.getvalue())
+    return {
+        "stub": status,
+        "exit": rc,
+        "verdict_status": payload["verdicts"][0]["status"],
+        "country": payload["country"],
+        "summary": payload["summary"],
+    }
+
+
+def usage(argv):
+    try:
+        pa.main(argv)
+    except SystemExit as exc:
+        return exc.code
+    return 0
+
+
+print(json.dumps({
+    "resolved": [run(s) for s in (STATUS_AVAILABLE, STATUS_UNAVAILABLE)],
+    "inconclusive": [run(s) for s in (STATUS_UNKNOWN, STATUS_ERROR)],
+    "usage": {
+        "unknown-store": usage(["--country", "RU", "--store", "nope", "--package", "a.b"]),
+        "no-package": usage(["--country", "RU"]),
+        "no-country": usage(["--package", "a.b"]),
+    },
+}))
+`;
+
+/** Exit codes and verdicts of fetch/play_availability.py with a stubbed store. */
+export function pythonAvailabilitySelfTest() {
+  const stdout = execFileSync("python3", ["-c", PY_AVAILABILITY_SELFTEST], {
+    cwd: REPO_ROOT,
+    encoding: "utf8",
+  });
+  return JSON.parse(stdout);
+}
+
+/** The discovery planner is pure: ask it what jobs it would run, offline. */
+const PY_DISCOVER_SELFTEST = `
+import json, sys
+sys.path.insert(0, "fetch")
+import discover as d
+from store_adapters import ADAPTERS
+
+matrix = {
+    "TR": {"banking": ["banka", "banka uygulamasi"], "rideshare": ["taksi"]},
+    "IR": {"banking": ["bank"]},
+}
+jobs = d.build_jobs(matrix, ["TR", "IR"], ["banking", "rideshare"])
+print(json.dumps({
+    "jobs": [list(j) for j in jobs],
+    "search_capable": sorted(i for i, a in ADAPTERS.items() if hasattr(a, "search")),
+}))
+`;
+
+/** Which country/category/query jobs the discovery run would issue. */
+export function pythonDiscoverPlan() {
+  const stdout = execFileSync("python3", ["-c", PY_DISCOVER_SELFTEST], {
+    cwd: REPO_ROOT,
+    encoding: "utf8",
+  });
+  return JSON.parse(stdout);
+}

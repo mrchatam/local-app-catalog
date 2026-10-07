@@ -15,6 +15,11 @@ Examples
     python3 fetch/discover.py --country TR --category banking
     python3 fetch/discover.py --all --out .scratch/candidates.json
     python3 fetch/discover.py --countries IR,RU --categories banking,rideshare
+
+Exit codes
+----------
+    0  candidates were produced (possibly zero; failures are per-query warnings)
+    2  usage error (bad flag, unknown store, unusable --workers)
 """
 
 from __future__ import annotations
@@ -87,6 +92,13 @@ def main(argv: list[str] | None = None) -> int:
     if not countries:
         ap.error("nothing to do: pass --country, --countries, or --all")
 
+    # Reject bad flags here rather than letting a raw KeyError/ValueError escape
+    # from deep inside the run: a usage mistake should print usage, not a
+    # traceback a contributor has to read.
+    if args.workers < 1:
+        ap.error(f"--workers must be at least 1 (got {args.workers})")
+    if args.store not in ADAPTERS:
+        ap.error(f"unknown store adapter: {args.store} (known: {', '.join(sorted(ADAPTERS))})")
     adapter = ADAPTERS[args.store]
     if not hasattr(adapter, "search"):
         ap.error(f"store adapter {args.store!r} does not support search discovery")
