@@ -116,6 +116,11 @@
       "id": "501efc0b-24f3-4e80-b7ca-2f5b7af5c9a3",
       "title": "Local-store enumeration measured live",
       "body": "Cafe Bazaar /lists/al-ebanking: 24 IR banking candidates with Persian labels. Myket /apps/shopping: 26 candidates, 22 store-isolated (not on Play): Digikala, Torob, Basalam, Sheypoor. Play search by contrast: 5 TR rideshare candidates, 1 Turkish. Runner (datacenter IP) reached Bazaar and Myket; only RuStore rate-limits. Commit dc00dd2."
+    },
+    {
+      "id": "d98bf724-e06f-4586-a4b1-7a66a1370816",
+      "title": "Daily pipeline wired end-to-end offline",
+      "body": "update-lists.mjs driven by a stubbed play_availability: verified insertion (country-scoped available), community insertion (Play-only), unavailable/unknown never insert, cap+defer, dry-run, usage errors. LOCAL_APP_CATALOG_DATA now covers the writer too. 108/108 tests. Commits 9d0c5e8/4698c34."
     }
   ],
   "links": [
@@ -221,6 +226,12 @@
       "rel": "claim_has_evidence",
       "from": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
       "to": "501efc0b-24f3-4e80-b7ca-2f5b7af5c9a3",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "claim_has_evidence",
+      "from": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
+      "to": "d98bf724-e06f-4586-a4b1-7a66a1370816",
       "source_type": "USER_ASSERTED"
     }
   ],
@@ -717,5 +728,5 @@
       ]
     }
   ],
-  "exported_at_commit": "dc00dd211dffb05e8f71aa5559968eaa89caf591"
+  "exported_at_commit": "4698c34851a0044201c6ffa8043811262286a1fe"
 }
