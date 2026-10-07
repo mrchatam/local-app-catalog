@@ -290,6 +290,81 @@ print(json.dumps({
 }))
 `;
 
+/**
+ * The listing-enumeration layer: country-scoped stores nominating from their
+ * OWN catalog pages, with fetch stubbed. This is the high-precision half of
+ * discovery — a Bazaar list page is almost entirely local apps, unlike a Play
+ * search, which matches words and returns global confusables.
+ */
+const PY_LISTINGS_SELFTEST = `
+import contextlib, io, json, os, sys, tempfile
+sys.path.insert(0, "fetch")
+import discover as d
+import store_adapters.cafe_bazaar as bazaar
+import store_adapters.myket as myket
+from store_adapters import ADAPTERS
+from store_adapters.base import STATUS_AVAILABLE, CheckResult
+
+
+class Fake:
+    def __init__(self, status, body):
+        self.status, self.body, self.url, self.error = status, body, "https://stub/", None
+
+
+BAZAAR_HTML = (
+    '<a href="/app/com.samanpr.blu" class="x"><picture alt="بلو - بانک"></picture></a>'
+    '<a href="/app/com.samanpr.blu" class="dup"><picture alt="بلو - بانک"></picture></a>'
+    '<a href="/app/com.whatsapp">a global app the list must not carry</a>'
+    '<a href="/app/com.pmb.mobile"><picture alt="همراه بانک ملت"></picture></a>'
+)
+MYKET_HTML = (
+    '<a href="/app/cab.snapp.passenger" title="اسنپ، سامانه هوشمند حمل و نقل">'
+    '<img alt="دانلود اسنپ، سامانه هوشمند حمل و نقل"></a>'
+)
+
+bazaar.fetch = lambda url, **kw: Fake(200, BAZAAR_HTML)
+myket.fetch = lambda url, **kw: Fake(200, MYKET_HTML)
+
+bazaar_hits = ADAPTERS["cafe_bazaar"].listings("al-ebanking", "ir")
+myket_hits = ADAPTERS["myket"].listings("shopping", "ir")
+
+# End-to-end through the CLI planner, with Play cross-check stubbed.
+ADAPTERS["google_play"].check = lambda pkg, cc: CheckResult(
+    package=pkg, store="google_play", country=cc.upper(),
+    status=STATUS_AVAILABLE, scope="global", evidence="https://stub/detail",
+)
+buf = io.StringIO()
+with contextlib.redirect_stdout(buf):
+    out = tempfile.mktemp(suffix=".json")
+    rc = d.main(["--store", "cafe_bazaar", "--country", "IR", "--category",
+                 "banking", "--cross-check", "google_play", "--out", out])
+payload = json.load(open(out))
+os.unlink(out)
+apps = payload["candidates"]["IR"]["banking"]
+
+print(json.dumps({
+    "rc": rc,
+    "bazaar_packages": [h["package"] for h in bazaar_hits],
+    "bazaar_labels": [h["label"] for h in bazaar_hits],
+    "bazaar_evidence": bazaar_hits[0]["evidence"],
+    "myket_label": myket_hits[0]["label"],
+    "source": payload["source"],
+    "global_dropped": payload["global_dropped"],
+    "candidate_count": payload["candidate_count"],
+    "cross_check_status": apps[0]["cross_check"]["status"],
+    "cross_check_store": apps[0]["cross_check"]["store"],
+}))
+`;
+
+/** Country-scoped stores nominating from their own catalog pages. */
+export function pythonListingsSelfTest() {
+  const stdout = execFileSync("python3", ["-c", PY_LISTINGS_SELFTEST], {
+    cwd: REPO_ROOT,
+    encoding: "utf8",
+  });
+  return JSON.parse(stdout);
+}
+
 /** Which country/category/query jobs the discovery run would issue. */
 export function pythonDiscoverPlan() {
   const stdout = execFileSync("python3", ["-c", PY_DISCOVER_SELFTEST], {

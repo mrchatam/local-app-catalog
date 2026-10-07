@@ -1,20 +1,34 @@
 #!/usr/bin/env python3
 """Nominate candidate local apps for each country/category via store search.
 
-Discovery is a *nomination* step, never a publish step. Play search is
-country-scoped, so native-language queries return locally relevant apps that
-English queries miss - but the same page also returns global apps that merely
-match the words, so everything this tool emits has to be confirmed by a curator
-(and, ideally, by an authoritative country store) before it reaches data/.
+Discovery is a *nomination* step, never a publish step. Two nominators exist:
 
-Packages listed in data/global.json are dropped here so the known confusables
-never even reach a reviewer's queue.
+* Google Play search (`--store google_play`, the default) is country-scoped, so
+  native-language queries return locally relevant apps - but the same page also
+  returns global apps that merely match the words, so everything it emits needs
+  confirmation.
+* A country-scoped store's OWN catalog pages (`--store cafe_bazaar`,
+  `--store myket`) are the high-precision reverse: a listing of a store that
+  serves only one country is almost entirely local apps, including the
+  store-isolated ones a Play crawl can never see. `--cross-check google_play`
+  annotates each candidate with a Play probe (one per package) so curators see
+  which nominations are store-isolated.
+
+Everything this tool emits still has to be confirmed by a curator (and,
+ideally, by an authoritative country store) before it reaches data/. Packages
+listed in data/global.json are dropped here so the known confusables never
+even reach a reviewer's queue.
 
 Examples
 --------
     python3 fetch/discover.py --country TR --category banking
     python3 fetch/discover.py --all --out .scratch/candidates.json
     python3 fetch/discover.py --countries IR,RU --categories banking,rideshare
+
+    # nominate from a local store's own catalog (near-certain localness):
+    python3 fetch/discover.py --store cafe_bazaar --country IR --category banking
+    python3 fetch/discover.py --store myket --country IR --category shopping \
+        --cross-check google_play
 
 Exit codes
 ----------
@@ -124,6 +138,26 @@ def build_jobs(matrix: dict, countries: list[str], categories: list[str]) -> lis
     return jobs
 
 
+def listing_jobs(adapter, countries: list[str], categories: list[str]) -> list[tuple]:
+    """Jobs for a listing-capable store: (cc, category, slug).
+
+    A country-scoped store's own catalog is the highest-precision nominator:
+    unlike Play search (which matches words and returns global confusables),
+    a listing page of a store that serves only its own country nominates
+    almost exclusively local apps. Sources are per-category slugs measured on
+    the live storefront (adapter.CATEGORY_SOURCES); unmapped categories are
+    refused before any network work instead of silently enumerating nothing.
+    """
+    sources = getattr(adapter, "CATEGORY_SOURCES", {})
+    jobs = []
+    for cc in countries:
+        for category in categories:
+            slug = sources.get(category)
+            if slug:
+                jobs.append((cc, category, slug))
+    return jobs
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--country", help="one ISO country code (merged with --countries)")
@@ -136,7 +170,11 @@ def main(argv: list[str] | None = None) -> int:
         help="every query-matrix country/category that is also in data/index.json",
     )
     ap.add_argument("--out", help="write candidates JSON here (default: stdout)")
-    ap.add_argument("--store", default="google_play", help="search-capable adapter id")
+    ap.add_argument("--store", default="google_play", help="discovery-capable adapter id")
+    ap.add_argument(
+        "--cross-check",
+        help="after nomination, probe each candidate once on this store and record the answer",
+    )
     ap.add_argument("--workers", type=int, default=6)
     args = ap.parse_args(argv)
 
@@ -172,18 +210,50 @@ def main(argv: list[str] | None = None) -> int:
     if args.store not in ADAPTERS:
         ap.error(f"unknown store adapter: {args.store} (known: {', '.join(sorted(ADAPTERS))})")
     adapter = ADAPTERS[args.store]
-    if not hasattr(adapter, "search"):
-        ap.error(f"store adapter {args.store!r} does not support search discovery")
+    is_search_capable = hasattr(adapter, "search")
+    is_listing_capable = hasattr(adapter, "listings")
+    if not is_search_capable and not is_listing_capable:
+        ap.error(
+            f"store adapter {args.store!r} supports neither search() nor listings(); "
+            f"it cannot nominate candidates"
+        )
+    if args.cross_check:
+        if args.cross_check not in ADAPTERS:
+            ap.error(
+                f"unknown cross-check store: {args.cross_check} (known: {', '.join(sorted(ADAPTERS))})"
+            )
+        if args.cross_check == args.store:
+            ap.error("--cross-check must name a different store than --store")
 
-    jobs = build_jobs(matrix, countries, categories)
+    if is_listing_capable:
+        # A listing store nominates from its own measured sources, not from
+        # queries.json; only its countries and mapped categories make sense.
+        countries = [c for c in countries if adapter.supports_country(c)]
+        sources = adapter.CATEGORY_SOURCES
+        unmapped = [c for c in categories if c not in sources]
+        if unmapped:
+            ap.error(
+                f"store {args.store} has no listing source for {', '.join(unmapped)} "
+                f"(measured sources: {', '.join(f'{c}={s}' for c, s in sorted(sources.items()))})"
+            )
+        if args.all:
+            countries = sorted(set(countries) & set(adapter.countries or []))
+            categories = sorted(set(categories) & set(sources))
+        jobs = listing_jobs(adapter, countries, categories)
+    else:
+        jobs = build_jobs(matrix, countries, categories)
     globals_ = load_global_packages()
 
     def run(job):
-        cc, category, query = job
+        cc, category, token = job
         try:
-            return [dict(hit, category=category) for hit in adapter.search(query, cc)]
+            if is_listing_capable:
+                hits = adapter.listings(token, cc)
+            else:
+                hits = adapter.search(token, cc)
+            return [dict(hit, category=category) for hit in hits]
         except Exception as exc:  # noqa: BLE001 - a failed query must not kill the run
-            print(f"warn: {cc}/{category} query {query!r} failed: {exc}", file=sys.stderr)
+            print(f"warn: {cc}/{category} {'list' if is_listing_capable else 'query'} {token!r} failed: {exc}", file=sys.stderr)
             return []
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -220,6 +290,28 @@ def main(argv: list[str] | None = None) -> int:
         for category in entry["categories"]:
             grouped[cc].setdefault(category, []).append(entry)
 
+    if args.cross_check:
+        # Annotation, never verification: the answer is recorded on the
+        # candidate, and only the availability check / curator decide what it
+        # means. One probe per candidate, so the nominating store is not hit
+        # again and the run stays a nomination, not a bulk crawl.
+        cross = ADAPTERS[args.cross_check]
+
+        def probe(job):
+            cc, pkg = job
+            try:
+                r = cross.check(pkg, cc).to_dict()
+                return (cc, pkg, {k: r.get(k) for k in ("status", "evidence", "detail")})
+            except Exception as exc:  # noqa: BLE001 - one probe failing must not kill the run
+                return (cc, pkg, {"status": "error", "evidence": None, "detail": str(exc)})
+
+        unique = sorted({(entry["country"], entry["package"]) for entry in by_key.values()})
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            probes = list(pool.map(probe, unique))
+        lookup = {(cc, pkg): r for cc, pkg, r in probes}
+        for entry in by_key.values():
+            entry["cross_check"] = {"store": args.cross_check, **lookup[(entry["country"], entry["package"])]}
+
     payload = {
         "source": args.store,
         "queries_run": len(jobs),
@@ -227,6 +319,8 @@ def main(argv: list[str] | None = None) -> int:
         "candidate_count": len(by_key),
         "candidates": grouped,
     }
+    if args.cross_check:
+        payload["cross_checked"] = args.cross_check
 
     if args.out:
         os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)

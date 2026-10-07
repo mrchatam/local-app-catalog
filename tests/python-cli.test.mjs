@@ -14,6 +14,7 @@ import { REPO_ROOT } from "../tools/lib/paths.mjs";
 import {
   pythonAvailabilitySelfTest,
   pythonDiscoverPlan,
+  pythonListingsSelfTest,
   readJson,
 } from "./helpers.mjs";
 
@@ -89,6 +90,29 @@ test("play_availability.py rejects bad usage with exit 1, not the inconclusive c
   });
 });
 
+// ------------------------------------------------- local-store enumeration
+
+const LISTINGS = pythonListingsSelfTest();
+
+test("a country-scoped store's own pages nominate its local apps", () => {
+  // The Bazaar list stub carries a duplicate anchor (deduped) and a global
+  // app the discovery layer must drop into the global-catalog filter.
+  assert.deepEqual(LISTINGS.bazaar_packages, ["com.samanpr.blu", "com.whatsapp", "com.pmb.mobile"]);
+  // An anchor with no title/alt falls back to the package id - and never
+  // borrows a label from the next anchor (the full-anchor match pins that).
+  assert.deepEqual(LISTINGS.bazaar_labels, ["بلو - بانک", "com.whatsapp", "همراه بانک ملت"]);
+  assert.equal(LISTINGS.bazaar_evidence, "https://cafebazaar.ir/app/com.samanpr.blu");
+  // Myket's icon alt carries a "download " prefix the parser must strip.
+  assert.equal(LISTINGS.myket_label, "اسنپ، سامانه هوشمند حمل و نقل");
+  assert.equal(LISTINGS.source, "cafe_bazaar");
+  assert.equal(LISTINGS.global_dropped, 1, "the WhatsApp anchor is a known global app");
+  assert.equal(LISTINGS.candidate_count, 2);
+  assert.equal(LISTINGS.rc, 0);
+  // The cross-check annotates candidates; it never promotes them.
+  assert.equal(LISTINGS.cross_check_store, "google_play");
+  assert.equal(LISTINGS.cross_check_status, "available");
+});
+
 // ------------------------------------------------------------ discover.py
 
 const PLAN = pythonDiscoverPlan();
@@ -140,6 +164,26 @@ test("discover.py reports a usage error instead of a traceback", () => {
   const unknownCategory = runPython("discover.py", ["--country", "IR", "--category", "nope"]);
   assert.equal(unknownCategory.status, 2, unknownCategory.stderr);
   assert.match(unknownCategory.stderr, /unknown category: nope \(registered: /);
+  // Listing stores nominate only from measured sources: an unmapped category
+  // must fail with the measured map, not silently enumerate nothing.
+  const unmapped = runPython("discover.py", [
+    "--store", "cafe_bazaar", "--country", "IR", "--category", "shopping",
+  ]);
+  assert.equal(unmapped.status, 2, unmapped.stderr);
+  assert.match(unmapped.stderr, /no listing source for shopping \(measured sources: banking=al-ebanking\)/);
+  assert.doesNotMatch(unmapped.stderr, /Traceback/);
+
+  // An adapter with neither search() nor listings() cannot nominate.
+  const notDiscovery = runPython("discover.py", ["--store", "onestore", "--country", "KR"]);
+  assert.equal(notDiscovery.status, 2, notDiscovery.stderr);
+  assert.match(notDiscovery.stderr, /neither search\(\) nor listings\(\)/);
+
+  // Cross-checking a store against itself is a no-op, not a validation.
+  const selfCross = runPython("discover.py", [
+    "--store", "cafe_bazaar", "--country", "IR", "--category", "banking", "--cross-check", "cafe_bazaar",
+  ]);
+  assert.equal(selfCross.status, 2, selfCross.stderr);
+  assert.match(selfCross.stderr, /different store than --store/);
 });
 
 test("every discovery country has at least one query for the categories it claims", () => {
