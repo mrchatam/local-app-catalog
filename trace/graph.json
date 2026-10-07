@@ -89,6 +89,11 @@
       "id": "f58c1d6f-3822-4b69-8558-b99f13067ae5",
       "title": "Google Play search is the discovery source because it is country-gated",
       "body": "Measured: GET /store/search?q=\u003cq\u003e\u0026c=apps\u0026gl=\u003cCC\u003e\u0026hl=en returns locale-specific results (bank queries in Cyrillic, Turkish and Arabic return different apps per country), whereas detail pages are not gated. Discovery therefore uses Play search as a nomination channel only; every nomination still needs a curator plus, where possible, a country-scoped store confirmation."
+    },
+    {
+      "id": "0a85ba2c-7be8-43c6-998e-5673dcaf3286",
+      "title": "Local-store enumeration is the primary nominator where an exclusive store exists",
+      "body": "For IR (cafe_bazaar, myket) and RU (rustore), enumerate the store's own category/list pages - near-certain localness, including store-isolated apps a Play crawl can never see. Play search stays the nominator for countries without an exclusive store; --cross-check records a Play probe per candidate as annotation only. Verification contract unchanged: country-scoped store check or curator review."
     }
   ],
   "assumptions": [],
@@ -106,6 +111,11 @@
       "id": "c83066e8-136e-471a-97b0-bd08dd6d0b95",
       "title": "Loop 5b-5c gate evidence",
       "body": "npm test 99/99 pass; npm run validate 0 errors 0 warnings; two pinned builds byte-identical and SHA256SUMS verified; loop 5b commit 9f0e2a0, loop 5c commit bafbbce."
+    },
+    {
+      "id": "501efc0b-24f3-4e80-b7ca-2f5b7af5c9a3",
+      "title": "Local-store enumeration measured live",
+      "body": "Cafe Bazaar /lists/al-ebanking: 24 IR banking candidates with Persian labels. Myket /apps/shopping: 26 candidates, 22 store-isolated (not on Play): Digikala, Torob, Basalam, Sheypoor. Play search by contrast: 5 TR rideshare candidates, 1 Turkish. Runner (datacenter IP) reached Bazaar and Myket; only RuStore rate-limits. Commit dc00dd2."
     }
   ],
   "links": [
@@ -196,9 +206,21 @@
       "source_type": "USER_ASSERTED"
     },
     {
+      "rel": "decision_affects_task",
+      "from": "0a85ba2c-7be8-43c6-998e-5673dcaf3286",
+      "to": "bd40342f-4b54-4f15-a8f0-2cc05e38ba2a",
+      "source_type": "USER_ASSERTED"
+    },
+    {
       "rel": "claim_has_evidence",
       "from": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
       "to": "c83066e8-136e-471a-97b0-bd08dd6d0b95",
+      "source_type": "USER_ASSERTED"
+    },
+    {
+      "rel": "claim_has_evidence",
+      "from": "f25996d0-9b4f-4d75-a99a-cf2eb40b6f18",
+      "to": "501efc0b-24f3-4e80-b7ca-2f5b7af5c9a3",
       "source_type": "USER_ASSERTED"
     }
   ],
@@ -695,5 +717,5 @@
       ]
     }
   ],
-  "exported_at_commit": "efa1fd4edf6914d65c4584d2f031ac5d74f1fc95"
+  "exported_at_commit": "dc00dd211dffb05e8f71aa5559968eaa89caf591"
 }
