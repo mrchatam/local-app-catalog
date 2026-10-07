@@ -5,9 +5,33 @@
   "description": "Community-curated per-country catalog of local apps, for VPN split-tunneling.",
   "license": "MIT",
   "type": "module",
+  "author": "LocalAppCatalog contributors",
+  "homepage": "https://github.com/localappcatalog/local-app-catalog#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localappcatalog/local-app-catalog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/localappcatalog/local-app-catalog/issues"
+  },
+  "keywords": [
+    "vpn",
+    "split-tunneling",
+    "split-tunnel",
+    "local-apps",
+    "app-catalog",
+    "open-data",
+    "odbl"
+  ],
   "engines": {
     "node": ">=20"
   },
+  "files": [
+    "data/",
+    "tools/lib/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "validate": "node tools/validate/cli.mjs",
     "validate:stores": "node tools/validate/cli.mjs --check-stores",

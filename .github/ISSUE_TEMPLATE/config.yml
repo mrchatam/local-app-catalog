@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Adding many apps at once
-    url: https://github.com/OWNER/local-app-catalog/blob/main/CONTRIBUTING.md
+    url: https://github.com/localappcatalog/local-app-catalog/blob/main/CONTRIBUTING.md
     about: Use the curation CLI or web UI - it validates entries and generates the PR for you.
   - name: A package is listed in the wrong country
-    url: https://github.com/OWNER/local-app-catalog/issues/new?template=report-app.yml
+    url: https://github.com/localappcatalog/local-app-catalog/issues/new?template=report-app.yml
     about: Report a bad entry instead of adding a new one.

@@ -33,7 +33,17 @@ import { unifiedDiff } from "../lib/diff.mjs";
 import { orderEntry } from "../curate/lib.mjs";
 
 const USAGE = `usage: node tools/recheck/cli.mjs [--apply] [--country CC] [--json] [--quiet]
-       [--max-demotions N] [--force] [--python <exe>]`;
+       [--max-demotions N] [--force] [--python <exe>]
+
+Re-ask the country-scoped stores about every \`verified\` entry and demote any
+whose listing is gone. Only a definite answer demotes; a blocked or throttled
+runner is reported as inconclusive and never erases data.
+
+Exit codes
+  0  nothing to demote, or demotions applied and the catalog still validates
+  1  demotions are pending without --apply, or the --max-demotions cap tripped
+  2  nothing demoted, but some verified entries could not be rechecked
+  3  usage error`;
 
 /**
  * Only these codes justify a demotion: both mean a country-scoped storefront

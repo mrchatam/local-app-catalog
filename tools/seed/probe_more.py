@@ -13,7 +13,9 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "fetch"))
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))  # tools/seed/ -> repo root
+sys.path.insert(0, os.path.join(ROOT, "fetch"))
 
 from store_adapters import ADAPTERS  # noqa: E402
 from store_adapters.http import fetch  # noqa: E402

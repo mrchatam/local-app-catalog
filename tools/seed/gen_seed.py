@@ -21,7 +21,7 @@ import sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
+ROOT = os.path.dirname(os.path.dirname(HERE))  # tools/seed/ -> repo root
 sys.path.insert(0, HERE)
 
 ADDED_BY = "@local-app-catalog"

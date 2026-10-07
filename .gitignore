@@ -9,10 +9,7 @@ dist-check/
 __pycache__/
 .venv/
 
-# Scratch outputs from local runs: scripts are kept for provenance, their
-# generated results are not (they differ per runner and per day).
-.scratch/*.log
-.scratch/*.pid
-.scratch/*.err
-.scratch/recheck.json
-.scratch/candidates.json
+# Disposable local run output. The seed pipeline that used to live here now
+# lives in tools/seed/; everything left under .scratch/ is regenerable and
+# differs per runner and per day, so none of it is tracked.
+.scratch/

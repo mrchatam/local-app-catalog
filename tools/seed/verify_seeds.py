@@ -13,8 +13,10 @@ import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "fetch"))
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))  # tools/seed/ -> repo root
+sys.path.insert(0, os.path.join(ROOT, "fetch"))
+sys.path.insert(0, HERE)
 
 from seed_spec import MINICHAT_CANDIDATES, SEEDS, UNVERIFIED_MAYBE  # noqa: E402
 from store_adapters import ADAPTERS, for_country  # noqa: E402

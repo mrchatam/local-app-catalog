@@ -14,8 +14,15 @@ function readJson(file) {
 /**
  * A country folder name is the lowercase ISO code; files inside are <category>.json.
  * Loads every country folder that exists and every .json inside it.
+ *
+ * `LOCAL_APP_CATALOG_DATA` overrides the data directory for the whole toolchain
+ * (the CLIs call loadRepo() with no arguments), which is what lets the CLI test
+ * suite run a validator against a deliberately broken tree without touching the
+ * shipped data. `global.json` is always read from the real repository: the
+ * negative catalog is a single global decision, not something a data-dir copy
+ * should be able to change.
  */
-export function loadRepo({ dataDir = DATA_DIR } = {}) {
+export function loadRepo({ dataDir = process.env.LOCAL_APP_CATALOG_DATA || DATA_DIR } = {}) {
   const index = readJson(path.join(dataDir, "index.json"));
   const global = readJson(GLOBAL_PATH);
 
