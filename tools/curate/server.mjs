@@ -13,12 +13,15 @@
  * cannot drift apart.
  */
 
+import { existsSync } from "node:fs";
 import { createServer } from "node:http";
 import { pathToFileURL } from "node:url";
 import { loadRepo } from "../lib/load.mjs";
 import { validateRepo } from "../lib/rules.mjs";
 import { KNOWN_STORES } from "../lib/paths.mjs";
+import { UsageError, need, needInt, usageGuard } from "../lib/args.mjs";
 import {
+  catalogPath,
   loadCatalog,
   normalizeEntry,
   orderEntry,
@@ -30,21 +33,33 @@ import {
   validateEntry,
 } from "./lib.mjs";
 
-const USAGE = `usage: node tools/curate/server.mjs [--port 5174] [--host 127.0.0.1] [--open]`;
+const USAGE = `usage: node tools/curate/server.mjs [--port 5174] [--host 127.0.0.1]
+
+The server writes to data/ with no authentication, so --host must be a loopback
+address. Exit codes: 0 stopped cleanly, 1 could not start, 3 usage error.`;
+
+/**
+ * The curator writes catalog files with no auth, so the documented "loopback
+ * only" rule is enforced rather than assumed: `--host 0.0.0.0` would publish a
+ * file-writing endpoint to the whole network.
+ */
+function assertLoopbackHost(host) {
+  if (host === "localhost" || host === "::1" || host === "0:0:0:0:0:0:0:1") return host;
+  if (/^127\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(host)) return host;
+  throw new UsageError(
+    `--host must be a loopback address, got "${host}" (see SECURITY.md: the curator writes to data/ unauthenticated)`,
+  );
+}
 
 function parseArgs(argv) {
   const opts = { port: 5174, host: "127.0.0.1" };
   for (let i = 0; i < argv.length; i += 1) {
     switch (argv[i]) {
       case "--port":
-        opts.port = Number.parseInt(argv[++i] ?? "", 10);
-        if (!Number.isInteger(opts.port) || opts.port <= 0) {
-          console.error(`${USAGE}\n--port needs a positive integer`);
-          process.exit(2);
-        }
+        opts.port = needInt("--port", argv[++i], { min: 1, max: 65535 });
         break;
       case "--host":
-        opts.host = argv[++i] ?? opts.host;
+        opts.host = assertLoopbackHost(need("--host", argv[++i]));
         break;
       case "-h":
       case "--help":
@@ -52,8 +67,7 @@ function parseArgs(argv) {
         process.exit(0);
         break;
       default:
-        console.error(`${USAGE}\nunknown argument: ${argv[i]}`);
-        process.exit(2);
+        throw new UsageError(`unknown argument: ${argv[i]}`);
     }
   }
   return opts;
@@ -61,32 +75,58 @@ function parseArgs(argv) {
 
 const MAX_BODY = 64 * 1024;
 
+/** An error that already knows the HTTP status the client deserves. */
+class HttpError extends Error {
+  constructor(status, message) {
+    super(message);
+    this.name = "HttpError";
+    this.status = status;
+  }
+}
+
+/**
+ * Read a request body, refusing anything over MAX_BODY. The oversized case
+ * stops reading and lets the caller answer 413 before the socket closes -
+ * destroying the request here means the client only ever sees a broken pipe.
+ */
 function readBody(req) {
   return new Promise((resolve, reject) => {
     let size = 0;
+    let settled = false;
     const chunks = [];
     req.on("data", (chunk) => {
+      if (settled) return;
       size += chunk.length;
       if (size > MAX_BODY) {
-        reject(new Error(`request body larger than ${MAX_BODY} bytes`));
-        req.destroy();
+        settled = true;
+        req.pause();
+        reject(new HttpError(413, `request body larger than ${MAX_BODY} bytes`));
         return;
       }
       chunks.push(chunk);
     });
-    req.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
-    req.on("error", reject);
+    req.on("end", () => {
+      if (settled) return;
+      settled = true;
+      resolve(Buffer.concat(chunks).toString("utf8"));
+    });
+    req.on("error", (err) => {
+      if (settled) return;
+      settled = true;
+      reject(err);
+    });
   });
 }
 
-function sendJson(res, status, payload) {
+function sendJson(res, status, payload, { close = false } = {}) {
   const body = JSON.stringify(payload);
   res.writeHead(status, {
     "content-type": "application/json; charset=utf-8",
     "content-length": Buffer.byteLength(body),
     "cache-control": "no-store",
+    ...(close ? { connection: "close" } : {}),
   });
-  res.end(body);
+  res.end(body, close ? () => res.destroy() : undefined);
 }
 
 /** Same defaults the CLI applies, so both paths produce identical entries. */
@@ -184,12 +224,24 @@ async function handle(req, res) {
   }
   if (req.method === "GET" && url.pathname === "/api/catalog") {
     const country = (url.searchParams.get("country") ?? "").toLowerCase();
-    const category = url.searchParams.get("category") ?? "";
-    if (!/^[a-z]{2}$/.test(country) || !category) {
-      sendJson(res, 400, { error: "country (2 letters) and category are required" });
+    const rawCategory = url.searchParams.get("category") ?? "";
+    // Both halves are path segments, so both are pattern-checked. Without this,
+    // `category=../../package` walked out of data/ and read any JSON file on
+    // disk through loadCatalog().
+    if (!/^[a-z]{2}$/.test(country) || !/^[a-z][a-z0-9_-]{0,31}$/.test(rawCategory)) {
+      sendJson(res, 400, {
+        error: "country (2 letters) and category (lowercase identifier) are required",
+      });
       return;
     }
-    sendJson(res, 200, { file: relCatalogPath(country, category), doc: loadCatalog(country, category) });
+    if (!existsSync(catalogPath(country, rawCategory))) {
+      sendJson(res, 404, { error: `no catalog for ${country.toUpperCase()}/${rawCategory}` });
+      return;
+    }
+    sendJson(res, 200, {
+      file: relCatalogPath(country, rawCategory),
+      doc: loadCatalog(country, rawCategory),
+    });
     return;
   }
   res.writeHead(404, { "content-type": "text/plain; charset=utf-8" });
@@ -198,9 +250,13 @@ async function handle(req, res) {
 
 /** Start the server; returns the listening http.Server so tests can close it. */
 export function start({ port = 5174, host = "127.0.0.1", quiet = false } = {}) {
+  assertLoopbackHost(host);
   const server = createServer((req, res) => {
     handle(req, res).catch((err) => {
-      sendJson(res, 400, { ok: false, errors: [err.message], warnings: [] });
+      const status = err instanceof HttpError ? err.status : 400;
+      const payload = { ok: false, errors: [err.message], warnings: [] };
+      if (res.headersSent) res.destroy();
+      else sendJson(res, status, payload, { close: status === 413 });
     });
   });
 
@@ -389,5 +445,5 @@ export { proposal, state, PAGE };
 
 const isEntryPoint = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isEntryPoint) {
-  start(parseArgs(process.argv.slice(2)));
+  start(usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2))));
 }

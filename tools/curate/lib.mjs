@@ -17,9 +17,20 @@ import { PACKAGE_ID_RE } from "../lib/rules.mjs";
 import { createValidators, formatAjvErrors } from "../lib/schema.mjs";
 import { loadRepo } from "../lib/load.mjs";
 
-/** data/<cc>/<category>.json - the only place an entry may live. */
+/**
+ * data/<cc>/<category>.json - the only place an entry may live.
+ *
+ * Fail closed on anything that escapes data/: country and category both arrive
+ * from contributors, and `path.join` happily follows `..` out of the tree
+ * (the curator server proved it by reading package.json through this function).
+ */
 export function catalogPath(country, category) {
-  return path.join(DATA_DIR, String(country).toLowerCase(), `${category}.json`);
+  const root = path.resolve(DATA_DIR) + path.sep;
+  const file = path.resolve(DATA_DIR, String(country).toLowerCase(), `${category}.json`);
+  if (!file.startsWith(root)) {
+    throw new Error(`refusing to touch ${file}: catalog files must live under ${DATA_DIR}`);
+  }
+  return file;
 }
 
 export function relCatalogPath(country, category) {
