@@ -1,0 +1,46 @@
+{
+  "country": "BR",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "br.com.bancobmg.bancodigital",
+      "label": "Banco Bmg",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.bancobmg.bancodigital&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.neon",
+      "label": "Neon",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.neon&gl=BR&hl=en"
+    },
+    {
+      "package": "io.cloudwalk.infinitepaydash",
+      "label": "InfinitePay",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=io.cloudwalk.infinitepaydash&gl=BR&hl=en"
+    }
+  ]
+}

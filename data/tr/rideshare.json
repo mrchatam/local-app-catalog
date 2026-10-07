@@ -1,0 +1,16 @@
+{
+  "country": "TR",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.taxime.client",
+      "label": "TaxiMe",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.taxime.client&gl=TR&hl=en"
+    }
+  ]
+}

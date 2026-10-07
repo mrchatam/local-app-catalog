@@ -1,0 +1,26 @@
+{
+  "country": "ID",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.alfamart.alfagift",
+      "label": "Alfagift",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alfamart.alfagift&gl=ID&hl=en"
+    },
+    {
+      "package": "id.toco",
+      "label": "Toco",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=id.toco&gl=ID&hl=en"
+    }
+  ]
+}

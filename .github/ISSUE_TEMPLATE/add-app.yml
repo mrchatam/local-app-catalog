@@ -1,0 +1,117 @@
+name: Add a local app
+description: Propose one app as a local app of a specific country and category.
+title: "[add] <country> / <category> / <package>"
+labels: ["contribution", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! **Local means: this app is used in this country
+        and is *not* a worldwide app.** Telegram, WhatsApp, PayPal, Google Wallet
+        and Amazon are global and will be rejected automatically.
+
+        An entry needs evidence a store listing exists **for that country**. A
+        bare Play Store URL is a start, but a country-scoped store (Café Bazaar,
+        Myket, RuStore) is what lets a maintainer promote the entry to
+        `verified`.
+
+  - type: input
+    id: package
+    attributes:
+      label: Package id
+      description: "Android package id, e.g. com.snapp.passenger"
+      placeholder: com.example.app
+    validations:
+      required: true
+
+  - type: input
+    id: label
+    attributes:
+      label: Display name
+      placeholder: Snapp
+    validations:
+      required: true
+
+  - type: dropdown
+    id: country
+    attributes:
+      label: Country
+      description: Which country is this app a *local* app of?
+      options:
+        - IR
+        - TR
+        - RU
+        - IN
+        - BR
+        - VN
+        - ID
+        - PK
+        - EG
+        - UA
+        - KR
+        - NG
+        - MX
+        - PH
+        - JP
+        - SA
+        - BD
+        - ZA
+        - "Other (name it below)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - banking
+        - government
+        - rideshare
+        - messaging
+        - streaming
+        - shopping
+        - wallet
+        - delivery
+        - telecom
+        - "Other (name it below)"
+    validations:
+      required: true
+
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence URL
+      description: A store or official page showing this app is published for that country.
+      placeholder: https://cafebazaar.ir/app/com.example.app
+    validations:
+      required: true
+
+  - type: dropdown
+    id: store
+    attributes:
+      label: Store the evidence comes from
+      options:
+        - google_play
+        - cafe_bazaar
+        - myket
+        - rustore
+        - appgallery
+        - apkpure
+        - onestore
+        - fdroid
+        - official website / other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmations
+      options:
+        - label: This app is specific to the country above, not a worldwide app.
+          required: true
+        - label: The evidence URL resolves and shows the app for that country.
+          required: true
+        - label: This package is not already listed in `data/global.json`.
+          required: true

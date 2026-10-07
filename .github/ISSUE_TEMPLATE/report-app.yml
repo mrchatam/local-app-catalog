@@ -1,0 +1,62 @@
+name: Report a bad entry
+description: A listed app is wrong - mislocated, dead, duplicated, or global.
+title: "[report] <package>"
+labels: ["correction", "needs-triage"]
+body:
+  - type: input
+    id: package
+    attributes:
+      label: Package id
+      description: Copy it exactly as it appears in the catalog.
+      placeholder: com.example.app
+    validations:
+      required: true
+
+  - type: dropdown
+    id: country
+    attributes:
+      label: Country in the catalog
+      options:
+        - IR
+        - TR
+        - RU
+        - IN
+        - BR
+        - VN
+        - ID
+        - PK
+        - EG
+        - UA
+        - KR
+        - NG
+        - MX
+        - PH
+        - JP
+        - SA
+        - BD
+        - ZA
+        - "Not sure / not listed"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - The app is global, not local to this country
+        - The app is local to a different country
+        - The app is no longer available in this country
+        - The package id or label is wrong
+        - It is listed in the wrong category
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and evidence
+      description: Links, screenshots, or the exact "not found" you saw.
+    validations:
+      required: true

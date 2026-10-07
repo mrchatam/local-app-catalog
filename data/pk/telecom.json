@@ -1,0 +1,16 @@
+{
+  "country": "PK",
+  "category": "telecom",
+  "apps": [
+    {
+      "package": "com.telenor.pakistan.mytelenor",
+      "label": "My Telenor",
+      "category": "telecom",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.telenor.pakistan.mytelenor&gl=PK&hl=en"
+    }
+  ]
+}

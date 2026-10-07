@@ -1,0 +1,16 @@
+{
+  "country": "VN",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.zing.zalo",
+      "label": "Zalo",
+      "category": "messaging",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zing.zalo&gl=VN&hl=en"
+    }
+  ]
+}

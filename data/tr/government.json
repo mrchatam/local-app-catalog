@@ -1,0 +1,16 @@
+{
+  "country": "TR",
+  "category": "government",
+  "apps": [
+    {
+      "package": "tr.gov.turkiye.belgedogrulama",
+      "label": "e-Devlet Belge Doğrulama",
+      "category": "government",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=tr.gov.turkiye.belgedogrulama&gl=TR&hl=en"
+    }
+  ]
+}

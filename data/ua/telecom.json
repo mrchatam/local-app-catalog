@@ -1,0 +1,26 @@
+{
+  "country": "UA",
+  "category": "telecom",
+  "apps": [
+    {
+      "package": "com.kyivstar.mykyivstar",
+      "label": "My Kyivstar",
+      "category": "telecom",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.kyivstar.mykyivstar&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.vodafone.myvodafone",
+      "label": "My Vodafone UA",
+      "category": "telecom",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.vodafone.myvodafone&gl=UA&hl=en"
+    }
+  ]
+}

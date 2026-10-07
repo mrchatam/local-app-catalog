@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "note": "Negative catalog. A split-tunnel client must NOT bypass the proxy for these packages. The validator fails any country file that lists one of them, which is what keeps the known confusables (Telegram, WhatsApp, Google Wallet, PayPal, Amazon, MiniChat, ...) out of per-country bypass sets even when they are extremely popular in that country. Add a package here only with a public listing that shows worldwide distribution.",
+  "packages": [
+    {
+      "package": "com.whatsapp",
+      "label": "WhatsApp",
+      "why": "worldwide messenger; popular everywhere, local nowhere",
+      "evidence": "https://play.google.com/store/apps/details?id=com.whatsapp"
+    },
+    {
+      "package": "org.telegram.messenger",
+      "label": "Telegram",
+      "why": "worldwide messenger and the canonical false positive for local-messenger detection",
+      "evidence": "https://play.google.com/store/apps/details?id=org.telegram.messenger"
+    },
+    {
+      "package": "com.google.android.apps.walletnfcrel",
+      "label": "Google Wallet",
+      "why": "confusable with local wallet apps; global distribution",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel"
+    },
+    {
+      "package": "com.paypal.android.p2pmobile",
+      "label": "PayPal",
+      "why": "confusable with local wallet and payment apps; global distribution",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile"
+    },
+    {
+      "package": "com.amazon.mShop.android.shopping",
+      "label": "Amazon Shopping",
+      "why": "confusable with local marketplaces; global distribution",
+      "evidence": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping"
+    },
+    {
+      "package": "com.netflix.mediaclient",
+      "label": "Netflix",
+      "why": "global streaming; confusable with local streaming apps",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient"
+    },
+    {
+      "package": "com.facebook.katana",
+      "label": "Facebook",
+      "why": "global social network",
+      "evidence": "https://play.google.com/store/apps/details?id=com.facebook.katana"
+    },
+    {
+      "package": "com.instagram.android",
+      "label": "Instagram",
+      "why": "global social network",
+      "evidence": "https://play.google.com/store/apps/details?id=com.instagram.android"
+    },
+    {
+      "package": "com.zhiliaoapp.musically",
+      "label": "TikTok",
+      "why": "global short-video app",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically"
+    },
+    {
+      "package": "com.google.android.youtube",
+      "label": "YouTube",
+      "why": "global video platform",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.youtube"
+    },
+    {
+      "package": "com.spotify.music",
+      "label": "Spotify",
+      "why": "global music streaming",
+      "evidence": "https://play.google.com/store/apps/details?id=com.spotify.music"
+    },
+    {
+      "package": "com.ubercab",
+      "label": "Uber",
+      "why": "global rideshare; regional operators (Careem, Bolt, Yandex Go) are handled separately",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubercab"
+    },
+    {
+      "package": "com.discord",
+      "label": "Discord",
+      "why": "global chat platform",
+      "evidence": "https://play.google.com/store/apps/details?id=com.discord"
+    },
+    {
+      "package": "org.thoughtcrime.securesms",
+      "label": "Signal",
+      "why": "global messenger",
+      "evidence": "https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms"
+    },
+    {
+      "package": "mini.video.chat",
+      "label": "Minichat - The Fast Video Chat",
+      "why": "worldwide random video chat; its package id does not read as 'Chinese MiniWorld', which is exactly how keyword matching fails on it",
+      "evidence": "https://play.google.com/store/apps/details?id=mini.video.chat"
+    },
+    {
+      "package": "com.google.android.apps.maps",
+      "label": "Google Maps",
+      "why": "global navigation",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps"
+    },
+    {
+      "package": "com.android.vending",
+      "label": "Google Play Store",
+      "why": "platform component, never a local app",
+      "evidence": "https://play.google.com/store/apps/details?id=com.android.vending"
+    },
+    {
+      "package": "com.alibaba.aliexpresshd",
+      "label": "AliExpress",
+      "why": "global marketplace",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd"
+    },
+    {
+      "package": "com.linkedin.android",
+      "label": "LinkedIn",
+      "why": "global professional network",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linkedin.android"
+    },
+    {
+      "package": "com.airbnb.android",
+      "label": "Airbnb",
+      "why": "global accommodation marketplace",
+      "evidence": "https://play.google.com/store/apps/details?id=com.airbnb.android"
+    },
+    {
+      "package": "org.mozilla.firefox",
+      "label": "Firefox",
+      "why": "global browser",
+      "evidence": "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "country": "IN",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.suntv.sunnxt",
+      "label": "Sun NXT",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.suntv.sunnxt&gl=IN&hl=en"
+    },
+    {
+      "package": "com.tatasky.binge",
+      "label": "Tata Play Binge",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tatasky.binge&gl=IN&hl=en"
+    },
+    {
+      "package": "tv.accedo.airtel.wynk",
+      "label": "Airtel Xstream Play",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=tv.accedo.airtel.wynk&gl=IN&hl=en"
+    }
+  ]
+}

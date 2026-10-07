@@ -1,0 +1,26 @@
+{
+  "country": "IN",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik",
+      "category": "wallet",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=IN&hl=en"
+    },
+    {
+      "package": "com.paytmmoney",
+      "label": "Paytm Money",
+      "category": "wallet",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paytmmoney&gl=IN&hl=en"
+    }
+  ]
+}

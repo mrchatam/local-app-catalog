@@ -1,0 +1,26 @@
+{
+  "country": "ZA",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "capitec.acuity.mobile.prod",
+      "label": "Capitec Bank",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.fireid.snapscan",
+      "label": "SnapScan",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fireid.snapscan&gl=ZA&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+name: Add a country
+description: Request a new country folder, or volunteer to be its maintainer.
+title: "[country] <CC>"
+labels: ["country-request", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every country is in scope. A country folder appears as soon as it has at
+        least one entry. You do not need to be from a country to contribute to
+        it - but you do need evidence a store listing exists for that country.
+
+  - type: input
+    id: country
+    attributes:
+      label: Country code
+      description: ISO 3166-1 alpha-2, uppercase.
+      placeholder: "IR"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stores
+    attributes:
+      label: Which stores serve this country?
+      description: Pick the most important one; mention others in the notes.
+      options:
+        - google_play
+        - cafe_bazaar
+        - myket
+        - rustore
+        - appgallery
+        - apkpure
+        - onestore
+        - fdroid
+        - "A store we do not support yet"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Which categories would you start with?
+      multiple: true
+      options:
+        - banking
+        - government
+        - rideshare
+        - messaging
+        - streaming
+        - shopping
+        - wallet
+        - delivery
+        - telecom
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Local apps you already know
+      description: "A few package ids to seed the folder, one per line, e.g. com.snapp.passenger"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: volunteer
+    attributes:
+      label: Maintenance
+      options:
+        - label: I am willing to review entries for this country.
+          required: false

@@ -1,0 +1,16 @@
+{
+  "country": "TR",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.inomera.sm",
+      "label": "Migros",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inomera.sm&gl=TR&hl=en"
+    }
+  ]
+}

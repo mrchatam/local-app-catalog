@@ -1,0 +1,36 @@
+{
+  "country": "UA",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "ua.android.kredobank.prod",
+      "label": "KredoBank",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.android.kredobank.prod&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.izibank.app",
+      "label": "izibank",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.izibank.app&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.raiffeisen.myraif",
+      "label": "MyRaif",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.raiffeisen.myraif&gl=UA&hl=en"
+    }
+  ]
+}

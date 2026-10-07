@@ -1,0 +1,36 @@
+{
+  "country": "ZA",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.bidorbuy.app",
+      "label": "Bob Shop",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bidorbuy.app&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ebay.gumtree.za",
+      "label": "Gumtree SA",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.gumtree.za&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.co.shoprite.sixty60",
+      "label": "Checkers Sixty60",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.shoprite.sixty60&gl=ZA&hl=en"
+    }
+  ]
+}

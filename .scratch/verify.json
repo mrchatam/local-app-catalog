@@ -1,0 +1,1204 @@
+{
+  "checked": 102,
+  "entries": [
+    {
+      "country": "TR",
+      "category": "banking",
+      "package": "com.tmobtech.halkbank",
+      "label": "Halkbank Mobil",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.tmobtech.halkbank&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "banking",
+      "package": "com.garanti.cepsubesi",
+      "label": "Garanti BBVA Mobile",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.garanti.cepsubesi&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "banking",
+      "package": "com.pozitron.iscep",
+      "label": "\u0130\u015fCep",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.pozitron.iscep&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "banking",
+      "package": "com.denizbank.mobildeniz",
+      "label": "MobilDeniz",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.denizbank.mobildeniz&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "government",
+      "package": "tr.gov.turkiye.belgedogrulama",
+      "label": "e-Devlet Belge Do\u011frulama",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=tr.gov.turkiye.belgedogrulama&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "streaming",
+      "package": "com.digiturk.tod.mobil",
+      "label": "TOD",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.digiturk.tod.mobil&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "streaming",
+      "package": "com.trt.tabii.android",
+      "label": "tabii",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.trt.tabii.android&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "streaming",
+      "package": "limex.tv.izle.canli.android",
+      "label": "TV IZLE",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=limex.tv.izle.canli.android&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "shopping",
+      "package": "com.inomera.sm",
+      "label": "Migros",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.inomera.sm&gl=TR&hl=en"
+    },
+    {
+      "country": "TR",
+      "category": "rideshare",
+      "package": "com.taxime.client",
+      "label": "TaxiMe",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.taxime.client&gl=TR&hl=en"
+    },
+    {
+      "country": "RU",
+      "category": "banking",
+      "package": "ru.sberbankmobile",
+      "label": "\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u041e\u043d\u043b\u0430\u0439\u043d",
+      "harvested": true,
+      "stores": {
+        "google_play": "unavailable",
+        "rustore": "available"
+      },
+      "play_evidence": "https://www.rustore.ru/catalog/app/ru.sberbankmobile",
+      "local_store": "rustore"
+    },
+    {
+      "country": "RU",
+      "category": "government",
+      "package": "ru.rtlabs.mobile.ebs.gosuslugi.android",
+      "label": "\u0413\u043e\u0441\u0443\u0441\u043b\u0443\u0433\u0438 \u0411\u0438\u043e\u043c\u0435\u0442\u0440\u0438\u044f",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "rustore": "available"
+      },
+      "play_evidence": "https://www.rustore.ru/catalog/app/ru.rtlabs.mobile.ebs.gosuslugi.android",
+      "local_store": "rustore"
+    },
+    {
+      "country": "RU",
+      "category": "streaming",
+      "package": "ru.rt.video.app.mobile",
+      "label": "Wink",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "rustore": "available"
+      },
+      "play_evidence": "https://www.rustore.ru/catalog/app/ru.rt.video.app.mobile",
+      "local_store": "rustore"
+    },
+    {
+      "country": "RU",
+      "category": "streaming",
+      "package": "com.ertelecom.domrutvstb",
+      "label": "Movix",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "rustore": "available"
+      },
+      "play_evidence": "https://www.rustore.ru/catalog/app/com.ertelecom.domrutvstb",
+      "local_store": "rustore"
+    },
+    {
+      "country": "UA",
+      "category": "banking",
+      "package": "ua.raiffeisen.myraif",
+      "label": "MyRaif",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.raiffeisen.myraif&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "banking",
+      "package": "ua.izibank.app",
+      "label": "izibank",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.izibank.app&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "banking",
+      "package": "ua.android.kredobank.prod",
+      "label": "KredoBank",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.android.kredobank.prod&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "government",
+      "package": "ua.gov.armyplus.app",
+      "label": "\u0410\u0440\u043c\u0456\u044f+",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.gov.armyplus.app&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "government",
+      "package": "helsi.me",
+      "label": "Helsi",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=helsi.me&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "telecom",
+      "package": "com.kyivstar.mykyivstar",
+      "label": "My Kyivstar",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.kyivstar.mykyivstar&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "telecom",
+      "package": "ua.vodafone.myvodafone",
+      "label": "My Vodafone UA",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.vodafone.myvodafone&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "rideshare",
+      "package": "com.mobox.taxi",
+      "label": "Taxi 838",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.mobox.taxi&gl=UA&hl=en"
+    },
+    {
+      "country": "UA",
+      "category": "shopping",
+      "package": "ua.prom.b2c",
+      "label": "Prom.ua",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ua.prom.b2c&gl=UA&hl=en"
+    },
+    {
+      "country": "PK",
+      "category": "banking",
+      "package": "pk.com.telenor.phoenix",
+      "label": "easypaisa",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=pk.com.telenor.phoenix&gl=PK&hl=en"
+    },
+    {
+      "country": "PK",
+      "category": "banking",
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=PK&hl=en"
+    },
+    {
+      "country": "PK",
+      "category": "telecom",
+      "package": "com.telenor.pakistan.mytelenor",
+      "label": "My Telenor",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.telenor.pakistan.mytelenor&gl=PK&hl=en"
+    },
+    {
+      "country": "PK",
+      "category": "messaging",
+      "package": "com.udna.tellotalk",
+      "label": "Tellotalk",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.udna.tellotalk&gl=PK&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "banking",
+      "package": "com.bca",
+      "label": "BCA mobile",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bca&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "banking",
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "banking",
+      "package": "com.bca.mybca.omni.android",
+      "label": "myBCA",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bca.mybca.omni.android&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "banking",
+      "package": "com.bnc.finance",
+      "label": "BNC Digital",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bnc.finance&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "government",
+      "package": "com.bpjstku",
+      "label": "JMO (Jamsostek Mobile)",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bpjstku&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "wallet",
+      "package": "id.dana",
+      "label": "DANA",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "shopping",
+      "package": "id.toco",
+      "label": "Toco",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=id.toco&gl=ID&hl=en"
+    },
+    {
+      "country": "ID",
+      "category": "shopping",
+      "package": "com.alfamart.alfagift",
+      "label": "Alfagift",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.alfamart.alfagift&gl=ID&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "net.one97.paytm",
+      "label": "Paytm",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "in.org.npci.upiapp",
+      "label": "BHIM",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "com.sbi.SBIFreedomPlus",
+      "label": "Yono Lite SBI",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.sbi.SBIFreedomPlus&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "com.bankofbaroda.mconnect",
+      "label": "bob World",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bankofbaroda.mconnect&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "com.csam.icici.bank.imobile",
+      "label": "iMobile",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "banking",
+      "package": "com.iexceed.ib.digitalbankingprod",
+      "label": "IndSMART IndianBank",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.iexceed.ib.digitalbankingprod&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "government",
+      "package": "in.gov.ecourts.eCourtsServices",
+      "label": "eCourts Services",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=in.gov.ecourts.eCourtsServices&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "messaging",
+      "package": "in.mohalla.sharechat",
+      "label": "ShareChat",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "rideshare",
+      "package": "com.olacabs.customer",
+      "label": "Ola",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.olacabs.customer&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "rideshare",
+      "package": "com.rapido.passenger",
+      "label": "Rapido",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "com.jpl.jiomart",
+      "label": "JioMart",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.jpl.jiomart&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "com.snapdeal.main",
+      "label": "Snapdeal",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.snapdeal.main&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "com.myntra.android",
+      "label": "Myntra",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "com.ril.ajio",
+      "label": "AJIO",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.ril.ajio&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "com.meesho.supply",
+      "label": "Meesho",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "shopping",
+      "package": "live.citymall.customer.prod",
+      "label": "CityMall",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "streaming",
+      "package": "tv.accedo.airtel.wynk",
+      "label": "Airtel Xstream Play",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=tv.accedo.airtel.wynk&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "streaming",
+      "package": "com.tatasky.binge",
+      "label": "Tata Play Binge",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.tatasky.binge&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "streaming",
+      "package": "com.suntv.sunnxt",
+      "label": "Sun NXT",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.suntv.sunnxt&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "wallet",
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "wallet",
+      "package": "com.paytmmoney",
+      "label": "Paytm Money",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.paytmmoney&gl=IN&hl=en"
+    },
+    {
+      "country": "IN",
+      "category": "telecom",
+      "package": "com.myairtelapp",
+      "label": "Airtel",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.myairtelapp&gl=IN&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "banking",
+      "package": "br.com.intermedium",
+      "label": "Inter",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "banking",
+      "package": "br.com.neon",
+      "label": "Neon",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=br.com.neon&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "banking",
+      "package": "br.com.bancobmg.bancodigital",
+      "label": "Banco Bmg",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=br.com.bancobmg.bancodigital&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "banking",
+      "package": "io.cloudwalk.infinitepaydash",
+      "label": "InfinitePay",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=io.cloudwalk.infinitepaydash&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "streaming",
+      "package": "com.globo.globotv",
+      "label": "Globoplay",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.globo.globotv&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "delivery",
+      "package": "br.com.brainweb.ifood",
+      "label": "iFood",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=br.com.brainweb.ifood&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "shopping",
+      "package": "com.tippingcanoe.pelando",
+      "label": "Pelando",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.tippingcanoe.pelando&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "shopping",
+      "package": "br.com.buscape.MainPack",
+      "label": "Buscap\u00e9",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=br.com.buscape.MainPack&gl=BR&hl=en"
+    },
+    {
+      "country": "BR",
+      "category": "shopping",
+      "package": "com.worten.app",
+      "label": "Worten",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.worten.app&gl=BR&hl=en"
+    },
+    {
+      "country": "MX",
+      "category": "banking",
+      "package": "mx.com.bancoazteca.bazdigitalmovil",
+      "label": "Banco Azteca",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=mx.com.bancoazteca.bazdigitalmovil&gl=MX&hl=en"
+    },
+    {
+      "country": "MX",
+      "category": "banking",
+      "package": "com.pagopopmobile",
+      "label": "Spin by OXXO",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.pagopopmobile&gl=MX&hl=en"
+    },
+    {
+      "country": "MX",
+      "category": "shopping",
+      "package": "mx.com.liverpool.shoppingapp",
+      "label": "Liverpool",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=mx.com.liverpool.shoppingapp&gl=MX&hl=en"
+    },
+    {
+      "country": "PH",
+      "category": "banking",
+      "package": "ph.com.bdo.pay",
+      "label": "BDO Pay",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=ph.com.bdo.pay&gl=PH&hl=en"
+    },
+    {
+      "country": "PH",
+      "category": "banking",
+      "package": "com.paymaya",
+      "label": "Maya",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.paymaya&gl=PH&hl=en"
+    },
+    {
+      "country": "PH",
+      "category": "banking",
+      "package": "com.tonik.mobile",
+      "label": "Tonik Bank",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.tonik.mobile&gl=PH&hl=en"
+    },
+    {
+      "country": "PH",
+      "category": "banking",
+      "package": "com.fhl.salmon",
+      "label": "Salmon",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.fhl.salmon&gl=PH&hl=en"
+    },
+    {
+      "country": "NG",
+      "category": "wallet",
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=NG&hl=en"
+    },
+    {
+      "country": "NG",
+      "category": "wallet",
+      "package": "com.transsnet.palmpay",
+      "label": "PalmPay",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.transsnet.palmpay&gl=NG&hl=en"
+    },
+    {
+      "country": "NG",
+      "category": "wallet",
+      "package": "com.mypaga.customer",
+      "label": "Paga",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.mypaga.customer&gl=NG&hl=en"
+    },
+    {
+      "country": "NG",
+      "category": "wallet",
+      "package": "com.nipek.cdcare",
+      "label": "CDcare",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.nipek.cdcare&gl=NG&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "banking",
+      "package": "com.bracbank.astha",
+      "label": "BRAC Bank Astha",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bracbank.astha&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "banking",
+      "package": "com.thecitybank.citytouch",
+      "label": "Citytouch",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.thecitybank.citytouch&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "banking",
+      "package": "com.ibbl.cellfin",
+      "label": "CellFin",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.ibbl.cellfin&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "banking",
+      "package": "com.konasl.mercantile",
+      "label": "MBL Rainbow",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.konasl.mercantile&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "wallet",
+      "package": "com.bKash.customerapp",
+      "label": "bKash",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bKash.customerapp&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "shopping",
+      "package": "com.othoba.android",
+      "label": "Othoba",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.othoba.android&gl=BD&hl=en"
+    },
+    {
+      "country": "BD",
+      "category": "shopping",
+      "package": "com.cartup.user",
+      "label": "Cartup",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.cartup.user&gl=BD&hl=en"
+    },
+    {
+      "country": "IR",
+      "category": "shopping",
+      "package": "ir.divar",
+      "label": "\u062f\u06cc\u0648\u0627\u0631",
+      "harvested": true,
+      "stores": {
+        "google_play": "unavailable",
+        "cafe_bazaar": "available",
+        "myket": "unavailable"
+      },
+      "play_evidence": "https://cafebazaar.ir/app/ir.divar",
+      "local_store": "cafe_bazaar"
+    },
+    {
+      "country": "IR",
+      "category": "shopping",
+      "package": "ir.emalls.app",
+      "label": "\u0627\u06cc\u0645\u0627\u0644\u0632",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "cafe_bazaar": "available",
+        "myket": "available"
+      },
+      "play_evidence": "https://myket.ir/app/ir.emalls.app",
+      "local_store": "myket"
+    },
+    {
+      "country": "IR",
+      "category": "banking",
+      "package": "ir.tgbs.peccharge",
+      "label": "\u062a\u0627\u067e",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "cafe_bazaar": "available",
+        "myket": "available"
+      },
+      "play_evidence": "https://myket.ir/app/ir.tgbs.peccharge",
+      "local_store": "myket"
+    },
+    {
+      "country": "IR",
+      "category": "wallet",
+      "package": "kifpool.me.v2",
+      "label": "\u06a9\u06cc\u0641 \u067e\u0648\u0644 \u0645\u0646",
+      "harvested": true,
+      "stores": {
+        "google_play": "available",
+        "cafe_bazaar": "available",
+        "myket": "available"
+      },
+      "play_evidence": "https://myket.ir/app/kifpool.me.v2",
+      "local_store": "myket"
+    },
+    {
+      "country": "KR",
+      "category": "messaging",
+      "package": "com.nhn.android.band",
+      "label": "BAND",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.nhn.android.band&gl=KR&hl=en"
+    },
+    {
+      "country": "KR",
+      "category": "shopping",
+      "package": "com.towneers.www",
+      "label": "\ub2f9\uadfc",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.towneers.www&gl=KR&hl=en"
+    },
+    {
+      "country": "JP",
+      "category": "banking",
+      "package": "jp.co.bank77.bankingappli",
+      "label": "\u4e03\u5341\u4e03\u9280\u884c\u30a2\u30d7\u30ea",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=jp.co.bank77.bankingappli&gl=JP&hl=en"
+    },
+    {
+      "country": "ZA",
+      "category": "banking",
+      "package": "capitec.acuity.mobile.prod",
+      "label": "Capitec Bank",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=ZA&hl=en"
+    },
+    {
+      "country": "ZA",
+      "category": "banking",
+      "package": "com.fireid.snapscan",
+      "label": "SnapScan",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.fireid.snapscan&gl=ZA&hl=en"
+    },
+    {
+      "country": "ZA",
+      "category": "shopping",
+      "package": "za.co.shoprite.sixty60",
+      "label": "Checkers Sixty60",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=za.co.shoprite.sixty60&gl=ZA&hl=en"
+    },
+    {
+      "country": "ZA",
+      "category": "shopping",
+      "package": "com.bidorbuy.app",
+      "label": "Bob Shop",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.bidorbuy.app&gl=ZA&hl=en"
+    },
+    {
+      "country": "ZA",
+      "category": "shopping",
+      "package": "com.ebay.gumtree.za",
+      "label": "Gumtree SA",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.ebay.gumtree.za&gl=ZA&hl=en"
+    },
+    {
+      "country": "EG",
+      "category": "government",
+      "package": "com.efinance.khadamatmisr",
+      "label": "Khadamat Misr",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.efinance.khadamatmisr&gl=EG&hl=en"
+    },
+    {
+      "country": "EG",
+      "category": "rideshare",
+      "package": "farid.taxi.ksa.egypt.passenger",
+      "label": "Farid Egypt TAXI",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=farid.taxi.ksa.egypt.passenger&gl=EG&hl=en"
+    },
+    {
+      "country": "VN",
+      "category": "messaging",
+      "package": "com.zing.zalo",
+      "label": "Zalo",
+      "harvested": true,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.zing.zalo&gl=VN&hl=en"
+    },
+    {
+      "country": "KR",
+      "category": "banking",
+      "package": "com.kbstar.kbbank",
+      "label": "KB Star Banking",
+      "harvested": false,
+      "stores": {
+        "google_play": "available"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&gl=KR&hl=en"
+    },
+    {
+      "country": "EG",
+      "category": "banking",
+      "package": "com.banquemisr.mobilebank",
+      "label": "Banque Misr",
+      "harvested": false,
+      "stores": {
+        "google_play": "unavailable"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.banquemisr.mobilebank&gl=EG&hl=en"
+    },
+    {
+      "country": "SA",
+      "category": "banking",
+      "package": "com.alahli.alahli",
+      "label": "AlAhli Mobile",
+      "harvested": false,
+      "stores": {
+        "google_play": "unavailable"
+      },
+      "play_evidence": "https://play.google.com/store/apps/details?id=com.alahli.alahli&gl=SA&hl=en"
+    }
+  ],
+  "minichat": [
+    {
+      "package": "com.minichat",
+      "store": "google_play",
+      "country": "US",
+      "status": "unavailable",
+      "scope": "global",
+      "http_status": 404,
+      "evidence": "https://play.google.com/store/apps/details?id=com.minichat&gl=US&hl=en",
+      "detail": "not published on Google Play (store-isolated app)",
+      "checked_at": "2026-10-07T12:22:02Z"
+    },
+    {
+      "package": "com.minichat.lite",
+      "store": "google_play",
+      "country": "US",
+      "status": "unavailable",
+      "scope": "global",
+      "http_status": 404,
+      "evidence": "https://play.google.com/store/apps/details?id=com.minichat.lite&gl=US&hl=en",
+      "detail": "not published on Google Play (store-isolated app)",
+      "checked_at": "2026-10-07T12:22:02Z"
+    },
+    {
+      "package": "com.minichat.android",
+      "store": "google_play",
+      "country": "US",
+      "status": "unavailable",
+      "scope": "global",
+      "http_status": 404,
+      "evidence": "https://play.google.com/store/apps/details?id=com.minichat.android&gl=US&hl=en",
+      "detail": "not published on Google Play (store-isolated app)",
+      "checked_at": "2026-10-07T12:22:02Z"
+    },
+    {
+      "package": "com.fun.minichat",
+      "store": "google_play",
+      "country": "US",
+      "status": "unavailable",
+      "scope": "global",
+      "http_status": 404,
+      "evidence": "https://play.google.com/store/apps/details?id=com.fun.minichat&gl=US&hl=en",
+      "detail": "not published on Google Play (store-isolated app)",
+      "checked_at": "2026-10-07T12:22:02Z"
+    },
+    {
+      "package": "com.mico.chat",
+      "store": "google_play",
+      "country": "US",
+      "status": "unavailable",
+      "scope": "global",
+      "http_status": 404,
+      "evidence": "https://play.google.com/store/apps/details?id=com.mico.chat&gl=US&hl=en",
+      "detail": "not published on Google Play (store-isolated app)",
+      "checked_at": "2026-10-07T12:22:02Z"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "country": "IN",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "in.mohalla.sharechat",
+      "label": "ShareChat",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&gl=IN&hl=en"
+    }
+  ]
+}

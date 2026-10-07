@@ -1,0 +1,36 @@
+{
+  "country": "BR",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "br.com.buscape.MainPack",
+      "label": "Buscapé",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.buscape.MainPack&gl=BR&hl=en"
+    },
+    {
+      "package": "com.tippingcanoe.pelando",
+      "label": "Pelando",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tippingcanoe.pelando&gl=BR&hl=en"
+    },
+    {
+      "package": "com.worten.app",
+      "label": "Worten",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.worten.app&gl=BR&hl=en"
+    }
+  ]
+}

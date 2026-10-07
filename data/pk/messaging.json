@@ -1,0 +1,16 @@
+{
+  "country": "PK",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.udna.tellotalk",
+      "label": "Tellotalk",
+      "category": "messaging",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.udna.tellotalk&gl=PK&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "country": "TR",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.denizbank.mobildeniz",
+      "label": "MobilDeniz",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.denizbank.mobildeniz&gl=TR&hl=en"
+    },
+    {
+      "package": "com.garanti.cepsubesi",
+      "label": "Garanti BBVA Mobile",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.garanti.cepsubesi&gl=TR&hl=en"
+    },
+    {
+      "package": "com.pozitron.iscep",
+      "label": "İşCep",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pozitron.iscep&gl=TR&hl=en"
+    },
+    {
+      "package": "com.tmobtech.halkbank",
+      "label": "Halkbank Mobil",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tmobtech.halkbank&gl=TR&hl=en"
+    }
+  ]
+}

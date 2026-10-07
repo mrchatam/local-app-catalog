@@ -1,0 +1,35 @@
+{
+  "countries": [
+    "IR",
+    "TR",
+    "RU",
+    "IN",
+    "BR",
+    "VN",
+    "ID",
+    "PK",
+    "EG",
+    "UA",
+    "KR",
+    "NG",
+    "MX",
+    "PH",
+    "JP",
+    "SA",
+    "BD",
+    "ZA"
+  ],
+  "categories": [
+    "banking",
+    "government",
+    "rideshare",
+    "messaging",
+    "streaming",
+    "shopping",
+    "wallet",
+    "delivery",
+    "telecom"
+  ],
+  "updated": "2026-10-07",
+  "version": 1
+}

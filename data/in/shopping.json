@@ -1,0 +1,66 @@
+{
+  "country": "IN",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.jpl.jiomart",
+      "label": "JioMart",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.jpl.jiomart&gl=IN&hl=en"
+    },
+    {
+      "package": "com.meesho.supply",
+      "label": "Meesho",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=IN&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=IN&hl=en"
+    },
+    {
+      "package": "com.ril.ajio",
+      "label": "AJIO",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ril.ajio&gl=IN&hl=en"
+    },
+    {
+      "package": "com.snapdeal.main",
+      "label": "Snapdeal",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.snapdeal.main&gl=IN&hl=en"
+    },
+    {
+      "package": "live.citymall.customer.prod",
+      "label": "CityMall",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&gl=IN&hl=en"
+    }
+  ]
+}

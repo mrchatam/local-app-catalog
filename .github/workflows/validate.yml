@@ -1,0 +1,98 @@
+name: validate
+
+# Runs on every pull request and on every push to the default branch.
+# This is the gate: a PR that breaks the schema, duplicates a package, cites a
+# global app as local, or marks an entry verified without a country-scoped store
+# earns a red check and cannot merge.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Validate catalog (schema, duplicates, package ids, conflicts)
+        run: npm run validate
+
+      - name: Check that built bundles are reproducible
+        run: |
+          npm run build
+          node tools/build/cli.mjs --out dist-check --validate --quiet
+          diff -r dist dist-check
+        env:
+          # Bundles are derived from the data, never from the wall clock, so two
+          # builds of the same commit must be byte-identical.
+          TZ: UTC
+
+  store-check:
+    # Best-effort liveness of the store listings a `verified` entry cites.
+    # This job is intentionally NOT required: runners live in datacenters, and
+    # many country-scoped stores (Café Bazaar, Myket, RuStore) throttle or block
+    # such traffic. An inconclusive check must never fail a contributor's PR, so
+    # the validator warns instead of erroring and this job tolerates exit 2.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: npm ci
+
+      - name: Store availability (warnings are not failures)
+        run: |
+          set +e
+          npm run validate:stores -- --json --quiet > store-check.json
+          status=$?
+          cat store-check.json
+          # 0 = every listing resolved; 2 = some were inconclusive (throttled).
+          if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
+            echo "::error::store check failed with exit $status (expected 0 or 2)"
+            exit "$status"
+          fi
+          echo "store check exit $status (inconclusive results are reported as warnings)"
+
+      - name: Summarize
+        if: always()
+        run: |
+          if [ -f store-check.json ]; then
+            node -e '
+              const r = JSON.parse(require("fs").readFileSync("store-check.json","utf8"));
+              const lines = [
+                "### Store availability (best effort)",
+                "",
+                `- errors: ${r.errors ?? 0}`,
+                `- warnings: ${r.warnings ?? 0}`,
+                `- inconclusive: ${r.store_inconclusive ? "yes" : "no"}`,
+                "",
+                "> An inconclusive result means the runner could not reach the store",
+                "> from a datacenter IP. It is not evidence that an app is unavailable.",
+              ];
+              require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
+            '
+          fi

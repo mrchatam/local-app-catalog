@@ -1,0 +1,159 @@
+{
+  "note": "Discovery queries, run against Play search with gl=<country>. Native-language queries surface locally relevant apps that English queries miss. Results are nominations only: a human curator decides what enters data/.",
+  "version": 1,
+  "queries": {
+    "IR": {
+      "banking": ["بانک", "bank iran"],
+      "government": ["دولت", "services iran"],
+      "rideshare": ["اسنپ", "تاکسی اینترنتی"],
+      "messaging": ["پیام رسان"],
+      "streaming": ["فیلم و سریال"],
+      "shopping": ["فروشگاه اینترنتی"],
+      "wallet": ["کیف پول"]
+    },
+    "TR": {
+      "banking": ["mobil bankacılık", "banka"],
+      "government": ["e devlet"],
+      "rideshare": ["taksi çağır"],
+      "messaging": ["mesajlaşma"],
+      "streaming": ["dizi izle"],
+      "shopping": ["alışveriş"],
+      "wallet": ["cüzdan"]
+    },
+    "RU": {
+      "banking": ["банк", "мобильный банк"],
+      "government": ["госуслуги"],
+      "rideshare": ["такси вызов"],
+      "messaging": ["мессенджер"],
+      "streaming": ["фильмы онлайн"],
+      "shopping": ["магазин"],
+      "wallet": ["кошелек"]
+    },
+    "IN": {
+      "banking": ["upi payment", "bank india"],
+      "government": ["digilocker", "government services india"],
+      "rideshare": ["cab booking india"],
+      "messaging": ["chat india"],
+      "streaming": ["movies hindi"],
+      "shopping": ["online shopping india"],
+      "wallet": ["paytm wallet"]
+    },
+    "BR": {
+      "banking": ["banco", "pix"],
+      "government": ["gov.br", "carteira de trabalho digital"],
+      "rideshare": ["motorista particular"],
+      "messaging": ["mensagens"],
+      "streaming": ["filmes series"],
+      "shopping": ["compras online"],
+      "wallet": ["carteira digital"]
+    },
+    "VN": {
+      "banking": ["ngân hàng"],
+      "government": ["dịch vụ công"],
+      "rideshare": ["xe ôm công nghệ"],
+      "messaging": ["zalo"],
+      "streaming": ["xem phim"],
+      "shopping": ["mua sắm online"],
+      "wallet": ["ví điện tử"]
+    },
+    "ID": {
+      "banking": ["mobile banking"],
+      "government": ["peduli lindungi"],
+      "rideshare": ["ojek online"],
+      "messaging": ["chat indonesia"],
+      "streaming": ["nonton film"],
+      "shopping": ["belanja online"],
+      "wallet": ["dompet digital"]
+    },
+    "PK": {
+      "banking": ["mobile banking pakistan", "easypaisa"],
+      "government": ["nadra"],
+      "rideshare": ["careem"],
+      "messaging": ["chat pakistan"],
+      "streaming": ["drama pakistani"],
+      "shopping": ["daraz"],
+      "wallet": ["jazzcash"]
+    },
+    "EG": {
+      "banking": ["بنك", "محفظة إلكترونية"],
+      "government": ["خدمات حكومية مصر"],
+      "rideshare": ["تاكسي مصر"],
+      "messaging": ["دردشة"],
+      "streaming": ["افلام"],
+      "shopping": ["تسوق اونلاين"],
+      "wallet": ["محفظة"]
+    },
+    "UA": {
+      "banking": ["банк", "приват24"],
+      "government": ["дія"],
+      "rideshare": ["таксі"],
+      "messaging": ["месенджер"],
+      "streaming": ["фільми"],
+      "shopping": ["магазин"],
+      "wallet": ["гаманець"]
+    },
+    "KR": {
+      "banking": ["은행 뱅킹"],
+      "government": ["정부24"],
+      "rideshare": ["택시 호출"],
+      "messaging": ["카카오톡"],
+      "streaming": ["드라마 다시보기"],
+      "shopping": ["쇼핑"],
+      "wallet": ["카카오페이"]
+    },
+    "NG": {
+      "banking": ["bank transfer nigeria", "opay"],
+      "government": ["nimc"],
+      "rideshare": ["bolt nigeria"],
+      "messaging": ["chat nigeria"],
+      "streaming": ["nollywood"],
+      "shopping": ["jumia"],
+      "wallet": ["opay wallet"]
+    },
+    "MX": {
+      "banking": ["banco mexico", "transferencia"],
+      "government": ["gobierno mexico"],
+      "rideshare": ["taxi mexico"],
+      "messaging": ["mensajes"],
+      "streaming": ["peliculas"],
+      "shopping": ["compras"]
+    },
+    "PH": {
+      "banking": ["bank philippines", "gcash"],
+      "government": ["government philippines"],
+      "rideshare": ["angkas"],
+      "messaging": ["chat philippines"],
+      "streaming": ["pinoy movies"],
+      "shopping": ["shopping philippines"]
+    },
+    "JP": {
+      "banking": ["銀行 アプリ", "paypay"],
+      "government": ["マイナポータル"],
+      "rideshare": ["タクシー配車"],
+      "messaging": ["line"],
+      "streaming": ["アニメ 見放題"],
+      "shopping": ["通販"]
+    },
+    "SA": {
+      "banking": ["بنك", "محفظة رقمية"],
+      "government": ["أبشر"],
+      "rideshare": ["كريم"],
+      "messaging": ["محادثة"],
+      "streaming": ["أفلام"]
+    },
+    "BD": {
+      "banking": ["bank bangladesh", "bkash"],
+      "government": ["government bangladesh"],
+      "rideshare": ["pathao"],
+      "messaging": ["chat bangladesh"],
+      "shopping": ["online shopping bangladesh"]
+    },
+    "ZA": {
+      "banking": ["bank south africa", "capitec"],
+      "government": ["government south africa"],
+      "rideshare": ["bolt south africa"],
+      "messaging": ["chat south africa"],
+      "shopping": ["online shopping south africa"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "country": "BR",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.globo.globotv",
+      "label": "Globoplay",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.globo.globotv&gl=BR&hl=en"
+    }
+  ]
+}

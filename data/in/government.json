@@ -1,0 +1,16 @@
+{
+  "country": "IN",
+  "category": "government",
+  "apps": [
+    {
+      "package": "in.gov.ecourts.eCourtsServices",
+      "label": "eCourts Services",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=in.gov.ecourts.eCourtsServices&gl=IN&hl=en"
+    }
+  ]
+}

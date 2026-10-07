@@ -1,0 +1,26 @@
+{
+  "country": "BD",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.cartup.user",
+      "label": "Cartup",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cartup.user&gl=BD&hl=en"
+    },
+    {
+      "package": "com.othoba.android",
+      "label": "Othoba",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.othoba.android&gl=BD&hl=en"
+    }
+  ]
+}

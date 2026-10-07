@@ -1,0 +1,46 @@
+{
+  "country": "BD",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.bracbank.astha",
+      "label": "BRAC Bank Astha",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bracbank.astha&gl=BD&hl=en"
+    },
+    {
+      "package": "com.ibbl.cellfin",
+      "label": "CellFin",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ibbl.cellfin&gl=BD&hl=en"
+    },
+    {
+      "package": "com.konasl.mercantile",
+      "label": "MBL Rainbow",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.konasl.mercantile&gl=BD&hl=en"
+    },
+    {
+      "package": "com.thecitybank.citytouch",
+      "label": "Citytouch",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.thecitybank.citytouch&gl=BD&hl=en"
+    }
+  ]
+}

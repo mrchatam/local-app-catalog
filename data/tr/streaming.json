@@ -1,0 +1,36 @@
+{
+  "country": "TR",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.digiturk.tod.mobil",
+      "label": "TOD",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.digiturk.tod.mobil&gl=TR&hl=en"
+    },
+    {
+      "package": "com.trt.tabii.android",
+      "label": "tabii",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trt.tabii.android&gl=TR&hl=en"
+    },
+    {
+      "package": "limex.tv.izle.canli.android",
+      "label": "TV IZLE",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=limex.tv.izle.canli.android&gl=TR&hl=en"
+    }
+  ]
+}

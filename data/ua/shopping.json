@@ -1,0 +1,16 @@
+{
+  "country": "UA",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "ua.prom.b2c",
+      "label": "Prom.ua",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.prom.b2c&gl=UA&hl=en"
+    }
+  ]
+}

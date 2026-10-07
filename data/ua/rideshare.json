@@ -1,0 +1,16 @@
+{
+  "country": "UA",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.mobox.taxi",
+      "label": "Taxi 838",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobox.taxi&gl=UA&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "country": "IN",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.olacabs.customer",
+      "label": "Ola",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.olacabs.customer&gl=IN&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=IN&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "country": "IR",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "ir.divar",
+      "label": "دیوار",
+      "category": "shopping",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://cafebazaar.ir/app/ir.divar",
+      "store": "cafe_bazaar",
+      "verified_at": "2026-10-07"
+    },
+    {
+      "package": "ir.emalls.app",
+      "label": "ایمالز",
+      "category": "shopping",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://myket.ir/app/ir.emalls.app",
+      "store": "myket",
+      "verified_at": "2026-10-07"
+    }
+  ]
+}

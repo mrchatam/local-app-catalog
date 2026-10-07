@@ -1,0 +1,46 @@
+{
+  "country": "PH",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.fhl.salmon",
+      "label": "Salmon",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fhl.salmon&gl=PH&hl=en"
+    },
+    {
+      "package": "com.paymaya",
+      "label": "Maya",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paymaya&gl=PH&hl=en"
+    },
+    {
+      "package": "com.tonik.mobile",
+      "label": "Tonik Bank",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tonik.mobile&gl=PH&hl=en"
+    },
+    {
+      "package": "ph.com.bdo.pay",
+      "label": "BDO Pay",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ph.com.bdo.pay&gl=PH&hl=en"
+    }
+  ]
+}

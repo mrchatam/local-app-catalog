@@ -1,0 +1,130 @@
+name: nightly-recheck
+
+# Re-checks every `verified` entry against the country-scoped store that vouched
+# for it, and demotes the ones that are provably gone.
+#
+# Design rule: a demotion requires a *definite* answer. Errors (blocked, rate
+# limited, soft-404) are inconclusive and never demote. So a throttled runner
+# produces chatter-free nights, and a real takedown produces exactly one PR.
+#
+# Demotion is `verified` -> `legacy`: the row is kept, the package stays in the
+# repo and in history, but consumers stop treating it as local.
+on:
+  schedule:
+    - cron: "17 3 * * *" # 03:17 UTC daily, off the hour
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Write demotions and open a PR (otherwise dry run)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: nightly-recheck
+  cancel-in-progress: false
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: npm ci
+
+      - name: Recheck verified entries
+        id: recheck
+        run: |
+          set +e
+          node tools/recheck/cli.mjs --json --quiet > recheck.json
+          status=$?
+          set -e
+          # 0 = nothing to do, 1 = demotions pending (or the safety cap tripped),
+          # 2 = nothing to demote but some entries could not be re-verified.
+          # Only 1 means "there is a diff to open a PR for".
+          echo "exit=$status"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat recheck.json
+          if [ "$status" -ne 0 ] && [ "$status" -ne 1 ] && [ "$status" -ne 2 ]; then
+            echo "::error::recheck failed with exit $status"
+            exit "$status"
+          fi
+
+      - name: Report inconclusive entries
+        run: |
+          node -e '
+            const r = JSON.parse(require("fs").readFileSync("recheck.json","utf8"));
+            if (!r.inconclusive_count) process.exit(0);
+            const lines = [
+              "### " + r.inconclusive_count + " entr(ies) could not be re-verified",
+              "",
+              "The runner could not reach the store (throttled/blocked). No action taken;",
+              "these are retried on the next nightly run.",
+            ];
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join("\n") + "\n");
+          '
+
+      - name: Apply demotions
+        if: steps.recheck.outputs.status == '1'
+        run: node tools/recheck/cli.mjs --apply --quiet
+
+      - name: Re-validate the demoted tree
+        if: steps.recheck.outputs.status == '1'
+        run: |
+          npm test
+          npm run validate
+
+      - name: Open or update the demotion PR
+        if: steps.recheck.outputs.status == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "no diff after --apply; nothing to do"
+            exit 0
+          fi
+          branch=nightly/recheck-$(date -u +%Y-%m-%d)
+          git config user.name  "local-app-catalog bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data
+          printf '%s\n' \
+            'Nightly recheck: demote entries no longer available' \
+            '' \
+            'Entries whose country-scoped store returned a definite not-available' \
+            'answer move from verified to legacy. legacy rows are kept for history' \
+            'and excluded from consumer defaults.' \
+            '' \
+            'Generated with Codebuff' \
+            'Co-Authored-By: Codebuff <noreply@codebuff.com>' > /tmp/commit-msg.txt
+          git commit -F /tmp/commit-msg.txt
+          count=$(node -e 'try{const r=JSON.parse(require("fs").readFileSync("recheck.json","utf8"));process.stdout.write(String(r.demotions.length))}catch{process.stdout.write("some")}')
+          git push --force-with-lease origin "$branch"
+          printf '%s\n' \
+            'Daily automated re-verification of `verified` entries.' \
+            '' \
+            'Each demotion below is backed by a definite "not available" answer from' \
+            'the country-scoped store that originally vouched for the entry. Rows move' \
+            '`verified` -> `legacy`; they are not deleted.' \
+            '' \
+            'Please review the diff. A maintainer should spot-check anything surprising' \
+            'before merging.' \
+            '' \
+            'Generated with Codebuff.' > /tmp/pr-body.md
+          gh pr create \
+            --title "Nightly recheck: demote $count entries" \
+            --body-file /tmp/pr-body.md \
+            --base "${GITHUB_REF_NAME}" \
+            --head "$branch" || echo "PR already open for $branch"

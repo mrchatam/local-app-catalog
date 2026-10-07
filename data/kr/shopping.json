@@ -1,0 +1,16 @@
+{
+  "country": "KR",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.towneers.www",
+      "label": "당근",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.towneers.www&gl=KR&hl=en"
+    }
+  ]
+}
