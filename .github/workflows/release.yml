@@ -46,7 +46,15 @@ jobs:
             echo "tag=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Pin the build clock to the commit
+        id: clock
+        run: echo "epoch=$(git log -1 --format=%ct)" >> "$GITHUB_OUTPUT"
+
       - name: Build checksummed bundles
+        env:
+          # Reproducible-builds convention: the timestamp in manifest.json comes
+          # from the commit, not from when the runner happened to execute.
+          SOURCE_DATE_EPOCH: ${{ steps.clock.outputs.epoch }}
         run: npm run build -- --tag "${{ steps.tag.outputs.tag }}" --validate
 
       - name: Verify checksums

@@ -85,3 +85,18 @@ test("checksums render in sha256sum -c format and manifest excludes itself", () 
   assert.equal(manifest.total_bytes, 30);
   assert.deepEqual(manifest.artifacts.map((a) => a.name), ["catalog-all.json", "catalog-ir.json"]);
 });
+
+test("the manifest timestamp is opt-in: no wall clock leaks into a build", () => {
+  const artifacts = [{ name: "catalog-all.json", bytes: 1, sha256: "c".repeat(64) }];
+
+  // Without a pinned clock the manifest carries no time at all, so the same
+  // commit always produces the same manifest - and the same SHA256SUMS line.
+  const unpinned = buildManifest({ release: "v2026.10.07", artifacts });
+  assert.equal("generated_at" in unpinned, false);
+
+  // With SOURCE_DATE_EPOCH (piped in as generatedAt) the time is reproducible.
+  const a = buildManifest({ release: "v2026.10.07", generatedAt: "2026-10-07T00:00:00Z", artifacts });
+  const b = buildManifest({ release: "v2026.10.07", generatedAt: "2026-10-07T00:00:00Z", artifacts });
+  assert.equal(a.generated_at, "2026-10-07T00:00:00Z");
+  assert.equal(JSON.stringify(a), JSON.stringify(b));
+});

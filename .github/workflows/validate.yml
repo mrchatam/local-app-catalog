@@ -33,14 +33,18 @@ jobs:
         run: npm run validate
 
       - name: Check that built bundles are reproducible
+        # Bundles are derived from the data and a pinned clock, never from the
+        # wall clock, so two builds of the same commit must be byte-identical -
+        # including manifest.json and SHA256SUMS. The clock is pinned to this
+        # commit so the check also exercises the generated_at path.
         run: |
-          npm run build
-          node tools/build/cli.mjs --out dist-check --validate --quiet
-          diff -r dist dist-check
-        env:
-          # Bundles are derived from the data, never from the wall clock, so two
-          # builds of the same commit must be byte-identical.
-          TZ: UTC
+          SOURCE_DATE_EPOCH=$(git log -1 --format=%ct) npm run build
+          SOURCE_DATE_EPOCH=$(git log -1 --format=%ct) node tools/build/cli.mjs --out dist-check --validate --quiet
+          if ! diff -r dist dist-check; then
+            echo "::error::the build is not reproducible: two builds of this commit differ"
+            exit 1
+          fi
+          echo "reproducible: dist and dist-check are byte-identical"
 
   store-check:
     # Best-effort liveness of the store listings a `verified` entry cites.

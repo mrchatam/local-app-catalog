@@ -24,11 +24,33 @@ import { loadRepo } from "../lib/load.mjs";
 import { validateRepo } from "../lib/rules.mjs";
 import { buildAllBundle, buildCountryBundle, buildManifest, renderChecksums } from "../lib/bundle.mjs";
 
-const USAGE = `usage: node tools/build/cli.mjs [--tag vYYYY.MM.DD] [--out dist] [--validate] [--quiet]`;
+const USAGE = `usage: node tools/build/cli.mjs [--tag vYYYY.MM.DD] [--out dist] [--validate] [--quiet]
+
+Deterministic by default: pass SOURCE_DATE_EPOCH (seconds since the Unix epoch,
+as git log -1 --format=%ct gives) to stamp manifest.json's generated_at. Without
+it the build omits the timestamp entirely, so the same commit always produces
+the same bytes and the same checksums.`;
+
+/**
+ * The one place the build reads a clock. SOURCE_DATE_EPOCH is the standard,
+ * reproducible-builds way to pin it; unset means "no timestamp at all" rather
+ * than "right now", so builds are byte-identical by default.
+ */
+function buildDate(env = process.env) {
+  const raw = env.SOURCE_DATE_EPOCH;
+  if (raw === undefined || raw === "") return null;
+  const seconds = Number(raw);
+  if (!Number.isFinite(seconds)) {
+    console.error(`SOURCE_DATE_EPOCH must be seconds since the epoch, got "${raw}"`);
+    process.exit(1);
+  }
+  return new Date(seconds * 1000);
+}
 
 function parseArgs(argv) {
-  const stamp = new Date().toISOString().slice(0, 10).replaceAll("-", ".");
-  const opts = { tag: `v${stamp}`, out: DIST_DIR, validate: false, quiet: false };
+  const date = buildDate();
+  const stamp = (date ?? new Date()).toISOString().slice(0, 10).replaceAll("-", ".");
+  const opts = { tag: `v${stamp}`, out: DIST_DIR, validate: false, quiet: false, date };
   for (let i = 0; i < argv.length; i += 1) {
     switch (argv[i]) {
       case "--tag":
@@ -103,7 +125,7 @@ function main() {
     );
   }
 
-  const generatedAt = new Date().toISOString().replace(/\.\d+Z$/, "Z");
+  const generatedAt = opts.date ? opts.date.toISOString().replace(/\.\d+Z$/, "Z") : undefined;
   artifacts.push(
     write(
       opts.out,

@@ -119,15 +119,19 @@ export function buildAllBundle(repo, { release }) {
 }
 
 export function buildManifest({ release, generatedAt, artifacts }) {
-  return {
+  const manifest = {
     format: BUNDLE_FORMAT,
     release,
-    generated_at: generatedAt,
     artifact_count: artifacts.length,
     total_bytes: artifacts.reduce((n, a) => n + a.bytes, 0),
     checksums: "SHA256SUMS",
     artifacts: [...artifacts].sort((a, b) => a.name.localeCompare(b.name)),
   };
+  // Only stamp a time when the caller pinned one (SOURCE_DATE_EPOCH). A wall
+  // clock here would make two builds of the same commit differ, and the
+  // manifest's own checksum is published in SHA256SUMS.
+  if (generatedAt) manifest.generated_at = generatedAt;
+  return manifest;
 }
 
 /** Lines in the format `sha256sum -c` expects: "<hex>  <filename>". */
