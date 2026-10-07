@@ -61,3 +61,13 @@ export function canVerify(countryCode) {
 
 /** Entries demoted by the nightly recheck; kept in the catalog, out of presets. */
 export const LEGACY_CONFIDENCE = "legacy";
+
+/**
+ * The data directory this process should act on: LOCAL_APP_CATALOG_DATA when
+ * set (loadRepo documents the override as toolchain-wide), DATA_DIR otherwise.
+ * Writers (tools/curate) must go through this, or the override would make the
+ * reader look at one tree while the writer touches another.
+ */
+export function activeDataDir() {
+  return process.env.LOCAL_APP_CATALOG_DATA || DATA_DIR;
+}

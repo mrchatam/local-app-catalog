@@ -1,16 +1,20 @@
 #!/usr/bin/env node
 /**
- * Publish the nightly demotions: commit what `recheck --apply` just wrote, push
- * it to a branch, and open (or leave alone) the PR.
+ * Publish the nightly bot writes: commit what the nightly tool just wrote into
+ * data/, push it to a branch, and open (or leave alone) the PR.
+ *
+ * Two kinds share this script:
+ *   recheck (default)  demotions from tools/recheck - report carries `demotions`
+ *   update             additions from tools/nightly - report carries `insertions`
  *
  * This used to be inline `run:` shell in `.github/workflows/recheck.yml`, and
  * the part that broke was the push. `git push --force-with-lease` with no
  * expected value consults the local *remote-tracking* ref, and a fresh checkout
- * of the default branch has none for `nightly/recheck-<date>` - so re-running
- * on a day that already had a branch was rejected with "stale info" instead of
- * updating the PR. Logic that has already regressed once belongs somewhere with
- * a test, so it lives here and `tests/recheck-pr.test.mjs` drives it against a
- * real bare remote.
+ * of the default branch has none for `nightly/<date>` - so re-running on a day
+ * that already had a branch was rejected with "stale info" instead of updating
+ * the PR. Logic that has already regressed once belongs somewhere with a test,
+ * so it lives here and `tests/recheck-pr.test.mjs` drives it against a real
+ * bare remote.
  *
  * Exit codes
  *   0  PR opened or updated - or there was nothing to publish
@@ -25,11 +29,12 @@ import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import { UsageError, need, usageGuard } from "../lib/args.mjs";
 
-const USAGE = `usage: node tools/recheck/open-pr.mjs --branch <name> --base <ref> --report <file> [--quiet]
+const USAGE = `usage: node tools/recheck/open-pr.mjs --branch <name> --base <ref> --report <file>
+       [--kind recheck|update] [--quiet]
 
-Commit the demotions already written into data/, push them to --branch, and
-open or update the PR against --base. The PR title quotes the demotion count
-from --report - the same file the demotions were replayed from - so the title
+Commit the entries the nightly tool just wrote into data/, push them to
+--branch, and open or update the PR against --base. The PR title quotes the
+count from --report - the same file the nightly tool ran from - so the title
 can never disagree with the diff.
 
 Exit codes
@@ -37,16 +42,17 @@ Exit codes
   1  git or gh failed
   3  usage error`;
 
-const COMMIT_MESSAGE = `Nightly recheck: demote entries no longer available
+const MESSAGES = {
+  recheck: {
+    commit: `Nightly recheck: demote entries no longer available
 
 Entries whose country-scoped store returned a definite not-available answer
 move from verified to legacy. legacy rows are kept for history and excluded
 from consumer defaults.
 
 Generated with Codebuff
-Co-Authored-By: Codebuff <noreply@codebuff.com>`;
-
-const PR_BODY = `Daily automated re-verification of \`verified\` entries.
+Co-Authored-By: Codebuff <noreply@codebuff.com>`,
+    body: `Daily automated re-verification of \`verified\` entries.
 
 Each demotion below is backed by a definite "not available" answer from the
 country-scoped store that originally vouched for the entry. Rows move
@@ -55,13 +61,40 @@ country-scoped store that originally vouched for the entry. Rows move
 Please review the diff. A maintainer should spot-check anything surprising
 before merging.
 
-Generated with Codebuff.`;
+Generated with Codebuff.`,
+    title: (n) => `Nightly recheck: demote ${n} entries`,
+    countKey: "demotions",
+  },
+  update: {
+    commit: `Nightly update: add entries confirmed by store availability
+
+Candidates nominated by fetch/discover.py, each backed by a definite
+"available" answer from the country-scoped store that vouches for its
+country (verified) or by Google Play (community). Inserted through
+tools/curate so schema, ordering and duplicate rules match CI.
+
+Generated with Codebuff
+Co-Authored-By: Codebuff <noreply@codebuff.com>`,
+    body: `Daily automated discovery: store nominations that a store answered for.
+
+Each insertion is backed by a definite "available" answer recorded in the
+update report. Nominations with no definite answer were not inserted; they
+are retried on the next nightly run.
+
+Please review the diff. A maintainer should spot-check anything surprising
+before merging.
+
+Generated with Codebuff.`,
+    title: (n) => `Nightly update: add ${n} entries`,
+    countKey: "insertions",
+  },
+};
 
 /** Branches this tool must never commit onto, whatever the caller passes. */
 const PROTECTED = new Set(["main", "master", "HEAD"]);
 
 function parseArgs(argv) {
-  const opts = { branch: null, base: null, report: null, quiet: false };
+  const opts = { branch: null, base: null, report: null, kind: "recheck", quiet: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     switch (arg) {
@@ -73,6 +106,9 @@ function parseArgs(argv) {
         break;
       case "--report":
         opts.report = need(arg, argv[++i]);
+        break;
+      case "--kind":
+        opts.kind = need(arg, argv[++i]);
         break;
       case "--quiet":
         opts.quiet = true;
@@ -89,6 +125,9 @@ function parseArgs(argv) {
   if (!opts.branch) throw new UsageError("--branch is required");
   if (!opts.base) throw new UsageError("--base is required");
   if (!opts.report) throw new UsageError("--report is required");
+  if (!(opts.kind in MESSAGES)) {
+    throw new UsageError(`--kind must be one of ${Object.keys(MESSAGES).join(", ")}, got "${opts.kind}"`);
+  }
   // The push is forced, so a mistyped --branch that lands on the trunk would
   // rewrite the trunk. Refuse before touching the remote.
   if (PROTECTED.has(opts.branch) || opts.branch === opts.base) {
@@ -114,22 +153,23 @@ function git(args) {
 }
 
 /**
- * The count in the PR title comes from the report the demotions were replayed
- * from. Failing loudly here is the point: the old workflow fell back to the
- * string "some", which turned a broken report into a PR titled "demote some
- * entries" that a reviewer had no way to check against anything.
+ * The count in the PR title comes from the report the nightly tool ran from:
+ * `demotions` for a recheck report, `insertions` for an update report. Failing
+ * loudly here is the point: the old workflow fell back to the string "some",
+ * which turned a broken report into a PR titled "demote some entries" that a
+ * reviewer had no way to check against anything.
  */
-export function readDemotionCount(file) {
+export function readReportCount(file, countKey) {
   let doc;
   try {
     doc = JSON.parse(readFileSync(file, "utf8"));
   } catch (err) {
     throw new Error(`--report ${file}: ${err.message}`);
   }
-  if (!Array.isArray(doc?.demotions)) {
-    throw new Error(`--report ${file} has no demotions array; it is not a recheck report`);
+  if (!Array.isArray(doc?.[countKey])) {
+    throw new Error(`--report ${file} has no ${countKey} array; it is not a nightly ${countKey === "demotions" ? "recheck" : "update"} report`);
   }
-  return doc.demotions.length;
+  return doc[countKey].length;
 }
 
 /**
@@ -156,7 +196,8 @@ async function main() {
     return;
   }
 
-  const count = readDemotionCount(opts.report);
+  const count = readReportCount(opts.report, MESSAGES[opts.kind].countKey);
+  const message = MESSAGES[opts.kind];
 
   git(["config", "user.name", "local-app-catalog bot"]);
   git(["config", "user.email", "bot@users.noreply.github.com"]);
@@ -181,8 +222,8 @@ async function main() {
   try {
     const messageFile = path.join(scratch, "commit-msg.txt");
     const bodyFile = path.join(scratch, "pr-body.md");
-    writeFileSync(messageFile, `${COMMIT_MESSAGE}\n`);
-    writeFileSync(bodyFile, `${PR_BODY}\n`);
+    writeFileSync(messageFile, `${message.commit}\n`);
+    writeFileSync(bodyFile, `${message.body}\n`);
 
     // Only data/ is staged: recheck.json is scratch and must not ship.
     git(["add", "data"]);
@@ -210,7 +251,7 @@ async function main() {
       "pr",
       "create",
       "--title",
-      `Nightly recheck: demote ${count} entries`,
+      message.title(count),
       "--body-file",
       bodyFile,
       "--base",

@@ -12,7 +12,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { DATA_DIR, KNOWN_STORES, authoritativeStoresFor } from "../lib/paths.mjs";
+import { activeDataDir, KNOWN_STORES, authoritativeStoresFor } from "../lib/paths.mjs";
 import { PACKAGE_ID_RE } from "../lib/rules.mjs";
 import { createValidators, formatAjvErrors } from "../lib/schema.mjs";
 import { loadRepo } from "../lib/load.mjs";
@@ -25,10 +25,11 @@ import { loadRepo } from "../lib/load.mjs";
  * (the curator server proved it by reading package.json through this function).
  */
 export function catalogPath(country, category) {
-  const root = path.resolve(DATA_DIR) + path.sep;
-  const file = path.resolve(DATA_DIR, String(country).toLowerCase(), `${category}.json`);
+  const dataDir = activeDataDir();
+  const root = path.resolve(dataDir) + path.sep;
+  const file = path.resolve(dataDir, String(country).toLowerCase(), `${category}.json`);
   if (!file.startsWith(root)) {
-    throw new Error(`refusing to touch ${file}: catalog files must live under ${DATA_DIR}`);
+    throw new Error(`refusing to touch ${file}: catalog files must live under ${dataDir}`);
   }
   return file;
 }

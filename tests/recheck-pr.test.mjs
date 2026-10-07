@@ -5,7 +5,7 @@ import { spawnSync } from "node:child_process";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { REPO_ROOT } from "../tools/lib/paths.mjs";
-import { pushArgs, readDemotionCount } from "../tools/recheck/open-pr.mjs";
+import { pushArgs, readReportCount } from "../tools/recheck/open-pr.mjs";
 
 /**
  * `tools/recheck/open-pr.mjs` publishes the nightly demotions, and it exists
@@ -245,6 +245,13 @@ test("pushArgs pins the lease to the SHA the remote reported", () => {
   ]);
 });
 
-test("readDemotionCount refuses a report it cannot count", () => {
-  assert.throws(() => readDemotionCount(path.join(REPO_ROOT, "package.json")), /no demotions array/);
+test("readReportCount refuses a report it cannot count", () => {
+  assert.throws(
+    () => readReportCount(path.join(REPO_ROOT, "package.json"), "demotions"),
+    /no demotions array/,
+  );
+  assert.throws(
+    () => readReportCount(path.join(REPO_ROOT, "package.json"), "insertions"),
+    /no insertions array/,
+  );
 });

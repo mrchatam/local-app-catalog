@@ -1,0 +1,81 @@
+name: nightly-update
+
+# The write half of the nightly automation (recheck.yml is the prune half):
+# discover nominations from the stores, check each one's availability, insert
+# the entries a store actually answered for, and open a PR with the diff.
+#
+# What becomes data, and what does not:
+#   available + country-scoped store -> verified (store + verified_at recorded)
+#   available + worldwide store only -> community (Play cannot prove locality)
+#   unavailable / unknown / error    -> skipped; retried the next night
+#
+# Insertions go through tools/curate, so schema, ordering, duplicate and
+# global-conflict rules are the same ones CI enforces on every pull request.
+# The nightly diff is capped (tools/nightly defaults to 25) so a review stays
+# reviewable; deferred candidates are picked up the following night.
+on:
+  schedule:
+    - cron: "43 2 * * *" # 02:43 UTC daily; recheck runs at 03:17
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: nightly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: npm ci
+
+      - name: Discover candidates from the stores
+        # Store warnings (throttling, blocking) are per-query and expected from
+        # a datacenter IP; discover still writes what it found. A hard failure
+        # (exit != 0) means the discovery contract itself broke - fail loudly.
+        run: python3 fetch/discover.py --all --out .scratch/candidates.json
+
+      - name: Verify and insert qualifying candidates
+        id: update
+        run: |
+          node tools/nightly/update-lists.mjs \
+            --candidates .scratch/candidates.json \
+            --report update-report.json \
+            --apply
+          cat update-report.json
+          n=$(node -e 'const r=JSON.parse(require("fs").readFileSync("update-report.json","utf8"));process.stdout.write(String(r.insertions.length))')
+          echo "insertions=$n" >> "$GITHUB_OUTPUT"
+
+      - name: Re-validate the updated tree
+        if: steps.update.outputs.insertions != '0'
+        run: |
+          npm test
+          npm run validate
+
+      # Same publish path as the recheck PR - one script, one test rig: the
+      # branch is fast-forwarded (never force-reset) and the title quotes the
+      # report the insertions were verified from.
+      - name: Open or update the nightly data PR
+        if: steps.update.outputs.insertions != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node tools/recheck/open-pr.mjs \
+            --kind update \
+            --branch "nightly/data-$(date -u +%Y-%m-%d)" \
+            --base "$GITHUB_REF_NAME" \
+            --report update-report.json

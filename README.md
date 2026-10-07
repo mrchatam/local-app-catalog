@@ -116,14 +116,28 @@ npm run curate            # web UI on http://localhost:5174
 npm run curate:cli -- --help   # headless, scriptable
 ```
 
-## Freshness and the nightly recheck
+## Freshness: the dataset updates itself daily
 
-`.github/workflows/recheck.yml` runs nightly. It re-checks every `verified`
-entry against the country-scoped store that confirmed it and **demotes** any
-entry whose listing has disappeared, preserving provenance and recording why in
-`notes`. It opens a PR; it never pushes to `main` directly. A blocked or
-throttled runner is reported as *inconclusive*, never as proof an app is gone,
-so a datacenter IP can never fail a contributor's change.
+Two nightly workflows keep `data/` current — both open PRs, neither pushes to
+`main` directly, and both fail with an **inconclusive** report rather than a
+wrong fact when a runner is throttled:
+
+- **[`.github/workflows/recheck.yml`](.github/workflows/recheck.yml) — prune.**
+  Re-checks every `verified` entry against the country-scoped store that
+  confirmed it and **demotes** any entry whose listing has disappeared
+  (`verified` -> `legacy`, provenance kept, reason recorded).
+- **[`.github/workflows/update-daily.yml`](.github/workflows/update-daily.yml) —
+  grow.** Runs the discovery crawls, checks each candidate's availability, and
+  inserts only candidates a store answered for: a country-scoped store's
+  `available` becomes `verified` (store + `verified_at` recorded), a Play-only
+  `available` becomes `community`, and `unavailable`/`unknown`/`error` are
+  never inserted — they are retried the next night. Insertions go through
+  `tools/curate`, so schema, ordering, duplicates and global-conflicts are
+  enforced by the same code CI uses on your PR, and the nightly diff is capped
+  so a review stays reviewable.
+
+So a consumer just pins the latest `v*` release (or `main`) and the per-country
+bundles stay current without anyone maintaining them by hand.
 
 ## License
 
