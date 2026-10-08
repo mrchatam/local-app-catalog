@@ -3,6 +3,26 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=BD&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=BD&hl=en"
+    },
+    {
       "package": "com.cartup.user",
       "label": "Cartup",
       "category": "shopping",
@@ -13,6 +33,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.cartup.user&gl=BD&hl=en"
     },
     {
+      "package": "com.daraz.android",
+      "label": "Daraz Online Shopping App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.daraz.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.daraz.shop.lite.sa",
+      "label": "Daraz Lite App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.daraz.shop.lite.sa&gl=BD&hl=en"
+    },
+    {
       "package": "com.othoba.android",
       "label": "Othoba",
       "category": "shopping",
@@ -21,6 +61,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.othoba.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.shopz.android",
+      "label": "ShopZ BD Online Shopping App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.shopz.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy: International Shopping",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=BD&hl=en"
     }
   ]
 }

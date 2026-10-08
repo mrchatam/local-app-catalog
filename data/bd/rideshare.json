@@ -1,0 +1,36 @@
+{
+  "country": "BD",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=BD&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=BD&hl=en"
+    },
+    {
+      "package": "hk.easyvan.app.client",
+      "label": "Lalamove - Fast & Affordable",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=hk.easyvan.app.client&gl=BD&hl=en"
+    }
+  ]
+}

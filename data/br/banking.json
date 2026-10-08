@@ -3,6 +3,16 @@
   "category": "banking",
   "apps": [
     {
+      "package": "app.pixel_launcher",
+      "label": "Pix Launcher",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.pixel_launcher&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.bancobmg.bancodigital",
       "label": "Banco Bmg",
       "category": "banking",
@@ -13,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.bancobmg.bancodigital&gl=BR&hl=en"
     },
     {
+      "package": "br.com.digio.uber",
+      "label": "Uber Conta",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.digio.uber&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.intermedium",
       "label": "Inter",
       "category": "banking",
@@ -21,6 +41,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.jeitto.meujeitto",
+      "label": "Jeitto: Crédito em até 24h",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.meupag",
+      "label": "Banco will: Cartão de crédito",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.meupag&gl=BR&hl=en"
     },
     {
       "package": "br.com.neon",

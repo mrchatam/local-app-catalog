@@ -3,6 +3,26 @@
   "category": "streaming",
   "apps": [
     {
+      "package": "com.a3.sgt",
+      "label": "atresplayer・Estrenos de Series",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.a3.sgt&gl=BR&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=BR&hl=en"
+    },
+    {
       "package": "com.globo.globotv",
       "label": "Globoplay",
       "category": "streaming",
