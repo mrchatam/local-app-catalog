@@ -61,6 +61,8 @@ jobs:
           echo "publishing $tag from $(git rev-parse --short HEAD)"
 
       - name: Build checksummed bundles
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
         run: |
           # Reproducible-builds convention: the clock is pinned to the commit,
           # never to when the runner happened to execute.
