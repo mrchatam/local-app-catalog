@@ -23,16 +23,6 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.bancobmg.bancodigital&gl=BR&hl=en"
     },
     {
-      "package": "br.com.digio.uber",
-      "label": "Uber Conta",
-      "category": "banking",
-      "country": "BR",
-      "confidence": "community",
-      "added_by": "@local-app-catalog",
-      "added_at": "2026-10-08",
-      "evidence": "https://play.google.com/store/apps/details?id=br.com.digio.uber&gl=BR&hl=en"
-    },
-    {
       "package": "br.com.intermedium",
       "label": "Inter",
       "category": "banking",
