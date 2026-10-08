@@ -1,0 +1,527 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "TR",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 42,
+    "active_entries": 42,
+    "legacy_entries": 0,
+    "categories": 7,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "br.com.intermedium",
+      "com.bbva.bbvacontigo",
+      "com.denizbank.mobildeniz",
+      "com.garanti.cepsubesi",
+      "com.pozitron.iscep",
+      "com.tmobtech.halkbank",
+      "es.lacaixa.mobile.android.newwapicon",
+      "id.co.bankbkemobile.digitalbank",
+      "id.co.bri.brimo",
+      "team.opay.pay"
+    ],
+    "government": [
+      "tr.gov.turkiye.belgedogrulama"
+    ],
+    "messaging": [
+      "network.loki.messenger",
+      "org.thunderdog.challegram"
+    ],
+    "rideshare": [
+      "app.hippotaxi.bg",
+      "com.eaglefleet.redtaxi",
+      "com.gettaxi.android",
+      "com.grabtaxi.passenger",
+      "com.taxime.client"
+    ],
+    "shopping": [
+      "com.akakce.akakce",
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.flipkart.android",
+      "com.inditex.zara",
+      "com.inomera.sm",
+      "com.markaz.app",
+      "com.zzkko"
+    ],
+    "streaming": [
+      "com.digiturk.tod.mobil",
+      "com.freereels.app",
+      "com.netshort.abroad",
+      "com.reels.wowtv",
+      "com.storymatrix.drama",
+      "com.trt.tabii.android",
+      "limex.tv.izle.canli.android"
+    ],
+    "wallet": [
+      "com.marcotardanico.wallyfor",
+      "com.mobikwik_new",
+      "com.naviapp",
+      "com.techlogix.mobilinkcustomer",
+      "id.dana",
+      "io.safepal.wallet",
+      "mm.com.wavemoney.wavepay",
+      "net.one97.paytm"
+    ]
+  },
+  "entries": [
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter: Conta, Cartão e Pix",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=TR&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=TR&hl=en"
+    },
+    {
+      "package": "com.denizbank.mobildeniz",
+      "label": "MobilDeniz",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.denizbank.mobildeniz&gl=TR&hl=en"
+    },
+    {
+      "package": "com.garanti.cepsubesi",
+      "label": "Garanti BBVA Mobile",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.garanti.cepsubesi&gl=TR&hl=en"
+    },
+    {
+      "package": "com.pozitron.iscep",
+      "label": "İşCep",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pozitron.iscep&gl=TR&hl=en"
+    },
+    {
+      "package": "com.tmobtech.halkbank",
+      "label": "Halkbank Mobil",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tmobtech.halkbank&gl=TR&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=TR&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=TR&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=TR&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=TR&hl=en"
+    },
+    {
+      "package": "tr.gov.turkiye.belgedogrulama",
+      "label": "e-Devlet Belge Doğrulama",
+      "category": "government",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=tr.gov.turkiye.belgedogrulama&gl=TR&hl=en"
+    },
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=network.loki.messenger&gl=TR&hl=en"
+    },
+    {
+      "package": "org.thunderdog.challegram",
+      "label": "Telegram X",
+      "category": "messaging",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&gl=TR&hl=en"
+    },
+    {
+      "package": "app.hippotaxi.bg",
+      "label": "Hippo Taxi",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.hippotaxi.bg&gl=TR&hl=en"
+    },
+    {
+      "package": "com.eaglefleet.redtaxi",
+      "label": "RedTaxi: Book Cab, Auto & Bike",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=TR&hl=en"
+    },
+    {
+      "package": "com.gettaxi.android",
+      "label": "Gett- Corporate Ground Travel",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gettaxi.android&gl=TR&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=TR&hl=en"
+    },
+    {
+      "package": "com.taxime.client",
+      "label": "TaxiMe",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.taxime.client&gl=TR&hl=en"
+    },
+    {
+      "package": "com.akakce.akakce",
+      "label": "Akakçe - En Ucuz Fiyatı Bul",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.akakce.akakce&gl=TR&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=TR&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=TR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=TR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=TR&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=TR&hl=en"
+    },
+    {
+      "package": "com.inomera.sm",
+      "label": "Migros",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inomera.sm&gl=TR&hl=en"
+    },
+    {
+      "package": "com.markaz.app",
+      "label": "Markaz: Pakistan Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.markaz.app&gl=TR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=TR&hl=en"
+    },
+    {
+      "package": "com.digiturk.tod.mobil",
+      "label": "TOD",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.digiturk.tod.mobil&gl=TR&hl=en"
+    },
+    {
+      "package": "com.freereels.app",
+      "label": "FreeReels - Dramas & Reels",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.freereels.app&gl=TR&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=TR&hl=en"
+    },
+    {
+      "package": "com.reels.wowtv",
+      "label": "WowTV",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.reels.wowtv&gl=TR&hl=en"
+    },
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=TR&hl=en"
+    },
+    {
+      "package": "com.trt.tabii.android",
+      "label": "tabii",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trt.tabii.android&gl=TR&hl=en"
+    },
+    {
+      "package": "limex.tv.izle.canli.android",
+      "label": "TV IZLE",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=limex.tv.izle.canli.android&gl=TR&hl=en"
+    },
+    {
+      "package": "com.marcotardanico.wallyfor",
+      "label": "Wallyfor",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.marcotardanico.wallyfor&gl=TR&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=TR&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=TR&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=TR&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=TR&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=TR&hl=en"
+    },
+    {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mm.com.wavemoney.wavepay&gl=TR&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=TR&hl=en"
+    }
+  ]
+}

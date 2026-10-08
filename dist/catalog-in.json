@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "IN",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming",
+    "telecom",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 54,
+    "active_entries": 54,
+    "legacy_entries": 0,
+    "categories": 8,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.bankofbaroda.mconnect",
+      "com.csam.icici.bank.imobile",
+      "com.flipkart.android",
+      "com.google.android.apps.nbu.paisa.user",
+      "com.iexceed.ib.digitalbankingprod",
+      "com.naviapp",
+      "com.nextbillion.groww",
+      "com.postpe.app",
+      "com.sbi.SBIFreedomPlus",
+      "com.trackmyphones.upipaymentannouncer",
+      "in.org.npci.upiapp",
+      "money.jupiter",
+      "net.one97.paytm",
+      "org.altruist.BajajExperia"
+    ],
+    "government": [
+      "com.cv.docscanner",
+      "com.hashcove.thecove",
+      "in.gov.ecourts.eCourtsServices",
+      "one.zoop.id.kyc.store.wallet"
+    ],
+    "messaging": [
+      "com.chatdesh.app",
+      "com.dating.for.all",
+      "com.mychatclub.mcc",
+      "com.unearby.sayhi",
+      "in.mohalla.sharechat"
+    ],
+    "rideshare": [
+      "com.disha.quickride",
+      "com.eaglefleet.redtaxi",
+      "com.gozocabs.client",
+      "com.olacabs.customer",
+      "com.rapido.passenger",
+      "com.refex.eveelz",
+      "com.trevcabs.app"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.applications.max",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.fsn.nds",
+      "com.inditex.zara",
+      "com.jpl.jiomart",
+      "com.manash.purplle",
+      "com.meesho.supply",
+      "com.myntra.android",
+      "com.ril.ajio",
+      "com.shopping.limeroad",
+      "com.snapdeal.main",
+      "fc.admin.fcexpressadmin",
+      "live.citymall.customer.prod"
+    ],
+    "streaming": [
+      "com.arj.mastii",
+      "com.google.android.videos",
+      "com.netflix.ninja",
+      "com.suntv.sunnxt",
+      "com.tatasky.binge",
+      "tv.accedo.airtel.wynk"
+    ],
+    "telecom": [
+      "com.myairtelapp"
+    ],
+    "wallet": [
+      "com.mobikwik_new",
+      "com.paytmmoney"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.bankofbaroda.mconnect",
+      "label": "bob World",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bankofbaroda.mconnect&gl=IN&hl=en"
+    },
+    {
+      "package": "com.csam.icici.bank.imobile",
+      "label": "iMobile",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile&gl=IN&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=IN&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "label": "Google Pay: Secure UPI payment",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&gl=IN&hl=en"
+    },
+    {
+      "package": "com.iexceed.ib.digitalbankingprod",
+      "label": "IndSMART IndianBank",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.iexceed.ib.digitalbankingprod&gl=IN&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=IN&hl=en"
+    },
+    {
+      "package": "com.nextbillion.groww",
+      "label": "Groww Stocks, Mutual Fund, IPO",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&gl=IN&hl=en"
+    },
+    {
+      "package": "com.postpe.app",
+      "label": "BharatPe UPI Payment, Loan App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.postpe.app&gl=IN&hl=en"
+    },
+    {
+      "package": "com.sbi.SBIFreedomPlus",
+      "label": "Yono Lite SBI",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sbi.SBIFreedomPlus&gl=IN&hl=en"
+    },
+    {
+      "package": "com.trackmyphones.upipaymentannouncer",
+      "label": "UPI Payment Announcer SoundBox",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trackmyphones.upipaymentannouncer&gl=IN&hl=en"
+    },
+    {
+      "package": "in.org.npci.upiapp",
+      "label": "BHIM",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&gl=IN&hl=en"
+    },
+    {
+      "package": "money.jupiter",
+      "label": "Jupiter: Cards, UPI, Banking",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=money.jupiter&gl=IN&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=IN&hl=en"
+    },
+    {
+      "package": "org.altruist.BajajExperia",
+      "label": "Bajaj Finance : UPI & Loan App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&gl=IN&hl=en"
+    },
+    {
+      "package": "com.cv.docscanner",
+      "label": "Document Scanner - PDF Creator",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cv.docscanner&gl=IN&hl=en"
+    },
+    {
+      "package": "com.hashcove.thecove",
+      "label": "Cove: Encrypted Digital Locker",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.hashcove.thecove&gl=IN&hl=en"
+    },
+    {
+      "package": "in.gov.ecourts.eCourtsServices",
+      "label": "eCourts Services",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=in.gov.ecourts.eCourtsServices&gl=IN&hl=en"
+    },
+    {
+      "package": "one.zoop.id.kyc.store.wallet",
+      "label": "Zoop | Secure Document Wallet",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=one.zoop.id.kyc.store.wallet&gl=IN&hl=en"
+    },
+    {
+      "package": "com.chatdesh.app",
+      "label": "ChatDesh - Indian Chat Rooms",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.chatdesh.app&gl=IN&hl=en"
+    },
+    {
+      "package": "com.dating.for.all",
+      "label": "FRND: Talk to Friends Online",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dating.for.all&gl=IN&hl=en"
+    },
+    {
+      "package": "com.mychatclub.mcc",
+      "label": "MyChatClub: Social Platform",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mychatclub.mcc&gl=IN&hl=en"
+    },
+    {
+      "package": "com.unearby.sayhi",
+      "label": "SayHi Chat Meet Dating People",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.unearby.sayhi&gl=IN&hl=en"
+    },
+    {
+      "package": "in.mohalla.sharechat",
+      "label": "ShareChat",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&gl=IN&hl=en"
+    },
+    {
+      "package": "com.disha.quickride",
+      "label": "Quick Ride- Cab Taxi & Carpool",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.disha.quickride&gl=IN&hl=en"
+    },
+    {
+      "package": "com.eaglefleet.redtaxi",
+      "label": "RedTaxi: Book Cab, Auto & Bike",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=IN&hl=en"
+    },
+    {
+      "package": "com.gozocabs.client",
+      "label": "Gozo Cabs - Travel all India",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gozocabs.client&gl=IN&hl=en"
+    },
+    {
+      "package": "com.olacabs.customer",
+      "label": "Ola",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.olacabs.customer&gl=IN&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=IN&hl=en"
+    },
+    {
+      "package": "com.refex.eveelz",
+      "label": "Refex: Safe Cabs",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.refex.eveelz&gl=IN&hl=en"
+    },
+    {
+      "package": "com.trevcabs.app",
+      "label": "Trev - Premium EV Cabs",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trevcabs.app&gl=IN&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=IN&hl=en"
+    },
+    {
+      "package": "com.applications.max",
+      "label": "Max Fashion India",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.applications.max&gl=IN&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=IN&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=IN&hl=en"
+    },
+    {
+      "package": "com.fsn.nds",
+      "label": "Nykaa Fashion – Shopping App",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fsn.nds&gl=IN&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=IN&hl=en"
+    },
+    {
+      "package": "com.jpl.jiomart",
+      "label": "JioMart",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.jpl.jiomart&gl=IN&hl=en"
+    },
+    {
+      "package": "com.manash.purplle",
+      "label": "Purplle Online Beauty Shopping",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.manash.purplle&gl=IN&hl=en"
+    },
+    {
+      "package": "com.meesho.supply",
+      "label": "Meesho",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=IN&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=IN&hl=en"
+    },
+    {
+      "package": "com.ril.ajio",
+      "label": "AJIO",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ril.ajio&gl=IN&hl=en"
+    },
+    {
+      "package": "com.shopping.limeroad",
+      "label": "LimeRoad: Online Fashion Shop",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.shopping.limeroad&gl=IN&hl=en"
+    },
+    {
+      "package": "com.snapdeal.main",
+      "label": "Snapdeal",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.snapdeal.main&gl=IN&hl=en"
+    },
+    {
+      "package": "fc.admin.fcexpressadmin",
+      "label": "FirstCry India - Baby & Kids",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=fc.admin.fcexpressadmin&gl=IN&hl=en"
+    },
+    {
+      "package": "live.citymall.customer.prod",
+      "label": "CityMall",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&gl=IN&hl=en"
+    },
+    {
+      "package": "com.arj.mastii",
+      "label": "Mastii OTT: Web series & Shows",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.arj.mastii&gl=IN&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=IN&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=IN&hl=en"
+    },
+    {
+      "package": "com.suntv.sunnxt",
+      "label": "Sun NXT",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.suntv.sunnxt&gl=IN&hl=en"
+    },
+    {
+      "package": "com.tatasky.binge",
+      "label": "Tata Play Binge",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tatasky.binge&gl=IN&hl=en"
+    },
+    {
+      "package": "tv.accedo.airtel.wynk",
+      "label": "Airtel Xstream Play",
+      "category": "streaming",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=tv.accedo.airtel.wynk&gl=IN&hl=en"
+    },
+    {
+      "package": "com.myairtelapp",
+      "label": "Airtel",
+      "category": "telecom",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myairtelapp&gl=IN&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik",
+      "category": "wallet",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=IN&hl=en"
+    },
+    {
+      "package": "com.paytmmoney",
+      "label": "Paytm Money",
+      "category": "wallet",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paytmmoney&gl=IN&hl=en"
+    }
+  ]
+}

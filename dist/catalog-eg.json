@@ -1,0 +1,582 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "EG",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 47,
+    "active_entries": 47,
+    "legacy_entries": 0,
+    "categories": 7,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.aiBank.RetailMobile",
+      "com.doublefun.moneyflow",
+      "com.luckyskeletonstudios.idlebanktycoon",
+      "com.marcotardanico.wallyfor",
+      "com.mobikwik_new",
+      "com.naviapp",
+      "com.ofss.fcdb.mobile.android.phone.BAE.launcher",
+      "com.ruya.bank",
+      "com.techlogix.mobilinkcustomer",
+      "id.dana",
+      "mm.com.wavemoney.wavepay",
+      "net.one97.paytm"
+    ],
+    "government": [
+      "com.b8ak.b8akapp",
+      "com.bayt",
+      "com.efinance.khadamatmisr",
+      "ps.moi.servicescitizens"
+    ],
+    "messaging": [
+      "com.hwsj.chat"
+    ],
+    "rideshare": [
+      "com.didiglobal.passenger",
+      "com.gettaxi.android",
+      "farid.taxi.ksa.egypt.passenger"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.flipkart.android",
+      "com.meesho.supply",
+      "com.myntra.android",
+      "com.ubuy",
+      "com.voghion.app",
+      "com.zalora.android",
+      "com.zzkko"
+    ],
+    "streaming": [
+      "com.apple.atve.androidtv.appletv",
+      "com.crunchyroll.crunchyroid",
+      "com.future.moviesByFawesomeAndroidTV",
+      "com.google.android.apps.youtube.kids",
+      "com.google.android.videos",
+      "com.graymatrix.did",
+      "com.imdb.mobile",
+      "com.netflix.ninja",
+      "net.comeandsee.thechosen"
+    ],
+    "wallet": [
+      "com.bitcoin.mwallet",
+      "com.blockabc.cctip",
+      "com.cards.wallet.cardsapp",
+      "com.golemapps.cardwallet",
+      "com.premier.customer",
+      "com.vita_wallet",
+      "com.wallet.crypto.btc.eth",
+      "com.wallet.crypto.trustapp"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.aiBank.RetailMobile",
+      "label": "Bank NXT Mobile",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.aiBank.RetailMobile&gl=EG&hl=en"
+    },
+    {
+      "package": "com.doublefun.moneyflow",
+      "label": "Idle Bank - Money Games",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.doublefun.moneyflow&gl=EG&hl=en"
+    },
+    {
+      "package": "com.luckyskeletonstudios.idlebanktycoon",
+      "label": "Idle Bank Tycoon: Money Empire",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.luckyskeletonstudios.idlebanktycoon&gl=EG&hl=en"
+    },
+    {
+      "package": "com.marcotardanico.wallyfor",
+      "label": "Wallyfor",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.marcotardanico.wallyfor&gl=EG&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=EG&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ofss.fcdb.mobile.android.phone.BAE.launcher",
+      "label": "Bank al Etihad - بنك الاتحاد",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ofss.fcdb.mobile.android.phone.BAE.launcher&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ruya.bank",
+      "label": "ruya bank",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ruya.bank&gl=EG&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=EG&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=EG&hl=en"
+    },
+    {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mm.com.wavemoney.wavepay&gl=EG&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=EG&hl=en"
+    },
+    {
+      "package": "com.b8ak.b8akapp",
+      "label": "B8ak بيتك | Home Services",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.b8ak.b8akapp&gl=EG&hl=en"
+    },
+    {
+      "package": "com.bayt",
+      "label": "Bayt.com Egypt Job Search App",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bayt&gl=EG&hl=en"
+    },
+    {
+      "package": "com.efinance.khadamatmisr",
+      "label": "Khadamat Misr",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.efinance.khadamatmisr&gl=EG&hl=en"
+    },
+    {
+      "package": "ps.moi.servicescitizens",
+      "label": "Citizens' Services",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=ps.moi.servicescitizens&gl=EG&hl=en"
+    },
+    {
+      "package": "com.hwsj.chat",
+      "label": "Timo - Chat Near & Real Friend",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.hwsj.chat&gl=EG&hl=en"
+    },
+    {
+      "package": "com.didiglobal.passenger",
+      "label": "DiDi Rider: book your rides",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.didiglobal.passenger&gl=EG&hl=en"
+    },
+    {
+      "package": "com.gettaxi.android",
+      "label": "Gett- Corporate Ground Travel",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gettaxi.android&gl=EG&hl=en"
+    },
+    {
+      "package": "farid.taxi.ksa.egypt.passenger",
+      "label": "Farid Egypt TAXI",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=farid.taxi.ksa.egypt.passenger&gl=EG&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=EG&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=EG&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=EG&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra - Fashion Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy: International Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=EG&hl=en"
+    },
+    {
+      "package": "com.voghion.app",
+      "label": "Voghion - Online shopping app",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.voghion.app&gl=EG&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=EG&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=EG&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=EG&hl=en"
+    },
+    {
+      "package": "com.future.moviesByFawesomeAndroidTV",
+      "label": "Fawesome: Free Movies and TV",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.future.moviesByFawesomeAndroidTV&gl=EG&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.youtube.kids",
+      "label": "YouTube Kids",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids&gl=EG&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=EG&hl=en"
+    },
+    {
+      "package": "com.graymatrix.did",
+      "label": "Zee 5",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.graymatrix.did&gl=EG&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=EG&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=EG&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=EG&hl=en"
+    },
+    {
+      "package": "com.bitcoin.mwallet",
+      "label": "Bitcoin.com: Crypto Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bitcoin.mwallet&gl=EG&hl=en"
+    },
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=EG&hl=en"
+    },
+    {
+      "package": "com.cards.wallet.cardsapp",
+      "label": "Wallet - Digital Wallet Card",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cards.wallet.cardsapp&gl=EG&hl=en"
+    },
+    {
+      "package": "com.golemapps.cardwallet",
+      "label": "Card Wallet – Mobile Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.golemapps.cardwallet&gl=EG&hl=en"
+    },
+    {
+      "package": "com.premier.customer",
+      "label": "Premier Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.premier.customer&gl=EG&hl=en"
+    },
+    {
+      "package": "com.vita_wallet",
+      "label": "Vita Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vita_wallet&gl=EG&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.btc.eth",
+      "label": "IronWallet: Crypto Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.btc.eth&gl=EG&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "wallet",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=EG&hl=en"
+    }
+  ]
+}

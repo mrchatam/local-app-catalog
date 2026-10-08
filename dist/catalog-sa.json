@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "SA",
+  "categories": [
+    "banking",
+    "messaging",
+    "rideshare",
+    "streaming"
+  ],
+  "counts": {
+    "entries": 26,
+    "active_entries": 26,
+    "legacy_entries": 0,
+    "categories": 4,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.blockabc.cctip",
+      "com.luckyskeletonstudios.idlebanktycoon",
+      "com.mobikwik_new",
+      "com.naviapp",
+      "com.techlogix.mobilinkcustomer",
+      "com.wallet.crypto.trustapp",
+      "id.dana",
+      "in.org.npci.upiapp",
+      "net.one97.paytm"
+    ],
+    "messaging": [
+      "com.camsea.videochat",
+      "com.talkin.learn"
+    ],
+    "rideshare": [
+      "com.KuraimiBank",
+      "com.RedLineGames.Game49",
+      "com.greentech.quran",
+      "com.madarsoft.quran",
+      "com.miniclip.carrom",
+      "com.pakdata.QuranMajeed"
+    ],
+    "streaming": [
+      "com.apple.atve.androidtv.appletv",
+      "com.crunchyroll.crunchyroid",
+      "com.future.moviesByFawesomeAndroidTV",
+      "com.google.android.apps.youtube.kids",
+      "com.google.android.videos",
+      "com.imdb.mobile",
+      "com.netflix.ninja",
+      "com.netshort.abroad",
+      "net.comeandsee.thechosen"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=SA&hl=en"
+    },
+    {
+      "package": "com.luckyskeletonstudios.idlebanktycoon",
+      "label": "Idle Bank Tycoon: Money Empire",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.luckyskeletonstudios.idlebanktycoon&gl=SA&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=SA&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=SA&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=SA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=SA&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=SA&hl=en"
+    },
+    {
+      "package": "in.org.npci.upiapp",
+      "label": "BHIM Bharat's Own Payments App",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&gl=SA&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=SA&hl=en"
+    },
+    {
+      "package": "com.camsea.videochat",
+      "label": "Camsea - Video Chat",
+      "category": "messaging",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.camsea.videochat&gl=SA&hl=en"
+    },
+    {
+      "package": "com.talkin.learn",
+      "label": "Talkin: Global Friends & Chat",
+      "category": "messaging",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.talkin.learn&gl=SA&hl=en"
+    },
+    {
+      "package": "com.greentech.quran",
+      "label": "Al Quran (Tafsir & by Word)",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.greentech.quran&gl=SA&hl=en"
+    },
+    {
+      "package": "com.KuraimiBank",
+      "label": "Kuraimi Jawal Application",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.KuraimiBank&gl=SA&hl=en"
+    },
+    {
+      "package": "com.madarsoft.quran",
+      "label": "مصحف المدينة : القران الكريم",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.madarsoft.quran&gl=SA&hl=en"
+    },
+    {
+      "package": "com.miniclip.carrom",
+      "label": "Carrom Pool: Disc Game",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.miniclip.carrom&gl=SA&hl=en"
+    },
+    {
+      "package": "com.pakdata.QuranMajeed",
+      "label": "Quran Majeed – القران الكريم",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pakdata.QuranMajeed&gl=SA&hl=en"
+    },
+    {
+      "package": "com.RedLineGames.Game49",
+      "label": "Ice Cream Inc. ASMR, DIY Games",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.RedLineGames.Game49&gl=SA&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=SA&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=SA&hl=en"
+    },
+    {
+      "package": "com.future.moviesByFawesomeAndroidTV",
+      "label": "Fawesome: Free Movies and TV",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.future.moviesByFawesomeAndroidTV&gl=SA&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.youtube.kids",
+      "label": "YouTube Kids",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids&gl=SA&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=SA&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=SA&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=SA&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=SA&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=SA&hl=en"
+    }
+  ]
+}

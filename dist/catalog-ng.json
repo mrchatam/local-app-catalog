@@ -1,0 +1,282 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "NG",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 20,
+    "active_entries": 20,
+    "legacy_entries": 0,
+    "categories": 6,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.acemoneytransfer.android",
+      "com.africhange.Africhange"
+    ],
+    "government": [
+      "com.surfshark.vpnclient.android",
+      "com.wallet.crypto.trustapp",
+      "mega.privacy.android.app"
+    ],
+    "messaging": [
+      "mingle.android.mingle2"
+    ],
+    "rideshare": [
+      "com.grabtaxi.passenger",
+      "com.klook",
+      "com.rapido.passenger"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.ebay.mobile",
+      "com.flipkart.android",
+      "com.zzkko"
+    ],
+    "wallet": [
+      "com.io.owallet",
+      "com.mypaga.customer",
+      "com.nipek.cdcare",
+      "com.oppi.wallet",
+      "com.transsnet.palmpay",
+      "io.safepal.wallet",
+      "team.opay.pay"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.acemoneytransfer.android",
+      "label": "ACE Money Transfer Send Money",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=NG&hl=en"
+    },
+    {
+      "package": "com.africhange.Africhange",
+      "label": "AfriChange: Send money abroad.",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.africhange.Africhange&gl=NG&hl=en"
+    },
+    {
+      "package": "com.surfshark.vpnclient.android",
+      "label": "Surfshark: Secure VPN service",
+      "category": "government",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.surfshark.vpnclient.android&gl=NG&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "government",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=NG&hl=en"
+    },
+    {
+      "package": "mega.privacy.android.app",
+      "label": "MEGA",
+      "category": "government",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mega.privacy.android.app&gl=NG&hl=en"
+    },
+    {
+      "package": "mingle.android.mingle2",
+      "label": "Mingle2: Dating, Chat & Meet",
+      "category": "messaging",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mingle.android.mingle2&gl=NG&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=NG&hl=en"
+    },
+    {
+      "package": "com.klook",
+      "label": "Klook: Travel & Activities",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.klook&gl=NG&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=NG&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=NG&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=NG&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=NG&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=NG&hl=en"
+    },
+    {
+      "package": "com.io.owallet",
+      "label": "OWallet",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.io.owallet&gl=NG&hl=en"
+    },
+    {
+      "package": "com.mypaga.customer",
+      "label": "Paga",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mypaga.customer&gl=NG&hl=en"
+    },
+    {
+      "package": "com.nipek.cdcare",
+      "label": "CDcare",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.nipek.cdcare&gl=NG&hl=en"
+    },
+    {
+      "package": "com.oppi.wallet",
+      "label": "Oppi: Crypto Wallet & Card",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.oppi.wallet&gl=NG&hl=en"
+    },
+    {
+      "package": "com.transsnet.palmpay",
+      "label": "PalmPay",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transsnet.palmpay&gl=NG&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=NG&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=NG&hl=en"
+    }
+  ]
+}

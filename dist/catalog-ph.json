@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "PH",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping"
+  ],
+  "counts": {
+    "entries": 24,
+    "active_entries": 24,
+    "legacy_entries": 0,
+    "categories": 5,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.fhl.salmon",
+      "com.gcash.business.pocketpay",
+      "com.grabtaxi.passenger",
+      "com.paymaya",
+      "com.securitybank.bbx.corp",
+      "com.tongitsgo.play",
+      "com.tonik.mobile",
+      "com.transferwise.android",
+      "ph.com.bdo.pay",
+      "ph.com.globe.globeonesuperapp"
+    ],
+    "government": [
+      "com.alllatestnews.philippinesnews",
+      "com.strzelba.cities_of_philippines"
+    ],
+    "messaging": [
+      "com.talkin.learn",
+      "omegle.tv"
+    ],
+    "rideshare": [
+      "com.klook",
+      "com.rapido.passenger",
+      "hk.easyvan.app.client"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.onlineshoppinghub.onlineshoppingphilippines",
+      "com.philippines.online.shopping.app",
+      "com.philippinesonlineshopping.shopping",
+      "com.philippinesshopping.onlineshoppingphilippines",
+      "com.philippinesshopping.sonu",
+      "com.zalora.android"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.fhl.salmon",
+      "label": "Salmon",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fhl.salmon&gl=PH&hl=en"
+    },
+    {
+      "package": "com.gcash.business.pocketpay",
+      "label": "GCash PocketPay",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gcash.business.pocketpay&gl=PH&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=PH&hl=en"
+    },
+    {
+      "package": "com.paymaya",
+      "label": "Maya",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paymaya&gl=PH&hl=en"
+    },
+    {
+      "package": "com.securitybank.bbx.corp",
+      "label": "DigiBanker Pro​",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.securitybank.bbx.corp&gl=PH&hl=en"
+    },
+    {
+      "package": "com.tongitsgo.play",
+      "label": "Tongits Go - Pusoy, Super Ace",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tongitsgo.play&gl=PH&hl=en"
+    },
+    {
+      "package": "com.tonik.mobile",
+      "label": "Tonik Bank",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tonik.mobile&gl=PH&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=PH&hl=en"
+    },
+    {
+      "package": "ph.com.bdo.pay",
+      "label": "BDO Pay",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ph.com.bdo.pay&gl=PH&hl=en"
+    },
+    {
+      "package": "ph.com.globe.globeonesuperapp",
+      "label": "GlobeOne: Get More from Globe",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=ph.com.globe.globeonesuperapp&gl=PH&hl=en"
+    },
+    {
+      "package": "com.alllatestnews.philippinesnews",
+      "label": "Philippines News",
+      "category": "government",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alllatestnews.philippinesnews&gl=PH&hl=en"
+    },
+    {
+      "package": "com.strzelba.cities_of_philippines",
+      "label": "Cities of Philippines",
+      "category": "government",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.strzelba.cities_of_philippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.talkin.learn",
+      "label": "Talkin: Global Friends & Chat",
+      "category": "messaging",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.talkin.learn&gl=PH&hl=en"
+    },
+    {
+      "package": "omegle.tv",
+      "label": "OmeTV – Video Chat Alternative",
+      "category": "messaging",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=omegle.tv&gl=PH&hl=en"
+    },
+    {
+      "package": "com.klook",
+      "label": "Klook: Travel & Activities",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.klook&gl=PH&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=PH&hl=en"
+    },
+    {
+      "package": "hk.easyvan.app.client",
+      "label": "Lalamove - Fast & Affordable",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=hk.easyvan.app.client&gl=PH&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=PH&hl=en"
+    },
+    {
+      "package": "com.onlineshoppinghub.onlineshoppingphilippines",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.onlineshoppinghub.onlineshoppingphilippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippines.online.shopping.app",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippines.online.shopping.app&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesonlineshopping.shopping",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesonlineshopping.shopping&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesshopping.onlineshoppingphilippines",
+      "label": "Online Shopping Philippines",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesshopping.onlineshoppingphilippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesshopping.sonu",
+      "label": "Online Shopping Philippines",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesshopping.sonu&gl=PH&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=PH&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "JP",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping"
+  ],
+  "counts": {
+    "entries": 30,
+    "active_entries": 30,
+    "legacy_entries": 0,
+    "categories": 5,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "br.com.intermedium",
+      "capitec.acuity.mobile.prod",
+      "com.bKash.customerapp",
+      "com.bbva.bbvacontigo",
+      "com.binance.dev",
+      "es.lacaixa.mobile.android.newwapicon",
+      "id.co.bankbkemobile.digitalbank",
+      "id.co.bri.brimo",
+      "id.dana",
+      "jp.co.bank77.bankingappli",
+      "net.one97.paytm",
+      "team.opay.pay"
+    ],
+    "government": [
+      "com.YoStarJP.MajSoul",
+      "com.bandainamcoent.idolmaster_gakuen",
+      "com.linecorp.LGTMTM",
+      "jp.co.craftegg.band",
+      "jp.co.cygames.umamusume",
+      "jp.co.mixi.monsterstrike",
+      "pl.nask.mobywatel"
+    ],
+    "messaging": [
+      "com.linecorp.LGBB2",
+      "com.linecorp.LGCHEF",
+      "com.linecorp.LGFARM",
+      "com.linecorp.LGPJCOIN",
+      "com.linecorp.LGPTT"
+    ],
+    "rideshare": [
+      "com.fulcul.fulcul",
+      "com.grabtaxi.passenger",
+      "com.taxime.client"
+    ],
+    "shopping": [
+      "com.ebay.mobile",
+      "com.inditex.zara",
+      "com.zzkko"
+    ]
+  },
+  "entries": [
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter: Conta, Cartão e Pix",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=JP&hl=en"
+    },
+    {
+      "package": "capitec.acuity.mobile.prod",
+      "label": "Capitec Bank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=JP&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=JP&hl=en"
+    },
+    {
+      "package": "com.binance.dev",
+      "label": "Binance: Buy Bitcoin & Crypto",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.binance.dev&gl=JP&hl=en"
+    },
+    {
+      "package": "com.bKash.customerapp",
+      "label": "bKash",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bKash.customerapp&gl=JP&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=JP&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=JP&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=JP&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=JP&hl=en"
+    },
+    {
+      "package": "jp.co.bank77.bankingappli",
+      "label": "七十七銀行アプリ",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.bank77.bankingappli&gl=JP&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=JP&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=JP&hl=en"
+    },
+    {
+      "package": "com.bandainamcoent.idolmaster_gakuen",
+      "label": "学園アイドルマスター",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bandainamcoent.idolmaster_gakuen&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGTMTM",
+      "label": "LINE：ディズニー ツムツム",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGTMTM&gl=JP&hl=en"
+    },
+    {
+      "package": "com.YoStarJP.MajSoul",
+      "label": "雀魂‐じゃんたま‐",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.YoStarJP.MajSoul&gl=JP&hl=en"
+    },
+    {
+      "package": "jp.co.craftegg.band",
+      "label": "バンドリ！ ガールズバンドパーティ！",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.craftegg.band&gl=JP&hl=en"
+    },
+    {
+      "package": "jp.co.cygames.umamusume",
+      "label": "ウマ娘 プリティーダービー",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.cygames.umamusume&gl=JP&hl=en"
+    },
+    {
+      "package": "jp.co.mixi.monsterstrike",
+      "label": "モンスターストライク",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.mixi.monsterstrike&gl=JP&hl=en"
+    },
+    {
+      "package": "pl.nask.mobywatel",
+      "label": "mObywatel",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=pl.nask.mobywatel&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGBB2",
+      "label": "LINE Bubble 2",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGBB2&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGCHEF",
+      "label": "LINE CHEF A cute cooking game!",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGCHEF&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGFARM",
+      "label": "LINE BROWN FARM",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGFARM&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGPJCOIN",
+      "label": "LINE Magic Coin - Coin Game!",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGPJCOIN&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGPTT",
+      "label": "LINE Puzzle TanTan",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGPTT&gl=JP&hl=en"
+    },
+    {
+      "package": "com.fulcul.fulcul",
+      "label": "Fulcul",
+      "category": "rideshare",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fulcul.fulcul&gl=JP&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=JP&hl=en"
+    },
+    {
+      "package": "com.taxime.client",
+      "label": "TaxiMe",
+      "category": "rideshare",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.taxime.client&gl=JP&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=JP&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=JP&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=JP&hl=en"
+    }
+  ]
+}

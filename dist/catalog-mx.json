@@ -1,0 +1,447 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "MX",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming"
+  ],
+  "counts": {
+    "entries": 35,
+    "active_entries": 35,
+    "legacy_entries": 0,
+    "categories": 6,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.acemoneytransfer.android",
+      "com.mychime.waveremit.app",
+      "com.pagopopmobile",
+      "com.remitbee.app.app",
+      "com.remitchoiceltd",
+      "com.sec.android.easyMover",
+      "com.topremit.topremit",
+      "com.transferwise.android",
+      "com.wondershare.mobiletrans",
+      "com.xe.currency",
+      "mx.com.bancoazteca.bazdigitalmovil"
+    ],
+    "government": [
+      "mx.com.cosmocolor.movapp",
+      "st.android.imsspublico"
+    ],
+    "messaging": [
+      "network.loki.messenger",
+      "org.thunderdog.challegram"
+    ],
+    "rideshare": [
+      "com.google.android.videos",
+      "com.grabtaxi.passenger",
+      "com.minicabit.android"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.mercadolibre",
+      "com.zzkko",
+      "mx.com.liverpool.shoppingapp"
+    ],
+    "streaming": [
+      "com.a3.sgt",
+      "com.apple.atve.androidtv.appletv",
+      "com.crunchyroll.crunchyroid",
+      "com.google.android.apps.youtube.kids",
+      "com.imdb.mobile",
+      "com.netflix.ninja",
+      "com.netshort.abroad",
+      "com.tubitv",
+      "com.vidangel.thechosen",
+      "net.comeandsee.thechosen",
+      "tv.pluto.android"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.acemoneytransfer.android",
+      "label": "ACE Money Transfer Send Money",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.mychime.waveremit.app",
+      "label": "Sendwave Wallet",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mychime.waveremit.app&gl=MX&hl=en"
+    },
+    {
+      "package": "com.pagopopmobile",
+      "label": "Spin by OXXO",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pagopopmobile&gl=MX&hl=en"
+    },
+    {
+      "package": "com.remitbee.app.app",
+      "label": "RemitBee: Money Transfer & FX",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.remitbee.app.app&gl=MX&hl=en"
+    },
+    {
+      "package": "com.remitchoiceltd",
+      "label": "Remit Choice: Money Transfer",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.remitchoiceltd&gl=MX&hl=en"
+    },
+    {
+      "package": "com.sec.android.easyMover",
+      "label": "Samsung Smart Switch Mobile",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sec.android.easyMover&gl=MX&hl=en"
+    },
+    {
+      "package": "com.topremit.topremit",
+      "label": "Topremit: Money Transfer",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.topremit.topremit&gl=MX&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.wondershare.mobiletrans",
+      "label": "Data Transfer - MobileTrans",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wondershare.mobiletrans&gl=MX&hl=en"
+    },
+    {
+      "package": "com.xe.currency",
+      "label": "Xe Money Transfer & Currency",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.xe.currency&gl=MX&hl=en"
+    },
+    {
+      "package": "mx.com.bancoazteca.bazdigitalmovil",
+      "label": "Banco Azteca",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=mx.com.bancoazteca.bazdigitalmovil&gl=MX&hl=en"
+    },
+    {
+      "package": "mx.com.cosmocolor.movapp",
+      "label": "Licencia Digital EDOMEX",
+      "category": "government",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mx.com.cosmocolor.movapp&gl=MX&hl=en"
+    },
+    {
+      "package": "st.android.imsspublico",
+      "label": "IMSS Digital",
+      "category": "government",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=st.android.imsspublico&gl=MX&hl=en"
+    },
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=network.loki.messenger&gl=MX&hl=en"
+    },
+    {
+      "package": "org.thunderdog.challegram",
+      "label": "Telegram X",
+      "category": "messaging",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&gl=MX&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=MX&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=MX&hl=en"
+    },
+    {
+      "package": "com.minicabit.android",
+      "label": "minicabit: UK Taxi & Transfers",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.minicabit.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=MX&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=MX&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=MX&hl=en"
+    },
+    {
+      "package": "com.mercadolibre",
+      "label": "Mercado Libre: Compras 10.10",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mercadolibre&gl=MX&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=MX&hl=en"
+    },
+    {
+      "package": "mx.com.liverpool.shoppingapp",
+      "label": "Liverpool",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=mx.com.liverpool.shoppingapp&gl=MX&hl=en"
+    },
+    {
+      "package": "com.a3.sgt",
+      "label": "atresplayer・Estrenos de Series",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.a3.sgt&gl=MX&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=MX&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=MX&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.youtube.kids",
+      "label": "YouTube Kids",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids&gl=MX&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=MX&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=MX&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=MX&hl=en"
+    },
+    {
+      "package": "com.tubitv",
+      "label": "Tubi: Free Movies & Live TV",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tubitv&gl=MX&hl=en"
+    },
+    {
+      "package": "com.vidangel.thechosen",
+      "label": "Angel: Watch Movies & TV Shows",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=MX&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=MX&hl=en"
+    },
+    {
+      "package": "tv.pluto.android",
+      "label": "Pluto TV: Watch Free Movies/TV",
+      "category": "streaming",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=tv.pluto.android&gl=MX&hl=en"
+    }
+  ]
+}

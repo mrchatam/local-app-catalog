@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "ZA",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping"
+  ],
+  "counts": {
+    "entries": 21,
+    "active_entries": 21,
+    "legacy_entries": 0,
+    "categories": 5,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "capitec.acuity.mobile.prod",
+      "com.ablmobilebankingsolution.sa.mobile",
+      "com.fireid.snapscan",
+      "com.hellogroup.HelloFinSurv",
+      "com.sozap.badmen"
+    ],
+    "government": [
+      "com.eduven.cg.southafrica",
+      "za.gov.za.selfservice.my.gepf"
+    ],
+    "messaging": [
+      "mingle.android.mingle2",
+      "za.co.koer.app"
+    ],
+    "rideshare": [
+      "com.screw3d.match.nuts.bolts.pin.jam.away.puzzle",
+      "com.wood.bolt.wordle.screw.nuts.puzzle",
+      "screw.puzzle.match3.brain.puzz"
+    ],
+    "shopping": [
+      "com.bash.prod",
+      "com.bidorbuy.app",
+      "com.ebay.gumtree.za",
+      "com.ebay.mobile",
+      "com.inditex.zara",
+      "com.ubuy",
+      "com.zzkko",
+      "za.co.makro.shopping",
+      "za.co.shoprite.sixty60"
+    ]
+  },
+  "entries": [
+    {
+      "package": "capitec.acuity.mobile.prod",
+      "label": "Capitec Bank",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ablmobilebankingsolution.sa.mobile",
+      "label": "Albaraka SA Banking App",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ablmobilebankingsolution.sa.mobile&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.fireid.snapscan",
+      "label": "SnapScan",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fireid.snapscan&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.hellogroup.HelloFinSurv",
+      "label": "Hello Paisa",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.hellogroup.HelloFinSurv&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.sozap.badmen",
+      "label": "Armed Heist: Shooting gun game",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sozap.badmen&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.eduven.cg.southafrica",
+      "label": "South Africa Travel & Explore",
+      "category": "government",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eduven.cg.southafrica&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.gov.za.selfservice.my.gepf",
+      "label": "Government Employees Pension F",
+      "category": "government",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=za.gov.za.selfservice.my.gepf&gl=ZA&hl=en"
+    },
+    {
+      "package": "mingle.android.mingle2",
+      "label": "Mingle2: Dating, Chat & Meet",
+      "category": "messaging",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mingle.android.mingle2&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.co.koer.app",
+      "label": "Koer: Afrikaanse Dating App",
+      "category": "messaging",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.koer.app&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.screw3d.match.nuts.bolts.pin.jam.away.puzzle",
+      "label": "3D Bolt Master®: Screw Master®",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.screw3d.match.nuts.bolts.pin.jam.away.puzzle&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.wood.bolt.wordle.screw.nuts.puzzle",
+      "label": "Woodle Screw® Pin Nuts & Bolts",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wood.bolt.wordle.screw.nuts.puzzle&gl=ZA&hl=en"
+    },
+    {
+      "package": "screw.puzzle.match3.brain.puzz",
+      "label": "Screw Sort Puzzle: Pin Jam 3D",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=screw.puzzle.match3.brain.puzz&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.bash.prod",
+      "label": "bash",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bash.prod&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.bidorbuy.app",
+      "label": "Bob Shop",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bidorbuy.app&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ebay.gumtree.za",
+      "label": "Gumtree SA",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.gumtree.za&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy Shopping App South Africa",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.co.makro.shopping",
+      "label": "Makro Online Shopping",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.makro.shopping&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.co.shoprite.sixty60",
+      "label": "Checkers Sixty60",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.shoprite.sixty60&gl=ZA&hl=en"
+    }
+  ]
+}

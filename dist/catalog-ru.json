@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "RU",
+  "categories": [
+    "banking",
+    "government",
+    "streaming"
+  ],
+  "counts": {
+    "entries": 4,
+    "active_entries": 4,
+    "legacy_entries": 0,
+    "categories": 3,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "ru.sberbankmobile"
+    ],
+    "government": [
+      "ru.rtlabs.mobile.ebs.gosuslugi.android"
+    ],
+    "streaming": [
+      "com.ertelecom.domrutvstb",
+      "ru.rt.video.app.mobile"
+    ]
+  },
+  "entries": [
+    {
+      "package": "ru.sberbankmobile",
+      "label": "Сбербанк Онлайн",
+      "category": "banking",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://www.rustore.ru/catalog/app/ru.sberbankmobile",
+      "store": "rustore",
+      "verified_at": "2026-10-07"
+    },
+    {
+      "package": "ru.rtlabs.mobile.ebs.gosuslugi.android",
+      "label": "Госуслуги Биометрия",
+      "category": "government",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://www.rustore.ru/catalog/app/ru.rtlabs.mobile.ebs.gosuslugi.android",
+      "store": "rustore",
+      "verified_at": "2026-10-07"
+    },
+    {
+      "package": "com.ertelecom.domrutvstb",
+      "label": "Movix",
+      "category": "streaming",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://www.rustore.ru/catalog/app/com.ertelecom.domrutvstb",
+      "store": "rustore",
+      "verified_at": "2026-10-07"
+    },
+    {
+      "package": "ru.rt.video.app.mobile",
+      "label": "Wink",
+      "category": "streaming",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://www.rustore.ru/catalog/app/ru.rt.video.app.mobile",
+      "store": "rustore",
+      "verified_at": "2026-10-07"
+    }
+  ]
+}

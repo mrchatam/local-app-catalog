@@ -1,0 +1,453 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "UA",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming",
+    "telecom",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 35,
+    "active_entries": 35,
+    "legacy_entries": 0,
+    "categories": 8,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "br.com.intermedium",
+      "com.bbva.bbvacontigo",
+      "es.lacaixa.mobile.android.newwapicon",
+      "team.opay.pay",
+      "ua.android.kredobank.prod",
+      "ua.izibank.app",
+      "ua.raiffeisen.myraif"
+    ],
+    "government": [
+      "helsi.me",
+      "pl.nask.mobywatel",
+      "ua.gov.armyplus.app"
+    ],
+    "messaging": [
+      "network.loki.messenger"
+    ],
+    "rideshare": [
+      "com.mobox.taxi"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.ebay.mobile",
+      "com.inditex.zara",
+      "com.zzkko",
+      "ua.prom.b2c"
+    ],
+    "streaming": [
+      "com.apple.atve.androidtv.appletv",
+      "com.crunchyroll.crunchyroid",
+      "com.google.android.apps.youtube.kids",
+      "com.google.android.videos",
+      "com.imdb.mobile",
+      "com.netflix.ninja",
+      "com.netshort.abroad",
+      "com.planet.imax",
+      "net.comeandsee.thechosen"
+    ],
+    "telecom": [
+      "com.kyivstar.mykyivstar",
+      "ua.vodafone.myvodafone"
+    ],
+    "wallet": [
+      "com.blockabc.cctip",
+      "com.golemapps.cardwallet",
+      "com.ledger.live",
+      "com.premier.customer",
+      "com.wallet.crypto.btc.eth",
+      "com.wallet.crypto.trustapp",
+      "io.safepal.wallet"
+    ]
+  },
+  "entries": [
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter: Conta, Cartão e Pix",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=UA&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=UA&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=UA&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.android.kredobank.prod",
+      "label": "KredoBank",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.android.kredobank.prod&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.izibank.app",
+      "label": "izibank",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.izibank.app&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.raiffeisen.myraif",
+      "label": "MyRaif",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.raiffeisen.myraif&gl=UA&hl=en"
+    },
+    {
+      "package": "helsi.me",
+      "label": "Helsi",
+      "category": "government",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=helsi.me&gl=UA&hl=en"
+    },
+    {
+      "package": "pl.nask.mobywatel",
+      "label": "mObywatel",
+      "category": "government",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=pl.nask.mobywatel&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.gov.armyplus.app",
+      "label": "Армія+",
+      "category": "government",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.gov.armyplus.app&gl=UA&hl=en"
+    },
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=network.loki.messenger&gl=UA&hl=en"
+    },
+    {
+      "package": "com.mobox.taxi",
+      "label": "Taxi 838",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobox.taxi&gl=UA&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=UA&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=UA&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=UA&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.prom.b2c",
+      "label": "Prom.ua",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.prom.b2c&gl=UA&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=UA&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=UA&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.youtube.kids",
+      "label": "YouTube Kids",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids&gl=UA&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=UA&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=UA&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=UA&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=UA&hl=en"
+    },
+    {
+      "package": "com.planet.imax",
+      "label": "Планета Кіно",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.planet.imax&gl=UA&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=UA&hl=en"
+    },
+    {
+      "package": "com.kyivstar.mykyivstar",
+      "label": "My Kyivstar",
+      "category": "telecom",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.kyivstar.mykyivstar&gl=UA&hl=en"
+    },
+    {
+      "package": "ua.vodafone.myvodafone",
+      "label": "My Vodafone UA",
+      "category": "telecom",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=ua.vodafone.myvodafone&gl=UA&hl=en"
+    },
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=UA&hl=en"
+    },
+    {
+      "package": "com.golemapps.cardwallet",
+      "label": "Card Wallet – Mobile Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.golemapps.cardwallet&gl=UA&hl=en"
+    },
+    {
+      "package": "com.ledger.live",
+      "label": "Ledger Wallet™ crypto app",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ledger.live&gl=UA&hl=en"
+    },
+    {
+      "package": "com.premier.customer",
+      "label": "Premier Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.premier.customer&gl=UA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.btc.eth",
+      "label": "IronWallet: Crypto Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.btc.eth&gl=UA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=UA&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=UA&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "BR",
+  "categories": [
+    "banking",
+    "delivery",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming"
+  ],
+  "counts": {
+    "entries": 49,
+    "active_entries": 49,
+    "legacy_entries": 0,
+    "categories": 6,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "app.pixel_launcher",
+      "br.com.bancobmg.bancodigital",
+      "br.com.digio.uber",
+      "br.com.intermedium",
+      "br.com.jeitto.meujeitto",
+      "br.com.meupag",
+      "br.com.neon",
+      "com.bbva.bbvacontigo",
+      "com.conceptispuzzles.picapix",
+      "com.pashapuma.pixminimal.iconpack",
+      "es.lacaixa.mobile.android.newwapicon",
+      "id.co.bankbkemobile.digitalbank",
+      "io.cloudwalk.infinitepaydash"
+    ],
+    "delivery": [
+      "br.com.brainweb.ifood"
+    ],
+    "messaging": [
+      "app.phound.app",
+      "co.happybits.marcopolo",
+      "com.gogii.textplus",
+      "com.messenger.sms.messages",
+      "io.keet.app",
+      "network.loki.messenger",
+      "org.thunderdog.challegram"
+    ],
+    "rideshare": [
+      "br.com.andecar.taxi.drivermachine",
+      "com.br_com_motoristapx_app",
+      "com.lalamove.global.driver.sea"
+    ],
+    "shopping": [
+      "br.com.buscape.MainPack",
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.amour.chicme",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.flipkart.android",
+      "com.inditex.zara",
+      "com.mercadolibre",
+      "com.tippingcanoe.pelando",
+      "com.ubuy",
+      "com.worten.app",
+      "com.zalora.android",
+      "com.zzkko"
+    ],
+    "streaming": [
+      "com.a3.sgt",
+      "com.apple.atve.androidtv.appletv",
+      "com.crunchyroll.crunchyroid",
+      "com.globo.globotv",
+      "com.google.android.videos",
+      "com.imdb.mobile",
+      "com.mubi",
+      "com.netflix.ninja",
+      "com.netshort.abroad",
+      "com.storymatrix.drama",
+      "com.vidangel.thechosen",
+      "tv.pluto.android"
+    ]
+  },
+  "entries": [
+    {
+      "package": "app.pixel_launcher",
+      "label": "Pix Launcher",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.pixel_launcher&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.bancobmg.bancodigital",
+      "label": "Banco Bmg",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.bancobmg.bancodigital&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.digio.uber",
+      "label": "Uber Conta",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.digio.uber&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.jeitto.meujeitto",
+      "label": "Jeitto: Crédito em até 24h",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.meupag",
+      "label": "Banco will: Cartão de crédito",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.meupag&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.neon",
+      "label": "Neon",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.neon&gl=BR&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=BR&hl=en"
+    },
+    {
+      "package": "com.conceptispuzzles.picapix",
+      "label": "Pic-a-Pix: Nonogram Color",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.picapix&gl=BR&hl=en"
+    },
+    {
+      "package": "com.pashapuma.pixminimal.iconpack",
+      "label": "Pix-Minimal Black/White Icons",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pashapuma.pixminimal.iconpack&gl=BR&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=BR&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=BR&hl=en"
+    },
+    {
+      "package": "io.cloudwalk.infinitepaydash",
+      "label": "InfinitePay",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=io.cloudwalk.infinitepaydash&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.brainweb.ifood",
+      "label": "iFood",
+      "category": "delivery",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.brainweb.ifood&gl=BR&hl=en"
+    },
+    {
+      "package": "app.phound.app",
+      "label": "Phound: Calls, Chat & Meetings",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.phound.app&gl=BR&hl=en"
+    },
+    {
+      "package": "co.happybits.marcopolo",
+      "label": "Marco Polo - Video Messenger",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=co.happybits.marcopolo&gl=BR&hl=en"
+    },
+    {
+      "package": "com.gogii.textplus",
+      "label": "textPlus: Text Message + Call",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gogii.textplus&gl=BR&hl=en"
+    },
+    {
+      "package": "com.messenger.sms.messages",
+      "label": "Messages - SMS Texting App",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.messenger.sms.messages&gl=BR&hl=en"
+    },
+    {
+      "package": "io.keet.app",
+      "label": "Keet - Private Encrypted Chat",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.keet.app&gl=BR&hl=en"
+    },
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=network.loki.messenger&gl=BR&hl=en"
+    },
+    {
+      "package": "org.thunderdog.challegram",
+      "label": "Telegram X",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=org.thunderdog.challegram&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.andecar.taxi.drivermachine",
+      "label": "AndeCar - Motoristas",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.andecar.taxi.drivermachine&gl=BR&hl=en"
+    },
+    {
+      "package": "com.br_com_motoristapx_app",
+      "label": "Motorista PX - Você só dirige!",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.br_com_motoristapx_app&gl=BR&hl=en"
+    },
+    {
+      "package": "com.lalamove.global.driver.sea",
+      "label": "Lalamove Driver - Drive & Earn",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.lalamove.global.driver.sea&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.buscape.MainPack",
+      "label": "Buscapé",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.buscape.MainPack&gl=BR&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=BR&hl=en"
+    },
+    {
+      "package": "com.amour.chicme",
+      "label": "CHICME - Shopping Online",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.amour.chicme&gl=BR&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=BR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=BR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=BR&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=BR&hl=en"
+    },
+    {
+      "package": "com.mercadolibre",
+      "label": "Mercado Livre: Compras e 10.10",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mercadolibre&gl=BR&hl=en"
+    },
+    {
+      "package": "com.tippingcanoe.pelando",
+      "label": "Pelando",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tippingcanoe.pelando&gl=BR&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy Brazil: Global Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=BR&hl=en"
+    },
+    {
+      "package": "com.worten.app",
+      "label": "Worten",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.worten.app&gl=BR&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=BR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=BR&hl=en"
+    },
+    {
+      "package": "com.a3.sgt",
+      "label": "atresplayer・Estrenos de Series",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.a3.sgt&gl=BR&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=BR&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=BR&hl=en"
+    },
+    {
+      "package": "com.globo.globotv",
+      "label": "Globoplay",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.globo.globotv&gl=BR&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=BR&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=BR&hl=en"
+    },
+    {
+      "package": "com.mubi",
+      "label": "MUBI: Curated Cinema",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mubi&gl=BR&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=BR&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=BR&hl=en"
+    },
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=BR&hl=en"
+    },
+    {
+      "package": "com.vidangel.thechosen",
+      "label": "Angel: Watch Movies & TV Shows",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=BR&hl=en"
+    },
+    {
+      "package": "tv.pluto.android",
+      "label": "Pluto TV: Watch Free Movies/TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=tv.pluto.android&gl=BR&hl=en"
+    }
+  ]
+}

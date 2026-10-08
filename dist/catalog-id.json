@@ -1,0 +1,348 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "ID",
+  "categories": [
+    "banking",
+    "government",
+    "rideshare",
+    "shopping",
+    "streaming",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 26,
+    "active_entries": 26,
+    "legacy_entries": 0,
+    "categories": 6,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.bca",
+      "com.bca.mybca.omni.android",
+      "com.bnc.finance",
+      "id.co.bri.brimo"
+    ],
+    "government": [
+      "com.bpjstku",
+      "com.medisafe.android.client",
+      "com.traveloka.android",
+      "eu.smartpatient.mytherapy"
+    ],
+    "rideshare": [
+      "codexplore.ojol",
+      "com.bm.sc.jogjakita",
+      "com.grabtaxi.passenger",
+      "com.maleo.ojollife"
+    ],
+    "shopping": [
+      "com.alfamart.alfagift",
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.banggood.client",
+      "com.ebay.mobile",
+      "com.zalora.android",
+      "com.zzkko",
+      "id.toco"
+    ],
+    "streaming": [
+      "com.apple.atve.androidtv.appletv",
+      "com.google.android.videos",
+      "com.netflix.ninja",
+      "com.vuclip.viu"
+    ],
+    "wallet": [
+      "com.gojek.gopaymerchant",
+      "com.naviapp",
+      "id.dana"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.bca",
+      "label": "BCA mobile",
+      "category": "banking",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bca&gl=ID&hl=en"
+    },
+    {
+      "package": "com.bca.mybca.omni.android",
+      "label": "myBCA",
+      "category": "banking",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bca.mybca.omni.android&gl=ID&hl=en"
+    },
+    {
+      "package": "com.bnc.finance",
+      "label": "BNC Digital",
+      "category": "banking",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bnc.finance&gl=ID&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=ID&hl=en"
+    },
+    {
+      "package": "com.bpjstku",
+      "label": "JMO (Jamsostek Mobile)",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bpjstku&gl=ID&hl=en"
+    },
+    {
+      "package": "com.medisafe.android.client",
+      "label": "Medisafe Pill & Med Reminder",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.medisafe.android.client&gl=ID&hl=en"
+    },
+    {
+      "package": "com.traveloka.android",
+      "label": "Traveloka: Book Hotel & Flight",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.traveloka.android&gl=ID&hl=en"
+    },
+    {
+      "package": "eu.smartpatient.mytherapy",
+      "label": "Meds & Pill Reminder MyTherapy",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=eu.smartpatient.mytherapy&gl=ID&hl=en"
+    },
+    {
+      "package": "codexplore.ojol",
+      "label": "Ojol The Game",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=codexplore.ojol&gl=ID&hl=en"
+    },
+    {
+      "package": "com.bm.sc.jogjakita",
+      "label": "JogjaKita - Ojek Online Jogja",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bm.sc.jogjakita&gl=ID&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=ID&hl=en"
+    },
+    {
+      "package": "com.maleo.ojollife",
+      "label": "Ojol Life: Food Delivery Game",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.maleo.ojollife&gl=ID&hl=en"
+    },
+    {
+      "package": "com.alfamart.alfagift",
+      "label": "Alfagift",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alfamart.alfagift&gl=ID&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=ID&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=ID&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=ID&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=ID&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=ID&hl=en"
+    },
+    {
+      "package": "id.toco",
+      "label": "Toco",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=id.toco&gl=ID&hl=en"
+    },
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=ID&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=ID&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=ID&hl=en"
+    },
+    {
+      "package": "com.vuclip.viu",
+      "label": "Viu: Dramas, TV Shows & Movies",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vuclip.viu&gl=ID&hl=en"
+    },
+    {
+      "package": "com.gojek.gopaymerchant",
+      "label": "GoPay Merchant: QRIS",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gojek.gopaymerchant&gl=ID&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=ID&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=ID&hl=en"
+    }
+  ]
+}

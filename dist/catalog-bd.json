@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "BD",
+  "categories": [
+    "banking",
+    "government",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "wallet"
+  ],
+  "counts": {
+    "entries": 22,
+    "active_entries": 22,
+    "legacy_entries": 0,
+    "categories": 6,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.bracbank.astha",
+      "com.ibbl.cellfin",
+      "com.ionicframework.icellular894076",
+      "com.konasl.mercantile",
+      "com.thecitybank.citytouch",
+      "com.transferwise.android"
+    ],
+    "government": [
+      "net.wsapps.alllawsofbangladesh"
+    ],
+    "messaging": [
+      "com.banglamatrimony",
+      "com.jivosite.mobile",
+      "mingle.android.mingle2"
+    ],
+    "rideshare": [
+      "com.grabtaxi.passenger",
+      "com.rapido.passenger",
+      "hk.easyvan.app.client"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.banggood.client",
+      "com.cartup.user",
+      "com.daraz.android",
+      "com.daraz.shop.lite.sa",
+      "com.othoba.android",
+      "com.shopz.android",
+      "com.ubuy"
+    ],
+    "wallet": [
+      "com.bKash.customerapp"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.bracbank.astha",
+      "label": "BRAC Bank Astha",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bracbank.astha&gl=BD&hl=en"
+    },
+    {
+      "package": "com.ibbl.cellfin",
+      "label": "CellFin",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ibbl.cellfin&gl=BD&hl=en"
+    },
+    {
+      "package": "com.ionicframework.icellular894076",
+      "label": "IBBL iSmart",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ionicframework.icellular894076&gl=BD&hl=en"
+    },
+    {
+      "package": "com.konasl.mercantile",
+      "label": "MBL Rainbow",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.konasl.mercantile&gl=BD&hl=en"
+    },
+    {
+      "package": "com.thecitybank.citytouch",
+      "label": "Citytouch",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.thecitybank.citytouch&gl=BD&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=BD&hl=en"
+    },
+    {
+      "package": "net.wsapps.alllawsofbangladesh",
+      "label": "All Laws Of Bangladesh",
+      "category": "government",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.wsapps.alllawsofbangladesh&gl=BD&hl=en"
+    },
+    {
+      "package": "com.banglamatrimony",
+      "label": "Bangladeshi Matrimony®",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banglamatrimony&gl=BD&hl=en"
+    },
+    {
+      "package": "com.jivosite.mobile",
+      "label": "JivoChat",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.jivosite.mobile&gl=BD&hl=en"
+    },
+    {
+      "package": "mingle.android.mingle2",
+      "label": "Mingle2: Dating, Chat & Meet",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mingle.android.mingle2&gl=BD&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=BD&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=BD&hl=en"
+    },
+    {
+      "package": "hk.easyvan.app.client",
+      "label": "Lalamove - Fast & Affordable",
+      "category": "rideshare",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=hk.easyvan.app.client&gl=BD&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=BD&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=BD&hl=en"
+    },
+    {
+      "package": "com.cartup.user",
+      "label": "Cartup",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cartup.user&gl=BD&hl=en"
+    },
+    {
+      "package": "com.daraz.android",
+      "label": "Daraz Online Shopping App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.daraz.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.daraz.shop.lite.sa",
+      "label": "Daraz Lite App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.daraz.shop.lite.sa&gl=BD&hl=en"
+    },
+    {
+      "package": "com.othoba.android",
+      "label": "Othoba",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.othoba.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.shopz.android",
+      "label": "ShopZ BD Online Shopping App",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.shopz.android&gl=BD&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy: International Shopping",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=BD&hl=en"
+    },
+    {
+      "package": "com.bKash.customerapp",
+      "label": "bKash",
+      "category": "wallet",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bKash.customerapp&gl=BD&hl=en"
+    }
+  ]
+}

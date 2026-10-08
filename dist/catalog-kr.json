@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "release": "v2026.10.08",
+  "data_version": 1,
+  "generated_from": "data/",
+  "globals": [
+    "com.airbnb.android",
+    "com.alibaba.aliexpresshd",
+    "com.amazon.mShop.android.shopping",
+    "com.android.vending",
+    "com.discord",
+    "com.facebook.katana",
+    "com.google.android.apps.maps",
+    "com.google.android.apps.walletnfcrel",
+    "com.google.android.youtube",
+    "com.instagram.android",
+    "com.linkedin.android",
+    "com.netflix.mediaclient",
+    "com.paypal.android.p2pmobile",
+    "com.spotify.music",
+    "com.ubercab",
+    "com.whatsapp",
+    "com.zhiliaoapp.musically",
+    "mini.video.chat",
+    "org.mozilla.firefox",
+    "org.telegram.messenger",
+    "org.thoughtcrime.securesms"
+  ],
+  "globals_note": "A client must not bypass the tunnel for these packages, in any country. Shipped inside every bundle so a single file is enough to build a bypass set.",
+  "country": "KR",
+  "categories": [
+    "banking",
+    "messaging",
+    "rideshare",
+    "shopping",
+    "streaming"
+  ],
+  "counts": {
+    "entries": 13,
+    "active_entries": 13,
+    "legacy_entries": 0,
+    "categories": 5,
+    "globals": 21
+  },
+  "packages": {
+    "banking": [
+      "com.kbstar.kbbank"
+    ],
+    "messaging": [
+      "com.nhn.android.band"
+    ],
+    "rideshare": [
+      "com.cabonline.fixutaxi",
+      "com.grabtaxi.passenger",
+      "com.town.towncar"
+    ],
+    "shopping": [
+      "com.alibaba.intl.android.apps.poseidon",
+      "com.ebay.mobile",
+      "com.flipkart.android",
+      "com.towneers.www",
+      "com.zzkko"
+    ],
+    "streaming": [
+      "com.netshort.abroad",
+      "com.newreading.goodreels",
+      "com.storymatrix.drama"
+    ]
+  },
+  "entries": [
+    {
+      "package": "com.kbstar.kbbank",
+      "label": "KB Star Banking",
+      "category": "banking",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&gl=KR&hl=en"
+    },
+    {
+      "package": "com.nhn.android.band",
+      "label": "BAND",
+      "category": "messaging",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.nhn.android.band&gl=KR&hl=en"
+    },
+    {
+      "package": "com.cabonline.fixutaxi",
+      "label": "FixuTaxi",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cabonline.fixutaxi&gl=KR&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=KR&hl=en"
+    },
+    {
+      "package": "com.town.towncar",
+      "label": "타운카 - 이웃 간 카셰어링",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.town.towncar&gl=KR&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=KR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=KR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=KR&hl=en"
+    },
+    {
+      "package": "com.towneers.www",
+      "label": "당근",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-09-30",
+      "evidence": "https://play.google.com/store/apps/details?id=com.towneers.www&gl=KR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=KR&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=KR&hl=en"
+    },
+    {
+      "package": "com.newreading.goodreels",
+      "label": "GoodShort - Short Dramas Hub",
+      "category": "streaming",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.newreading.goodreels&gl=KR&hl=en"
+    },
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=KR&hl=en"
+    }
+  ]
+}
