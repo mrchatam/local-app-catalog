@@ -75,10 +75,23 @@ jobs:
         run: sha256sum -c SHA256SUMS
 
       - name: Update the rolling release branch
-        # Force is deliberate: `release` is a derived pointer, never worked on
-        # by hand. A fast-forward is the normal case; force only matters if a
-        # re-review rewrote main's history.
-        run: git push origin "HEAD:refs/heads/release" --force
+        # dist/ is gitignored on main (it is a build artifact), so the release
+        # branch gets its own root commit containing ONLY the built bundles:
+        # raw/jsDelivr consumers get a tiny, artifact-only tree.
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan release-publish
+          git rm -rf --cached . >/dev/null
+          find . -mindepth 1 -maxdepth 1 ! -name dist ! -name .git -exec rm -rf {} +
+          # -f: dist is gitignored, and here it is exactly what we ship.
+          git add -f dist
+          git commit -m "dist for $TAG ($GITHUB_SHA)"
+          # Force is deliberate: `release` is a derived pointer, never worked
+          # on by hand.
+          git push origin "release-publish:refs/heads/release" --force
 
       - name: Publish the dated release
         env:
