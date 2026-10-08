@@ -1,0 +1,36 @@
+{
+  "country": "BD",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.banglamatrimony",
+      "label": "Bangladeshi Matrimony®",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banglamatrimony&gl=BD&hl=en"
+    },
+    {
+      "package": "com.jivosite.mobile",
+      "label": "JivoChat",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.jivosite.mobile&gl=BD&hl=en"
+    },
+    {
+      "package": "mingle.android.mingle2",
+      "label": "Mingle2: Dating, Chat & Meet",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mingle.android.mingle2&gl=BD&hl=en"
+    }
+  ]
+}

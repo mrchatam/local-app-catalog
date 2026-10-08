@@ -1,0 +1,26 @@
+{
+  "country": "BR",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "app.phound.app",
+      "label": "Phound: Calls, Chat & Meetings",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.phound.app&gl=BR&hl=en"
+    },
+    {
+      "package": "co.happybits.marcopolo",
+      "label": "Marco Polo - Video Messenger",
+      "category": "messaging",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=co.happybits.marcopolo&gl=BR&hl=en"
+    }
+  ]
+}

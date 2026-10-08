@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.ibbl.cellfin&gl=BD&hl=en"
     },
     {
+      "package": "com.ionicframework.icellular894076",
+      "label": "IBBL iSmart",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ionicframework.icellular894076&gl=BD&hl=en"
+    },
+    {
       "package": "com.konasl.mercantile",
       "label": "MBL Rainbow",
       "category": "banking",
@@ -41,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.thecitybank.citytouch&gl=BD&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=BD&hl=en"
     }
   ]
 }

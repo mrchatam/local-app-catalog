@@ -13,6 +13,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.buscape.MainPack&gl=BR&hl=en"
     },
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=BR&hl=en"
+    },
+    {
+      "package": "com.amour.chicme",
+      "label": "CHICME - Shopping Online",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.amour.chicme&gl=BR&hl=en"
+    },
+    {
       "package": "com.tippingcanoe.pelando",
       "label": "Pelando",
       "category": "shopping",

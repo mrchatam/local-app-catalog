@@ -1,0 +1,16 @@
+{
+  "country": "BR",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "br.com.andecar.taxi.drivermachine",
+      "label": "AndeCar - Motoristas",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.andecar.taxi.drivermachine&gl=BR&hl=en"
+    }
+  ]
+}
