@@ -15,9 +15,13 @@ store access and no network at all:
 python3 tools/seed/gen_seed.py        # rewrites data/<cc>/<category>.json
 ```
 
-Running it against the committed `verify.json` reproduces the shipped `data/`
-tree byte-for-byte. If it ever does not, either `verify.json` or the generator
-changed, and the diff tells you which.
+`tools/seed/check_seed_subset.py SEED_DIR DATA_DIR` proves the provenance
+guarantee: every entry the generator produces is present, deep-equal, in the
+tracked tree. It does **not** require the whole tree to be byte-identical,
+because the dataset is designed to grow beyond the seed — nightly insertions
+(`tools/nightly/`) and human curation append entries the seed never emitted.
+A seeded entry that is missing, moved, or has any field changed fails the
+check; extra entries are expected and ignored.
 
 ## The three stages
 

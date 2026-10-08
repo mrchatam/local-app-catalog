@@ -46,19 +46,22 @@ jobs:
           fi
           echo "reproducible: dist and dist-check are byte-identical"
 
-      - name: Seed proof (gen_seed.py reproduces data/ byte-for-byte)
-        # tools/seed/gen_seed.py regenerates data/ in place from the recorded
-        # probe results, so it runs in a throwaway worktree, never on the job's
-        # tree; a drift there must fail the gate, because it would mean the
-        # tracked data no longer matches its recorded provenance.
+      - name: Seed proof (every seeded entry is present, unchanged, in data/)
+        # tools/seed/gen_seed.py regenerates the original seed from the
+        # recorded probe results, in a throwaway worktree. The dataset now
+        # legitimately grows beyond the seed (nightly insertions, curation),
+        # so the proof is no longer byte-equality of the whole tree but
+        # provenance: every entry the seed produces must be present,
+        # deep-equal, in the tracked data/ tree.
         run: |
           git worktree add "$RUNNER_TEMP/seed-check" HEAD
           python3 "$RUNNER_TEMP/seed-check/tools/seed/gen_seed.py" >/dev/null
-          diff -r "$RUNNER_TEMP/seed-check/data" data || {
-            echo "::error::tools/seed/gen_seed.py no longer reproduces data/ byte-for-byte"
+          python3 tools/seed/check_seed_subset.py \
+            "$RUNNER_TEMP/seed-check/data" data || {
+            echo "::error::seed provenance broken: a seeded entry is missing from, moved, or changed in data/ (see step log)"
             exit 1
           }
-          echo "seed proof: regenerated data/ is byte-identical to the tracked data"
+          echo "seed proof: every seeded entry is present and unchanged in data/"
 
   store-check:
     # Best-effort liveness of the store listings a `verified` entry cites.
