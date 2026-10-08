@@ -26,10 +26,15 @@ The definition of "clean" after any loop:
 | 5a | `2fd75e1` | The curator server read any JSON file on disk through a traversing `category`; its own flags swallowed each other and it exited 2 for usage errors; it could be bound to `0.0.0.0` despite documenting loopback-only; an oversized body killed the socket instead of answering 413; a missing catalog was reported as an empty one. | G24–G28 |
 | 5b | `9f0e2a0` | `validate.yml` shipped a banner-prefixed "JSON" file because `npm run` prints its banner to stdout; the nightly push always failed with `--force-with-lease` "stale info" on any same-day re-run; a dispatch `inputs.tag` reached the shell unvalidated; two report parsers died on a broken file (one producing a PR titled "demote some entries"); the demotion PR would have re-probed stores, applying a different set than the report describes; and `checkout -B` + a forced push replaced the previous night's commit instead of extending it. | G29–G34 |
 | 5c | `bafbbce` | The Python fetch CLIs still had the bugs audit loop 4 removed from the Node ones, plus one only Python could have: `discover.py` accepted unregistered countries/categories, `--all` was a union with the query matrix, its twin selection flags overrode each other silently; `play_availability.py` surfaced a typo'd `--from-catalog` as a traceback and let `--only-verified` silently check nothing; and a store authoritative for a *different* country over-claimed `authoritative: true` on its verdicts. | G36–G40 |
+| 6 | this commit | The nightly updater's `already_listed` pre-filter never fired: `stageEntry().changed` cannot detect a duplicate (`insertSorted` would happily add a second copy, so the bytes always differ), so all 490 of 556 real candidates flowed into `validateEntry`, were misreported as `invalid`, and - contradicting the code's own comment - each cost a nightly store probe. Also counted a definite `unavailable` verdict as `inconclusive`. | G43 |
 
 ## Open items
 
 *(none — the audit loop is empty; every enumerated gap is closed below)*
+
+| # | Gap | Closed by |
+|---|-----|-----------|
+| G43 | The nightly `already_listed` pre-filter never fired, so duplicates were probed, misreported as `invalid`, and re-judged every night | [tools/nightly/update-lists.mjs](tools/nightly/update-lists.mjs) now skips candidates against the country's full package set (read from the repo tree, not a staged diff) before any availability probe: a package may live in only one category per country, so a cross-category duplicate must not cost a store hit. Measured on the real candidate file: probes per night drop 556 → 67; `skipped.invalid` 487 → 0; duplicates are correctly counted in `already_listed`. A definite `unavailable` verdict no longer inflates `inconclusive_count` (it is a proven "no", not a throttled one). Pinned by a regression test that asserts the listed candidate is neither re-inserted, nor reported invalid, nor probed.
 
 ## Done items
 

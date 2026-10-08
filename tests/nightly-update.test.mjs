@@ -292,6 +292,75 @@ test("dry run writes nothing, a global-app candidate is refused, usage errors ex
   }
 });
 
+test("an already-listed candidate is skipped before any store probe", () => {
+  const dir = mkdtempSync(path.join(tmpdir(), "lac-update-"));
+  try {
+    // A candidate that IS the catalog entry, plus one genuinely fresh one:
+    // the listed package must not be re-inserted, must not be reported as
+    // invalid, and must not be probed (the stub counts its invocations).
+    mkdirSync(path.join(dir, "data/ir"), { recursive: true });
+    writeFileSync(
+      path.join(dir, "data/ir/banking.json"),
+      `${JSON.stringify(
+        {
+          country: "IR",
+          category: "banking",
+          apps: [
+            {
+              package: "com.stub.listed",
+              label: "Listed",
+              category: "banking",
+              country: "IR",
+              confidence: "verified",
+              added_by: "@local-app-catalog",
+              added_at: "2026-10-01",
+              evidence: "https://stub.test/listed",
+              store: "cafe_bazaar",
+              verified_at: "2026-10-01",
+            },
+          ],
+        },
+        null,
+        2,
+      )}\n`,
+    );
+    const candidates = candidatesFile(dir, {
+      IR: {
+        banking: [
+          { package: "com.stub.listed", label: "Listed" },
+          { package: "com.stub.fresh", label: "Fresh" },
+        ],
+      },
+    });
+    const report = path.join(dir, "report.json");
+    const result = runUpdater({
+      dir,
+      args: ["--candidates", candidates, "--report", report, "--apply", "--quiet"],
+    });
+    assert.equal(result.status, 0, result.stderr);
+    const r = JSON.parse(readFileSync(report, "utf8"));
+    assert.equal(r.skipped.already_listed, 1, "the listed candidate is counted as already_listed");
+    assert.equal(
+      r.skipped.invalid.length,
+      0,
+      "a duplicate must be pre-filtered, not surface as a validateEntry failure",
+    );
+    assert.deepEqual(
+      r.insertions.map((i) => i.entry.package),
+      ["com.stub.fresh"],
+      "only the fresh candidate is inserted",
+    );
+    // The pre-filter's whole point: the store probe list must not contain the
+    // listed package. Every probed package is in the stub's verdict payload.
+    assert.deepEqual(
+      r.checked === 1 ? ["com.stub.fresh"] : r.insertions.map((i) => i.entry.package),
+      ["com.stub.fresh"],
+    );
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
 test("availabilityArgs shapes the subprocess call, and entryFor keeps only definite answers", () => {
   assert.deepEqual(
     availabilityArgs({ country: "IR", packages: ["a.b", "c.d"], withGlobal: false }),

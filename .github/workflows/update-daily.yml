@@ -11,7 +11,8 @@ name: nightly-update
 #
 # Insertions go through tools/curate, so schema, ordering, duplicate and
 # global-conflict rules are the same ones CI enforces on every pull request.
-# The nightly diff is capped (tools/nightly defaults to 25) so a review stays
+# Already-listed candidates are skipped before any store is probed, and the
+# nightly diff is capped (tools/nightly defaults to 100) so a review stays
 # reviewable; deferred candidates are picked up the following night.
 on:
   schedule:

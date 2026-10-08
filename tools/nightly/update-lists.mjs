@@ -16,10 +16,12 @@
  * Every insertion goes through tools/curate/lib.mjs - normalizeEntry,
  * validateEntry, insertSorted, the same stageEntry bytes CI validates on the
  * pull request - so the automated path cannot write something the human path
- * could not. Insertions are capped per run (--max-insertions) so one bad
- * night cannot flood the diff; the default (100) is sized for a healthy
- * multi-country sweep, and anything beyond it is reported as `deferred` and
- * picked up the next night (already-inserted packages are skipped then).
+ * could not. Candidates already listed in the catalog are skipped BEFORE any
+ * store is probed (a duplicate nomination must not cost a store hit), and
+ * insertions are capped per run (--max-insertions) so one bad night cannot
+ * flood the diff; the default (100) is sized for a healthy multi-country
+ * sweep, and anything beyond it is reported as `deferred` and picked up the
+ * next night (already-inserted packages are skipped then).
  *
  * Exit codes (same taxonomy as tools/recheck):
  *   0  entries inserted (or nothing qualified)
@@ -33,7 +35,8 @@ import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import { UsageError, need, needInt, usageGuard } from "../lib/args.mjs";
 import { REPO_ROOT, authoritativeStoresFor } from "../lib/paths.mjs";
-import { normalizeEntry, stageEntry, validateEntry } from "../curate/lib.mjs";
+import { loadRepo } from "../lib/load.mjs";
+import { loadCatalog, normalizeEntry, stageEntry, validateEntry } from "../curate/lib.mjs";
 
 const USAGE = `usage: node tools/nightly/update-lists.mjs --candidates <file> [--report <file>]
        [--apply] [--country <CC>] [--max-insertions <N>] [--python <cmd>] [--quiet]
@@ -198,6 +201,9 @@ async function main() {
   const opts = usageGuard(USAGE, 3, () => parseArgs(process.argv.slice(2)));
   const candidates = readCandidates(opts.candidates);
   const today = new Date().toISOString().slice(0, 10);
+  // The registry + tree this run acts on (LOCAL_APP_CATALOG_DATA-aware, like
+  // every writer in tools/curate) - used for the already-listed pre-filter.
+  const repo = loadRepo();
 
   const report = {
     ok: true,
@@ -223,22 +229,21 @@ async function main() {
     // Candidates already in the catalog (any category) are not re-checked:
     // the availability probe costs a store hit per package, every night.
     const fresh = [];
+    // A package may live in only one category per country (the validator's
+    // country-wide duplicate rule), so a listing anywhere in the country's
+    // catalog files - not just under the nominated categories - means the
+    // candidate is known and must not cost a store probe. This check has to
+    // read the catalog directly: stageEntry().changed cannot detect a
+    // duplicate, because insertSorted would happily insert a second copy and
+    // the bytes would still differ.
+    const listed = new Set();
+    for (const file of repo.countries.find((c) => c.code === country)?.files ?? []) {
+      for (const app of file.doc?.apps ?? []) listed.add(app.package);
+    }
     for (const candidate of [...perCountry.values()].sort((a, b) =>
       a.package.localeCompare(b.package),
     )) {
-      const stage = stageEntry(
-        normalizeEntry({
-          package: candidate.package,
-          label: candidate.label,
-          category: [...candidate.categories].sort()[0],
-          country,
-          confidence: "community",
-          added_by: ADDED_BY,
-          added_at: today,
-          evidence: candidate.evidence ?? "https://example.invalid/placeholder",
-        }),
-      );
-      if (!stage.changed) {
+      if (listed.has(candidate.package)) {
         report.skipped.already_listed += 1;
         continue;
       }
@@ -257,10 +262,13 @@ async function main() {
     for (const { candidate, category } of fresh) {
       const verdict = verdicts.get(candidate.package);
       if (!verdict || verdict.status !== "available") {
-        // unavailable is a definite "no" for a nomination; unknown/error are
-        // inconclusive. Neither becomes data, and neither is retried tonight.
+        // unavailable is a definite "no" for a nomination; unknown/error (or a
+        // missing verdict) are inconclusive. Neither becomes data, and neither
+        // is retried tonight - but only the inconclusive ones count as such.
         report.skipped.unproven += 1;
-        report.inconclusive_count += 1;
+        if (!verdict || verdict.status !== "unavailable") {
+          report.inconclusive_count += 1;
+        }
         continue;
       }
       const entry = entryFor({ candidate, verdict, country, today, category });
