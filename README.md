@@ -66,6 +66,20 @@ on the Releases page, each byte-for-byte reproducible from its commit:
 - `manifest.json` — tag, counts, artifact sizes and their sha256.
 - `SHA256SUMS` — every artifact's hash in `sha256sum -c` format.
 
+**Always-latest, stable URLs.** A rolling `release` branch is republished
+automatically after every reviewed data merge (the model Chocolate4U's
+Iran-v2ray-rules uses for its geo files), so clients that want fresh data
+daily without pinning a tag can hard-code:
+
+```sh
+curl -LO https://raw.githubusercontent.com/mrchatam/local-app-catalog/release/dist/catalog-ir.json
+curl -LO https://cdn.jsdelivr.net/gh/mrchatam/local-app-catalog@release/dist/catalog-ir.json
+```
+
+The branch always mirrors the newest reviewed dataset; a dated tag freezes a
+version. Everything on the `release` branch has already passed review and CI —
+nightly changes land there only through a merged PR, never directly.
+
 A country bundle looks like this (see `tools/lib/bundle.mjs` for the source of
 truth — `format` is the bundle format version, independent of the data version):
 

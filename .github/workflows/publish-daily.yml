@@ -1,0 +1,124 @@
+name: publish-daily
+
+# The consumer surface of the dataset, modeled on Chocolate4U/Iran-v2ray-rules:
+# their workflow force-pushes built artifacts to a rolling `release` branch so
+# clients can pin stable URLs forever:
+#
+#   raw:      https://raw.githubusercontent.com/mrchatam/local-app-catalog/release/dist/catalog-<cc>.json
+#   jsDelivr: https://cdn.jsdelivr.net/gh/mrchatam/local-app-catalog@release/dist/catalog-<cc>.json
+#
+# We keep what their model gives up: nothing reaches the `release` branch until
+# the nightly PR has been reviewed and merged to main. This workflow runs on
+# that merge, so the branch always mirrors the latest reviewed dataset within
+# minutes.
+#
+# It also publishes the dated, checksummed GitHub Release for the day (the step
+# release.yml does for hand-pushed tags) and deletes nightly/* branches whose
+# PR is no longer open, so branch clutter cannot grow with each nightly run.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "tools/build/**"
+      - "tools/validate/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-daily
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Gate on tests and validation
+        run: |
+          npm test
+          npm run validate
+
+      - name: Determine the dataset version (UTC date of the reviewed commit)
+        id: tag
+        run: |
+          # The tag names the commit, like release.yml: the dataset version is
+          # when the data changed, not when this job happened to run.
+          epoch=$(git log -1 --format=%ct)
+          tag="v$(date -u -d "@$epoch" +%Y.%m.%d)"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "publishing $tag from $(git rev-parse --short HEAD)"
+
+      - name: Build checksummed bundles
+        run: |
+          # Reproducible-builds convention: the clock is pinned to the commit,
+          # never to when the runner happened to execute.
+          SOURCE_DATE_EPOCH=$(git log -1 --format=%ct)
+          export SOURCE_DATE_EPOCH
+          npm run --silent build -- --tag "$TAG" --validate
+
+      - name: Verify checksums
+        working-directory: dist
+        run: sha256sum -c SHA256SUMS
+
+      - name: Update the rolling release branch
+        # Force is deliberate: `release` is a derived pointer, never worked on
+        # by hand. A fast-forward is the normal case; force only matters if a
+        # re-review rewrote main's history.
+        run: git push origin "HEAD:refs/heads/release" --force
+
+      - name: Publish the dated release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "release $TAG already exists today; the release branch above is fresher"
+            exit 0
+          fi
+          printf '%s\n' \
+            "Daily dataset release. Stable URLs that always track the latest" \
+            "reviewed data (this branch, not necessarily this tag):" \
+            "" \
+            "- https://raw.githubusercontent.com/mrchatam/local-app-catalog/release/dist/catalog-<cc>.json" \
+            "- https://cdn.jsdelivr.net/gh/mrchatam/local-app-catalog@release/dist/catalog-<cc>.json" \
+            "" \
+            "Pin THIS tag's assets to freeze a version; verify with" \
+            "\`sha256sum -c SHA256SUMS\`. Data is ODbL. Tooling is MIT." > /tmp/notes.md
+          # --target pins the tag to this exact reviewed commit; without it a
+          # racing push could move default-branch head between build and tag.
+          gh release create "$TAG" dist/* \
+            --target "$GITHUB_SHA" \
+            --title "$TAG" \
+            --notes-file /tmp/notes.md
+
+      - name: Delete nightly branches with no open PR
+        # nightly/data-<date> branches are review vehicles. One exists per date
+        # and is reused while its PR is open; once the PR merges (or a newer
+        # night superseded it), the branch is noise - its history lives on main.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -eu
+          git ls-remote --heads origin 'refs/heads/nightly/*' \
+            | cut -f2 | sed 's|refs/heads/||' \
+            | while read -r branch; do
+                open=$(gh pr list --state open --head "$branch" --json number --jq 'length')
+                if [ "$open" -eq 0 ]; then
+                  echo "deleting $branch (no open PR)"
+                  git push origin --delete "$branch"
+                else
+                  echo "keeping $branch (PR still open)"
+                fi
+              done

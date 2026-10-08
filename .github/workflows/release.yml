@@ -89,6 +89,13 @@ jobs:
           # --verify-tag: publishing must not be able to invent a tag. Without
           # it, a dispatch whose tag is mistyped would create that tag at the
           # current default branch and ship a release for a commit nobody chose.
+          # A tag can already carry a release published automatically by
+          # publish-daily.yml under the same vYYYY.MM.DD scheme; that is not a
+          # conflict, so skip instead of failing on the duplicate.
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "release $TAG already exists; publish-daily already published it"
+            exit 0
+          fi
           gh release create "$TAG" dist/* \
             --verify-tag \
             --title "$TAG" \
