@@ -13,6 +13,46 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.digiturk.tod.mobil&gl=TR&hl=en"
     },
     {
+      "package": "com.freereels.app",
+      "label": "FreeReels - Dramas & Reels",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.freereels.app&gl=TR&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=TR&hl=en"
+    },
+    {
+      "package": "com.reels.wowtv",
+      "label": "WowTV",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.reels.wowtv&gl=TR&hl=en"
+    },
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=TR&hl=en"
+    },
+    {
       "package": "com.trt.tabii.android",
       "label": "tabii",
       "category": "streaming",

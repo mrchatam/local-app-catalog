@@ -1,0 +1,46 @@
+{
+  "country": "ID",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "codexplore.ojol",
+      "label": "Ojol The Game",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=codexplore.ojol&gl=ID&hl=en"
+    },
+    {
+      "package": "com.bm.sc.jogjakita",
+      "label": "JogjaKita - Ojek Online Jogja",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bm.sc.jogjakita&gl=ID&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=ID&hl=en"
+    },
+    {
+      "package": "com.maleo.ojollife",
+      "label": "Ojol Life: Food Delivery Game",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.maleo.ojollife&gl=ID&hl=en"
+    }
+  ]
+}

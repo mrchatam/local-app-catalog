@@ -3,6 +3,26 @@
   "category": "government",
   "apps": [
     {
+      "package": "com.cv.docscanner",
+      "label": "Document Scanner - PDF Creator",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cv.docscanner&gl=IN&hl=en"
+    },
+    {
+      "package": "com.hashcove.thecove",
+      "label": "Cove: Encrypted Digital Locker",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.hashcove.thecove&gl=IN&hl=en"
+    },
+    {
       "package": "in.gov.ecourts.eCourtsServices",
       "label": "eCourts Services",
       "category": "government",
@@ -11,6 +31,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=in.gov.ecourts.eCourtsServices&gl=IN&hl=en"
+    },
+    {
+      "package": "one.zoop.id.kyc.store.wallet",
+      "label": "Zoop | Secure Document Wallet",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=one.zoop.id.kyc.store.wallet&gl=IN&hl=en"
     }
   ]
 }

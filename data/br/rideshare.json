@@ -11,6 +11,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=br.com.andecar.taxi.drivermachine&gl=BR&hl=en"
+    },
+    {
+      "package": "com.br_com_motoristapx_app",
+      "label": "Motorista PX - Você só dirige!",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.br_com_motoristapx_app&gl=BR&hl=en"
+    },
+    {
+      "package": "com.lalamove.global.driver.sea",
+      "label": "Lalamove Driver - Drive & Earn",
+      "category": "rideshare",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.lalamove.global.driver.sea&gl=BR&hl=en"
     }
   ]
 }

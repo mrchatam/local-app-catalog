@@ -1,0 +1,16 @@
+{
+  "country": "UA",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=network.loki.messenger&gl=UA&hl=en"
+    }
+  ]
+}

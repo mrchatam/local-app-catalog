@@ -1,0 +1,46 @@
+{
+  "country": "ID",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=ID&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=ID&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=ID&hl=en"
+    },
+    {
+      "package": "com.vuclip.viu",
+      "label": "Viu: Dramas, TV Shows & Movies",
+      "category": "streaming",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vuclip.viu&gl=ID&hl=en"
+    }
+  ]
+}

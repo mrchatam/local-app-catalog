@@ -1,0 +1,96 @@
+{
+  "country": "SA",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=SA&hl=en"
+    },
+    {
+      "package": "com.luckyskeletonstudios.idlebanktycoon",
+      "label": "Idle Bank Tycoon: Money Empire",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.luckyskeletonstudios.idlebanktycoon&gl=SA&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=SA&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=SA&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=SA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=SA&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=SA&hl=en"
+    },
+    {
+      "package": "in.org.npci.upiapp",
+      "label": "BHIM Bharat's Own Payments App",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&gl=SA&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=SA&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "country": "KR",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.cabonline.fixutaxi",
+      "label": "FixuTaxi",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cabonline.fixutaxi&gl=KR&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=KR&hl=en"
+    },
+    {
+      "package": "com.town.towncar",
+      "label": "타운카 - 이웃 간 카셰어링",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.town.towncar&gl=KR&hl=en"
+    }
+  ]
+}

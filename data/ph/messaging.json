@@ -1,0 +1,26 @@
+{
+  "country": "PH",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.talkin.learn",
+      "label": "Talkin: Global Friends & Chat",
+      "category": "messaging",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.talkin.learn&gl=PH&hl=en"
+    },
+    {
+      "package": "omegle.tv",
+      "label": "OmeTV – Video Chat Alternative",
+      "category": "messaging",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=omegle.tv&gl=PH&hl=en"
+    }
+  ]
+}

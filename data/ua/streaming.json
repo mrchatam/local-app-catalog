@@ -1,0 +1,96 @@
+{
+  "country": "UA",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.apple.atve.androidtv.appletv",
+      "label": "Apple TV: Shows, Movies & More",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=UA&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=UA&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.youtube.kids",
+      "label": "YouTube Kids",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids&gl=UA&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=UA&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=UA&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=UA&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=UA&hl=en"
+    },
+    {
+      "package": "com.planet.imax",
+      "label": "Планета Кіно",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.planet.imax&gl=UA&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=UA&hl=en"
+    }
+  ]
+}

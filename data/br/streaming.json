@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=BR&hl=en"
     },
     {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=BR&hl=en"
+    },
+    {
       "package": "com.globo.globotv",
       "label": "Globoplay",
       "category": "streaming",
@@ -31,6 +41,86 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.globo.globotv&gl=BR&hl=en"
+    },
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=BR&hl=en"
+    },
+    {
+      "package": "com.imdb.mobile",
+      "label": "IMDb: Movies & TV Shows",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.imdb.mobile&gl=BR&hl=en"
+    },
+    {
+      "package": "com.mubi",
+      "label": "MUBI: Curated Cinema",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mubi&gl=BR&hl=en"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "label": "Netflix",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netflix.ninja&gl=BR&hl=en"
+    },
+    {
+      "package": "com.netshort.abroad",
+      "label": "NetShort - Popular Dramas & TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.netshort.abroad&gl=BR&hl=en"
+    },
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=BR&hl=en"
+    },
+    {
+      "package": "com.vidangel.thechosen",
+      "label": "Angel: Watch Movies & TV Shows",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=BR&hl=en"
+    },
+    {
+      "package": "tv.pluto.android",
+      "label": "Pluto TV: Watch Free Movies/TV",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=tv.pluto.android&gl=BR&hl=en"
     }
   ]
 }

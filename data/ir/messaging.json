@@ -1,0 +1,30 @@
+{
+  "country": "IR",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.pumble",
+      "label": "Pumble",
+      "category": "messaging",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.pumble",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "network.loki.messenger",
+      "label": "Session - Private Messenger",
+      "category": "messaging",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/network.loki.messenger",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    }
+  ]
+}

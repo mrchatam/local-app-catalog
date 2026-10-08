@@ -1,0 +1,26 @@
+{
+  "country": "NG",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.acemoneytransfer.android",
+      "label": "ACE Money Transfer Send Money",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=NG&hl=en"
+    },
+    {
+      "package": "com.africhange.Africhange",
+      "label": "AfriChange: Send money abroad.",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.africhange.Africhange&gl=NG&hl=en"
+    }
+  ]
+}

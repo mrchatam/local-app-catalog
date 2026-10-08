@@ -1,0 +1,26 @@
+{
+  "country": "MX",
+  "category": "government",
+  "apps": [
+    {
+      "package": "mx.com.cosmocolor.movapp",
+      "label": "Licencia Digital EDOMEX",
+      "category": "government",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mx.com.cosmocolor.movapp&gl=MX&hl=en"
+    },
+    {
+      "package": "st.android.imsspublico",
+      "label": "IMSS Digital",
+      "category": "government",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=st.android.imsspublico&gl=MX&hl=en"
+    }
+  ]
+}

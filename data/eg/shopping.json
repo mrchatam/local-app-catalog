@@ -1,0 +1,106 @@
+{
+  "country": "EG",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=EG&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=EG&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=EG&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra - Fashion Shopping App",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy: International Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=EG&hl=en"
+    },
+    {
+      "package": "com.voghion.app",
+      "label": "Voghion - Online shopping app",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.voghion.app&gl=EG&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=EG&hl=en"
+    }
+  ]
+}

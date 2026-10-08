@@ -1,0 +1,66 @@
+{
+  "country": "IR",
+  "category": "government",
+  "apps": [
+    {
+      "package": "ahf.dummynation",
+      "label": "Dummynation",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/ahf.dummynation",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "com.oxiwyle.modernage2",
+      "label": "MA 2 – President Simulator",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.oxiwyle.modernage2",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "com.oxiwyle.modernage3",
+      "label": "MA 3 – President Simulator",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.oxiwyle.modernage3",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "com.windyty.android",
+      "label": "Windy.com - Weather Forecast",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.windyty.android",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "org.wikipedia",
+      "label": "Wikipedia",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/org.wikipedia",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    }
+  ]
+}

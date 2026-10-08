@@ -33,6 +33,56 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.amour.chicme&gl=BR&hl=en"
     },
     {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=BR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=BR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=BR&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=BR&hl=en"
+    },
+    {
+      "package": "com.mercadolibre",
+      "label": "Mercado Livre: Compras e 10.10",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mercadolibre&gl=BR&hl=en"
+    },
+    {
       "package": "com.tippingcanoe.pelando",
       "label": "Pelando",
       "category": "shopping",
@@ -43,6 +93,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.tippingcanoe.pelando&gl=BR&hl=en"
     },
     {
+      "package": "com.ubuy",
+      "label": "Ubuy Brazil: Global Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=BR&hl=en"
+    },
+    {
       "package": "com.worten.app",
       "label": "Worten",
       "category": "shopping",
@@ -51,6 +111,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.worten.app&gl=BR&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=BR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=BR&hl=en"
     }
   ]
 }

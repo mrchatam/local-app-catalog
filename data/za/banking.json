@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=ZA&hl=en"
     },
     {
+      "package": "com.ablmobilebankingsolution.sa.mobile",
+      "label": "Albaraka SA Banking App",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ablmobilebankingsolution.sa.mobile&gl=ZA&hl=en"
+    },
+    {
       "package": "com.fireid.snapscan",
       "label": "SnapScan",
       "category": "banking",
@@ -21,6 +31,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.fireid.snapscan&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.hellogroup.HelloFinSurv",
+      "label": "Hello Paisa",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.hellogroup.HelloFinSurv&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.sozap.badmen",
+      "label": "Armed Heist: Shooting gun game",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sozap.badmen&gl=ZA&hl=en"
     }
   ]
 }

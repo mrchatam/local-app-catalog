@@ -1,0 +1,56 @@
+{
+  "country": "VN",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=VN&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=VN&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=VN&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=VN&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=VN&hl=en"
+    }
+  ]
+}

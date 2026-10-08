@@ -3,6 +3,56 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=MX&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=MX&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=MX&hl=en"
+    },
+    {
+      "package": "com.mercadolibre",
+      "label": "Mercado Libre: Compras 10.10",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mercadolibre&gl=MX&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=MX&hl=en"
+    },
+    {
       "package": "mx.com.liverpool.shoppingapp",
       "label": "Liverpool",
       "category": "shopping",

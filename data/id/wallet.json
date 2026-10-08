@@ -3,6 +3,26 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.gojek.gopaymerchant",
+      "label": "GoPay Merchant: QRIS",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gojek.gopaymerchant&gl=ID&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=ID&hl=en"
+    },
+    {
       "package": "id.dana",
       "label": "DANA",
       "category": "wallet",

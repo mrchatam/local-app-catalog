@@ -3,6 +3,16 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.bash.prod",
+      "label": "bash",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bash.prod&gl=ZA&hl=en"
+    },
+    {
       "package": "com.bidorbuy.app",
       "label": "Bob Shop",
       "category": "shopping",
@@ -21,6 +31,56 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.ebay.gumtree.za&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.ubuy",
+      "label": "Ubuy Shopping App South Africa",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=ZA&hl=en"
+    },
+    {
+      "package": "za.co.makro.shopping",
+      "label": "Makro Online Shopping",
+      "category": "shopping",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.makro.shopping&gl=ZA&hl=en"
     },
     {
       "package": "za.co.shoprite.sixty60",

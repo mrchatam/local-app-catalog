@@ -1,0 +1,36 @@
+{
+  "country": "ZA",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.screw3d.match.nuts.bolts.pin.jam.away.puzzle",
+      "label": "3D Bolt Master®: Screw Master®",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.screw3d.match.nuts.bolts.pin.jam.away.puzzle&gl=ZA&hl=en"
+    },
+    {
+      "package": "com.wood.bolt.wordle.screw.nuts.puzzle",
+      "label": "Woodle Screw® Pin Nuts & Bolts",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wood.bolt.wordle.screw.nuts.puzzle&gl=ZA&hl=en"
+    },
+    {
+      "package": "screw.puzzle.match3.brain.puzz",
+      "label": "Screw Sort Puzzle: Pin Jam 3D",
+      "category": "rideshare",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=screw.puzzle.match3.brain.puzz&gl=ZA&hl=en"
+    }
+  ]
+}

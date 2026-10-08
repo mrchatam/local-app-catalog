@@ -1,0 +1,56 @@
+{
+  "country": "JP",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.linecorp.LGBB2",
+      "label": "LINE Bubble 2",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGBB2&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGCHEF",
+      "label": "LINE CHEF A cute cooking game!",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGCHEF&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGFARM",
+      "label": "LINE BROWN FARM",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGFARM&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGPJCOIN",
+      "label": "LINE Magic Coin - Coin Game!",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGPJCOIN&gl=JP&hl=en"
+    },
+    {
+      "package": "com.linecorp.LGPTT",
+      "label": "LINE Puzzle TanTan",
+      "category": "messaging",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGPTT&gl=JP&hl=en"
+    }
+  ]
+}

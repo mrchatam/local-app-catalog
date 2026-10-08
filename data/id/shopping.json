@@ -13,6 +13,56 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.alfamart.alfagift&gl=ID&hl=en"
     },
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=ID&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=ID&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=ID&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=ID&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=ID&hl=en"
+    },
+    {
       "package": "id.toco",
       "label": "Toco",
       "category": "shopping",

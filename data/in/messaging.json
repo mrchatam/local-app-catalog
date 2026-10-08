@@ -3,6 +3,46 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.chatdesh.app",
+      "label": "ChatDesh - Indian Chat Rooms",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.chatdesh.app&gl=IN&hl=en"
+    },
+    {
+      "package": "com.dating.for.all",
+      "label": "FRND: Talk to Friends Online",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dating.for.all&gl=IN&hl=en"
+    },
+    {
+      "package": "com.mychatclub.mcc",
+      "label": "MyChatClub: Social Platform",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mychatclub.mcc&gl=IN&hl=en"
+    },
+    {
+      "package": "com.unearby.sayhi",
+      "label": "SayHi Chat Meet Dating People",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.unearby.sayhi&gl=IN&hl=en"
+    },
+    {
       "package": "in.mohalla.sharechat",
       "label": "ShareChat",
       "category": "messaging",

@@ -3,6 +3,36 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=KR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=KR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=KR&hl=en"
+    },
+    {
       "package": "com.towneers.www",
       "label": "당근",
       "category": "shopping",
@@ -11,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.towneers.www&gl=KR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=KR&hl=en"
     }
   ]
 }

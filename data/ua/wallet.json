@@ -1,0 +1,76 @@
+{
+  "country": "UA",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=UA&hl=en"
+    },
+    {
+      "package": "com.golemapps.cardwallet",
+      "label": "Card Wallet – Mobile Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.golemapps.cardwallet&gl=UA&hl=en"
+    },
+    {
+      "package": "com.ledger.live",
+      "label": "Ledger Wallet™ crypto app",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ledger.live&gl=UA&hl=en"
+    },
+    {
+      "package": "com.premier.customer",
+      "label": "Premier Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.premier.customer&gl=UA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.btc.eth",
+      "label": "IronWallet: Crypto Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.btc.eth&gl=UA&hl=en"
+    },
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=UA&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=UA&hl=en"
+    }
+  ]
+}

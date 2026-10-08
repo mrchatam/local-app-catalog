@@ -3,6 +3,46 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "app.hippotaxi.bg",
+      "label": "Hippo Taxi",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=app.hippotaxi.bg&gl=TR&hl=en"
+    },
+    {
+      "package": "com.eaglefleet.redtaxi",
+      "label": "RedTaxi: Book Cab, Auto & Bike",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=TR&hl=en"
+    },
+    {
+      "package": "com.gettaxi.android",
+      "label": "Gett- Corporate Ground Travel",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gettaxi.android&gl=TR&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=TR&hl=en"
+    },
+    {
       "package": "com.taxime.client",
       "label": "TaxiMe",
       "category": "rideshare",

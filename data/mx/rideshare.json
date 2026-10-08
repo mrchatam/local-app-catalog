@@ -1,0 +1,36 @@
+{
+  "country": "MX",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.google.android.videos",
+      "label": "Google TV",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.videos&gl=MX&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=MX&hl=en"
+    },
+    {
+      "package": "com.minicabit.android",
+      "label": "minicabit: UK Taxi & Transfers",
+      "category": "rideshare",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.minicabit.android&gl=MX&hl=en"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "country": "VN",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "br.com.intermedium",
+      "label": "Inter: Conta, Cartão e Pix",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=VN&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=VN&hl=en"
+    },
+    {
+      "package": "com.vietinbank.ipay",
+      "label": "VietinBank iPay",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vietinbank.ipay&gl=VN&hl=en"
+    },
+    {
+      "package": "com.vnpay.vpbankonline",
+      "label": "VPBank NEO",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vnpay.vpbankonline&gl=VN&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=VN&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=VN&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=VN&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "banking",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=VN&hl=en"
+    }
+  ]
+}

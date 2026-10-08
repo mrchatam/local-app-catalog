@@ -1,0 +1,86 @@
+{
+  "country": "TR",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.marcotardanico.wallyfor",
+      "label": "Wallyfor",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.marcotardanico.wallyfor&gl=TR&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=TR&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=TR&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=TR&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=TR&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=TR&hl=en"
+    },
+    {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mm.com.wavemoney.wavepay&gl=TR&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=TR&hl=en"
+    }
+  ]
+}

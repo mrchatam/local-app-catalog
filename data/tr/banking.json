@@ -3,6 +3,26 @@
   "category": "banking",
   "apps": [
     {
+      "package": "br.com.intermedium",
+      "label": "Inter: Conta, Cartão e Pix",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=TR&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=TR&hl=en"
+    },
+    {
       "package": "com.denizbank.mobildeniz",
       "label": "MobilDeniz",
       "category": "banking",
@@ -41,6 +61,46 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.tmobtech.halkbank&gl=TR&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=TR&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=TR&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=TR&hl=en"
+    },
+    {
+      "package": "team.opay.pay",
+      "label": "OPay",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=team.opay.pay&gl=TR&hl=en"
     }
   ]
 }

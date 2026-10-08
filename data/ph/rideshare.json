@@ -1,0 +1,36 @@
+{
+  "country": "PH",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.klook",
+      "label": "Klook: Travel & Activities",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.klook&gl=PH&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=PH&hl=en"
+    },
+    {
+      "package": "hk.easyvan.app.client",
+      "label": "Lalamove - Fast & Affordable",
+      "category": "rideshare",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=hk.easyvan.app.client&gl=PH&hl=en"
+    }
+  ]
+}

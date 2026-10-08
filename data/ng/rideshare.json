@@ -1,0 +1,36 @@
+{
+  "country": "NG",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=NG&hl=en"
+    },
+    {
+      "package": "com.klook",
+      "label": "Klook: Travel & Activities",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.klook&gl=NG&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=NG&hl=en"
+    }
+  ]
+}

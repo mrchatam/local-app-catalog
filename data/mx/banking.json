@@ -3,6 +3,26 @@
   "category": "banking",
   "apps": [
     {
+      "package": "com.acemoneytransfer.android",
+      "label": "ACE Money Transfer Send Money",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.mychime.waveremit.app",
+      "label": "Sendwave Wallet",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mychime.waveremit.app&gl=MX&hl=en"
+    },
+    {
       "package": "com.pagopopmobile",
       "label": "Spin by OXXO",
       "category": "banking",
@@ -11,6 +31,76 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.pagopopmobile&gl=MX&hl=en"
+    },
+    {
+      "package": "com.remitbee.app.app",
+      "label": "RemitBee: Money Transfer & FX",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.remitbee.app.app&gl=MX&hl=en"
+    },
+    {
+      "package": "com.remitchoiceltd",
+      "label": "Remit Choice: Money Transfer",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.remitchoiceltd&gl=MX&hl=en"
+    },
+    {
+      "package": "com.sec.android.easyMover",
+      "label": "Samsung Smart Switch Mobile",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sec.android.easyMover&gl=MX&hl=en"
+    },
+    {
+      "package": "com.topremit.topremit",
+      "label": "Topremit: Money Transfer",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.topremit.topremit&gl=MX&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.wondershare.mobiletrans",
+      "label": "Data Transfer - MobileTrans",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wondershare.mobiletrans&gl=MX&hl=en"
+    },
+    {
+      "package": "com.xe.currency",
+      "label": "Xe Money Transfer & Currency",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.xe.currency&gl=MX&hl=en"
     },
     {
       "package": "mx.com.bancoazteca.bazdigitalmovil",

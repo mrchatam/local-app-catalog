@@ -11,6 +11,36 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.bpjstku&gl=ID&hl=en"
+    },
+    {
+      "package": "com.medisafe.android.client",
+      "label": "Medisafe Pill & Med Reminder",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.medisafe.android.client&gl=ID&hl=en"
+    },
+    {
+      "package": "com.traveloka.android",
+      "label": "Traveloka: Book Hotel & Flight",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.traveloka.android&gl=ID&hl=en"
+    },
+    {
+      "package": "eu.smartpatient.mytherapy",
+      "label": "Meds & Pill Reminder MyTherapy",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=eu.smartpatient.mytherapy&gl=ID&hl=en"
     }
   ]
 }

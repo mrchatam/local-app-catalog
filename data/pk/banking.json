@@ -3,6 +3,26 @@
   "category": "banking",
   "apps": [
     {
+      "package": "com.binance.dev",
+      "label": "Binance: Buy Bitcoin & Crypto",
+      "category": "banking",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.binance.dev&gl=PK&hl=en"
+    },
+    {
+      "package": "com.personale.credit.carry.cash.loan.paisaya",
+      "label": "Paisayaar-Easy Safe Cash Loan",
+      "category": "banking",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.personale.credit.carry.cash.loan.paisaya&gl=PK&hl=en"
+    },
+    {
       "package": "com.techlogix.mobilinkcustomer",
       "label": "JazzCash",
       "category": "banking",
@@ -11,6 +31,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=PK&hl=en"
+    },
+    {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=PK&hl=en"
     },
     {
       "package": "pk.com.telenor.phoenix",

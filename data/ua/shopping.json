@@ -3,6 +3,46 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=UA&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=UA&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=UA&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=UA&hl=en"
+    },
+    {
       "package": "ua.prom.b2c",
       "label": "Prom.ua",
       "category": "shopping",

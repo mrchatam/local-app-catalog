@@ -3,6 +3,66 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.akakce.akakce",
+      "label": "Akakçe - En Ucuz Fiyatı Bul",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.akakce.akakce&gl=TR&hl=en"
+    },
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=TR&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=TR&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=TR&hl=en"
+    },
+    {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=TR&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=TR&hl=en"
+    },
+    {
       "package": "com.inomera.sm",
       "label": "Migros",
       "category": "shopping",
@@ -11,6 +71,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.inomera.sm&gl=TR&hl=en"
+    },
+    {
+      "package": "com.markaz.app",
+      "label": "Markaz: Pakistan Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.markaz.app&gl=TR&hl=en"
+    },
+    {
+      "package": "com.zzkko",
+      "label": "SHEIN-Shopping Online",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=TR&hl=en"
     }
   ]
 }

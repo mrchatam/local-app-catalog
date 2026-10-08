@@ -3,6 +3,36 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "com.disha.quickride",
+      "label": "Quick Ride- Cab Taxi & Carpool",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.disha.quickride&gl=IN&hl=en"
+    },
+    {
+      "package": "com.eaglefleet.redtaxi",
+      "label": "RedTaxi: Book Cab, Auto & Bike",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=IN&hl=en"
+    },
+    {
+      "package": "com.gozocabs.client",
+      "label": "Gozo Cabs - Travel all India",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gozocabs.client&gl=IN&hl=en"
+    },
+    {
       "package": "com.olacabs.customer",
       "label": "Ola",
       "category": "rideshare",
@@ -21,6 +51,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=IN&hl=en"
+    },
+    {
+      "package": "com.refex.eveelz",
+      "label": "Refex: Safe Cabs",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.refex.eveelz&gl=IN&hl=en"
+    },
+    {
+      "package": "com.trevcabs.app",
+      "label": "Trev - Premium EV Cabs",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trevcabs.app&gl=IN&hl=en"
     }
   ]
 }

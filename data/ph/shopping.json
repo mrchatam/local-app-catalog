@@ -1,0 +1,76 @@
+{
+  "country": "PH",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=PH&hl=en"
+    },
+    {
+      "package": "com.onlineshoppinghub.onlineshoppingphilippines",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.onlineshoppinghub.onlineshoppingphilippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippines.online.shopping.app",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippines.online.shopping.app&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesonlineshopping.shopping",
+      "label": "Philippines Online Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesonlineshopping.shopping&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesshopping.onlineshoppingphilippines",
+      "label": "Online Shopping Philippines",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesshopping.onlineshoppingphilippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.philippinesshopping.sonu",
+      "label": "Online Shopping Philippines",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.philippinesshopping.sonu&gl=PH&hl=en"
+    },
+    {
+      "package": "com.zalora.android",
+      "label": "ZALORA-Online Fashion Shopping",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.zalora.android&gl=PH&hl=en"
+    }
+  ]
+}

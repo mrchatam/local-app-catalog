@@ -1,0 +1,16 @@
+{
+  "country": "PK",
+  "category": "streaming",
+  "apps": [
+    {
+      "package": "com.storymatrix.drama",
+      "label": "DramaBox - Stream Drama Shorts",
+      "category": "streaming",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=PK&hl=en"
+    }
+  ]
+}

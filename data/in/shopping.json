@@ -3,6 +3,66 @@
   "category": "shopping",
   "apps": [
     {
+      "package": "com.alibaba.intl.android.apps.poseidon",
+      "label": "Alibaba.com - B2B marketplace",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=IN&hl=en"
+    },
+    {
+      "package": "com.applications.max",
+      "label": "Max Fashion India",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.applications.max&gl=IN&hl=en"
+    },
+    {
+      "package": "com.banggood.client",
+      "label": "Banggood - Online Shopping",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=IN&hl=en"
+    },
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=IN&hl=en"
+    },
+    {
+      "package": "com.fsn.nds",
+      "label": "Nykaa Fashion – Shopping App",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fsn.nds&gl=IN&hl=en"
+    },
+    {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=IN&hl=en"
+    },
+    {
       "package": "com.jpl.jiomart",
       "label": "JioMart",
       "category": "shopping",
@@ -11,6 +71,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.jpl.jiomart&gl=IN&hl=en"
+    },
+    {
+      "package": "com.manash.purplle",
+      "label": "Purplle Online Beauty Shopping",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.manash.purplle&gl=IN&hl=en"
     },
     {
       "package": "com.meesho.supply",
@@ -43,6 +113,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.ril.ajio&gl=IN&hl=en"
     },
     {
+      "package": "com.shopping.limeroad",
+      "label": "LimeRoad: Online Fashion Shop",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.shopping.limeroad&gl=IN&hl=en"
+    },
+    {
       "package": "com.snapdeal.main",
       "label": "Snapdeal",
       "category": "shopping",
@@ -51,6 +131,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.snapdeal.main&gl=IN&hl=en"
+    },
+    {
+      "package": "fc.admin.fcexpressadmin",
+      "label": "FirstCry India - Baby & Kids",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=fc.admin.fcexpressadmin&gl=IN&hl=en"
     },
     {
       "package": "live.citymall.customer.prod",

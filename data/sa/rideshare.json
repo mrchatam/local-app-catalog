@@ -1,0 +1,66 @@
+{
+  "country": "SA",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.KuraimiBank",
+      "label": "Kuraimi Jawal Application",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.KuraimiBank&gl=SA&hl=en"
+    },
+    {
+      "package": "com.RedLineGames.Game49",
+      "label": "Ice Cream Inc. ASMR, DIY Games",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.RedLineGames.Game49&gl=SA&hl=en"
+    },
+    {
+      "package": "com.greentech.quran",
+      "label": "Al Quran (Tafsir & by Word)",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.greentech.quran&gl=SA&hl=en"
+    },
+    {
+      "package": "com.madarsoft.quran",
+      "label": "مصحف المدينة : القران الكريم",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.madarsoft.quran&gl=SA&hl=en"
+    },
+    {
+      "package": "com.miniclip.carrom",
+      "label": "Carrom Pool: Disc Game",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.miniclip.carrom&gl=SA&hl=en"
+    },
+    {
+      "package": "com.pakdata.QuranMajeed",
+      "label": "Quran Majeed – القران الكريم",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.pakdata.QuranMajeed&gl=SA&hl=en"
+    }
+  ]
+}

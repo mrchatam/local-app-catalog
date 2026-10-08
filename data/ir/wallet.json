@@ -3,6 +3,66 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.ncwallet",
+      "label": "NC Wallet: Crypto Without Fees",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.ncwallet",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.techlogix.mobilinkcustomer",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/id.dana",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "io.metamask",
+      "label": "MetaMask: Trade Crypto",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/io.metamask",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/io.safepal.wallet",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    },
+    {
       "package": "kifpool.me.v2",
       "label": "کیف پول من",
       "category": "wallet",
@@ -13,6 +73,18 @@
       "evidence": "https://myket.ir/app/kifpool.me.v2",
       "store": "myket",
       "verified_at": "2026-10-07"
+    },
+    {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/mm.com.wavemoney.wavepay",
+      "store": "myket",
+      "verified_at": "2026-10-08"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "country": "IR",
+  "category": "rideshare",
+  "apps": [
+    {
+      "package": "com.lenovo.anyshare.gps",
+      "label": "SHAREit: Transfer, Share Files",
+      "category": "rideshare",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://myket.ir/app/com.lenovo.anyshare.gps",
+      "store": "myket",
+      "verified_at": "2026-10-08"
+    }
+  ]
+}

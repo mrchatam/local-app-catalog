@@ -16,9 +16,10 @@
  * Every insertion goes through tools/curate/lib.mjs - normalizeEntry,
  * validateEntry, insertSorted, the same stageEntry bytes CI validates on the
  * pull request - so the automated path cannot write something the human path
- * could not. Insertions are capped per run (--max-insertions) to keep the
- * nightly diff reviewable; the remainder is reported as `deferred` and picked
- * up the next night (already-inserted packages are skipped then).
+ * could not. Insertions are capped per run (--max-insertions) so one bad
+ * night cannot flood the diff; the default (100) is sized for a healthy
+ * multi-country sweep, and anything beyond it is reported as `deferred` and
+ * picked up the next night (already-inserted packages are skipped then).
  *
  * Exit codes (same taxonomy as tools/recheck):
  *   0  entries inserted (or nothing qualified)
@@ -43,7 +44,7 @@ written (dry run, prints the plan).
 
 Exit codes: 0 inserted or nothing qualified, 1 hard failure, 3 usage error.`;
 
-const DEFAULT_MAX_INSERTIONS = 25;
+const DEFAULT_MAX_INSERTIONS = 100;
 const ADDED_BY = "@local-app-catalog"; // schema: a GitHub-username-shaped handle
 
 function parseArgs(argv) {

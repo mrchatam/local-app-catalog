@@ -3,6 +3,26 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "com.didiglobal.passenger",
+      "label": "DiDi Rider: book your rides",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.didiglobal.passenger&gl=EG&hl=en"
+    },
+    {
+      "package": "com.gettaxi.android",
+      "label": "Gett- Corporate Ground Travel",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gettaxi.android&gl=EG&hl=en"
+    },
+    {
       "package": "farid.taxi.ksa.egypt.passenger",
       "label": "Farid Egypt TAXI",
       "category": "rideshare",

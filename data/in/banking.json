@@ -23,6 +23,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.csam.icici.bank.imobile&gl=IN&hl=en"
     },
     {
+      "package": "com.flipkart.android",
+      "label": "Flipkart Online Shopping App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=IN&hl=en"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "label": "Google Pay: Secure UPI payment",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&gl=IN&hl=en"
+    },
+    {
       "package": "com.iexceed.ib.digitalbankingprod",
       "label": "IndSMART IndianBank",
       "category": "banking",
@@ -31,6 +51,36 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.iexceed.ib.digitalbankingprod&gl=IN&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=IN&hl=en"
+    },
+    {
+      "package": "com.nextbillion.groww",
+      "label": "Groww Stocks, Mutual Fund, IPO",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&gl=IN&hl=en"
+    },
+    {
+      "package": "com.postpe.app",
+      "label": "BharatPe UPI Payment, Loan App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.postpe.app&gl=IN&hl=en"
     },
     {
       "package": "com.sbi.SBIFreedomPlus",
@@ -43,6 +93,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.sbi.SBIFreedomPlus&gl=IN&hl=en"
     },
     {
+      "package": "com.trackmyphones.upipaymentannouncer",
+      "label": "UPI Payment Announcer SoundBox",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.trackmyphones.upipaymentannouncer&gl=IN&hl=en"
+    },
+    {
       "package": "in.org.npci.upiapp",
       "label": "BHIM",
       "category": "banking",
@@ -53,6 +113,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&gl=IN&hl=en"
     },
     {
+      "package": "money.jupiter",
+      "label": "Jupiter: Cards, UPI, Banking",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=money.jupiter&gl=IN&hl=en"
+    },
+    {
       "package": "net.one97.paytm",
       "label": "Paytm",
       "category": "banking",
@@ -61,6 +131,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=IN&hl=en"
+    },
+    {
+      "package": "org.altruist.BajajExperia",
+      "label": "Bajaj Finance : UPI & Loan App",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&gl=IN&hl=en"
     }
   ]
 }

@@ -3,6 +3,16 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.io.owallet",
+      "label": "OWallet",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.io.owallet&gl=NG&hl=en"
+    },
+    {
       "package": "com.mypaga.customer",
       "label": "Paga",
       "category": "wallet",
@@ -23,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.nipek.cdcare&gl=NG&hl=en"
     },
     {
+      "package": "com.oppi.wallet",
+      "label": "Oppi: Crypto Wallet & Card",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.oppi.wallet&gl=NG&hl=en"
+    },
+    {
       "package": "com.transsnet.palmpay",
       "label": "PalmPay",
       "category": "wallet",
@@ -31,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.transsnet.palmpay&gl=NG&hl=en"
+    },
+    {
+      "package": "io.safepal.wallet",
+      "label": "SafePal: Crypto Wallet BTC NFT",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=io.safepal.wallet&gl=NG&hl=en"
     },
     {
       "package": "team.opay.pay",

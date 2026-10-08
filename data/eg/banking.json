@@ -1,0 +1,126 @@
+{
+  "country": "EG",
+  "category": "banking",
+  "apps": [
+    {
+      "package": "com.aiBank.RetailMobile",
+      "label": "Bank NXT Mobile",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.aiBank.RetailMobile&gl=EG&hl=en"
+    },
+    {
+      "package": "com.doublefun.moneyflow",
+      "label": "Idle Bank - Money Games",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.doublefun.moneyflow&gl=EG&hl=en"
+    },
+    {
+      "package": "com.luckyskeletonstudios.idlebanktycoon",
+      "label": "Idle Bank Tycoon: Money Empire",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.luckyskeletonstudios.idlebanktycoon&gl=EG&hl=en"
+    },
+    {
+      "package": "com.marcotardanico.wallyfor",
+      "label": "Wallyfor",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.marcotardanico.wallyfor&gl=EG&hl=en"
+    },
+    {
+      "package": "com.mobikwik_new",
+      "label": "MobiKwik: Loans, UPI & Wallet",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=EG&hl=en"
+    },
+    {
+      "package": "com.naviapp",
+      "label": "Navi: UPI, Payments, Insurance",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ofss.fcdb.mobile.android.phone.BAE.launcher",
+      "label": "Bank al Etihad - بنك الاتحاد",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ofss.fcdb.mobile.android.phone.BAE.launcher&gl=EG&hl=en"
+    },
+    {
+      "package": "com.ruya.bank",
+      "label": "ruya bank",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ruya.bank&gl=EG&hl=en"
+    },
+    {
+      "package": "com.techlogix.mobilinkcustomer",
+      "label": "JazzCash - Your Mobile Account",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=EG&hl=en"
+    },
+    {
+      "package": "id.dana",
+      "label": "DANA Indonesia Digital Wallet",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=EG&hl=en"
+    },
+    {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=mm.com.wavemoney.wavepay&gl=EG&hl=en"
+    },
+    {
+      "package": "net.one97.paytm",
+      "label": "Paytm: Secure UPI Payments",
+      "category": "banking",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-08",
+      "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=EG&hl=en"
+    }
+  ]
+}
