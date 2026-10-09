@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=BR&hl=en"
     },
     {
+      "package": "com.freereels.app",
+      "label": "FreeReels - Dramas & Reels",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.freereels.app&gl=BR&hl=en"
+    },
+    {
       "package": "com.globo.globotv",
       "label": "Globoplay",
       "category": "streaming",
@@ -111,6 +121,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=BR&hl=en"
+    },
+    {
+      "package": "net.comeandsee.thechosen",
+      "label": "The Chosen",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&gl=BR&hl=en"
     },
     {
       "package": "tv.pluto.android",

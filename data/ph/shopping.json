@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=PH&hl=en"
     },
     {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=PH&hl=en"
+    },
+    {
       "package": "com.onlineshoppinghub.onlineshoppingphilippines",
       "label": "Philippines Online Shopping",
       "category": "shopping",
