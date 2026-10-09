@@ -31,6 +31,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.unearby.sayhi&gl=PK&hl=en"
+    },
+    {
+      "package": "com.voicechat.live.group",
+      "label": "YoHo: Group voice chat",
+      "category": "messaging",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.voicechat.live.group&gl=PK&hl=en"
     }
   ]
 }

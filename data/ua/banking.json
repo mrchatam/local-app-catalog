@@ -23,6 +23,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=UA&hl=en"
     },
     {
+      "package": "com.fuib.android.spot.online",
+      "label": "PUMB－Mobile Banking App",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fuib.android.spot.online&gl=UA&hl=en"
+    },
+    {
+      "package": "com.vostok.bv",
+      "label": "VST bank — online banking",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vostok.bv&gl=UA&hl=en"
+    },
+    {
       "package": "es.lacaixa.mobile.android.newwapicon",
       "label": "CaixaBankNow・Mobile banking",
       "category": "banking",

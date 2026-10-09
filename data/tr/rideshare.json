@@ -51,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.taxime.client&gl=TR&hl=en"
+    },
+    {
+      "package": "kz.nidge.tez_taxi.tez_taxi",
+      "label": "Tez Taxi: заказывай своё такси",
+      "category": "rideshare",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=kz.nidge.tez_taxi.tez_taxi&gl=TR&hl=en"
     }
   ]
 }

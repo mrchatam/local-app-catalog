@@ -103,6 +103,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.trackmyphones.upipaymentannouncer&gl=IN&hl=en"
     },
     {
+      "package": "com.whizdm.moneyview.loans",
+      "label": "Moneyview: UPI, Personal Loans",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.whizdm.moneyview.loans&gl=IN&hl=en"
+    },
+    {
       "package": "in.org.npci.upiapp",
       "label": "BHIM",
       "category": "banking",

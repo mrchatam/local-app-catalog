@@ -3,6 +3,36 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "com.eaglefleet.redtaxi",
+      "label": "RedTaxi: Book Cab, Auto & Bike",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=UA&hl=en"
+    },
+    {
+      "package": "com.gettaxi.android",
+      "label": "Gett- Corporate Ground Travel",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gettaxi.android&gl=UA&hl=en"
+    },
+    {
+      "package": "com.grabtaxi.passenger",
+      "label": "Grab - Taxi & Food Delivery",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=UA&hl=en"
+    },
+    {
       "package": "com.mobox.taxi",
       "label": "Taxi 838",
       "category": "rideshare",
@@ -11,6 +41,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.mobox.taxi&gl=UA&hl=en"
+    },
+    {
+      "package": "com.rapido.passenger",
+      "label": "Rapido: Bike-Taxi, Auto & Cabs",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rapido.passenger&gl=UA&hl=en"
+    },
+    {
+      "package": "kz.nidge.tez_taxi.tez_taxi",
+      "label": "Tez Taxi: заказывай своё такси",
+      "category": "rideshare",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-09",
+      "evidence": "https://play.google.com/store/apps/details?id=kz.nidge.tez_taxi.tez_taxi&gl=UA&hl=en"
     }
   ]
 }
