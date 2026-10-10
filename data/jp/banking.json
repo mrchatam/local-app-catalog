@@ -103,6 +103,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=jp.co.bank77.bankingappli&gl=JP&hl=en"
     },
     {
+      "package": "jp.japanpost.jp_bank.bankbookapp",
+      "label": "ゆうちょ通帳アプリ-銀行・通帳アプリ",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.japanpost.jp_bank.bankbookapp&gl=JP&hl=en"
+    },
+    {
       "package": "net.one97.paytm",
       "label": "Paytm: Secure UPI Payments",
       "category": "banking",

@@ -3,6 +3,26 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "codexplore.ojol",
+      "label": "Ojol The Game",
+      "category": "rideshare",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=codexplore.ojol&gl=VN&hl=en"
+    },
+    {
+      "package": "com.lalamove.global.driver.sea",
+      "label": "Lalamove Driver - Drive & Earn",
+      "category": "rideshare",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.lalamove.global.driver.sea&gl=VN&hl=en"
+    },
+    {
       "package": "hk.easyvan.app.client",
       "label": "Lalamove - Fast & Affordable",
       "category": "rideshare",

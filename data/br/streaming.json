@@ -113,6 +113,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=BR&hl=en"
     },
     {
+      "package": "com.viewlift.hoichoi",
+      "label": "hoichoi - Movies & Web Series",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.viewlift.hoichoi&gl=BR&hl=en"
+    },
+    {
       "package": "tv.pluto.android",
       "label": "Pluto TV: Watch Free Movies/TV",
       "category": "streaming",

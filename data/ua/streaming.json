@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=UA&hl=en"
     },
     {
+      "package": "com.future.moviesByFawesomeAndroidTV",
+      "label": "Fawesome: Free Movies and TV",
+      "category": "streaming",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.future.moviesByFawesomeAndroidTV&gl=UA&hl=en"
+    },
+    {
       "package": "com.google.android.apps.youtube.kids",
       "label": "YouTube Kids",
       "category": "streaming",

@@ -1,0 +1,16 @@
+{
+  "country": "BR",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.cards.wallet.cardsapp",
+      "label": "Wallet - Digital Wallet Card",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cards.wallet.cardsapp&gl=BR&hl=en"
+    }
+  ]
+}

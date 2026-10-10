@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.oppi.wallet&gl=NG&hl=en"
     },
     {
+      "package": "com.redotpay",
+      "label": "RedotPay: Crypto Card & Pay",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.redotpay&gl=NG&hl=en"
+    },
+    {
       "package": "com.transsnet.palmpay",
       "label": "PalmPay",
       "category": "wallet",
