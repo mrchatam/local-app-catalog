@@ -63,6 +63,18 @@
       "verified_at": "2026-10-08"
     },
     {
+      "package": "com.tradeling.mobilebuyerapp",
+      "label": "Tradeling - Wholesale Shopping",
+      "category": "shopping",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://myket.ir/app/com.tradeling.mobilebuyerapp",
+      "store": "myket",
+      "verified_at": "2026-10-10"
+    },
+    {
       "package": "com.ubuy",
       "label": "Ubuy: International Shopping",
       "category": "shopping",

@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.daraz.shop.lite.sa&gl=BD&hl=en"
     },
     {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=BD&hl=en"
+    },
+    {
       "package": "com.othoba.android",
       "label": "Othoba",
       "category": "shopping",

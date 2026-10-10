@@ -3,6 +3,18 @@
   "category": "streaming",
   "apps": [
     {
+      "package": "com.amdteka",
+      "label": "Amediateka",
+      "category": "streaming",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://www.rustore.ru/catalog/app/com.amdteka",
+      "store": "rustore",
+      "verified_at": "2026-10-10"
+    },
+    {
       "package": "com.ertelecom.domrutvstb",
       "label": "Movix",
       "category": "streaming",

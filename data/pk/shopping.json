@@ -1,0 +1,16 @@
+{
+  "country": "PK",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.daraz.shop.lite.sa",
+      "label": "Daraz Lite App",
+      "category": "shopping",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.daraz.shop.lite.sa&gl=PK&hl=en"
+    }
+  ]
+}

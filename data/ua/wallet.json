@@ -3,6 +3,16 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.bitcoin.mwallet",
+      "label": "Bitcoin.com: Crypto Wallet",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bitcoin.mwallet&gl=UA&hl=en"
+    },
+    {
       "package": "com.blockabc.cctip",
       "label": "Cwallet - Secure Crypto Wallet",
       "category": "wallet",
@@ -31,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.ledger.live&gl=UA&hl=en"
+    },
+    {
+      "package": "com.ncwallet",
+      "label": "NC Wallet: Crypto Without Fees",
+      "category": "wallet",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ncwallet&gl=UA&hl=en"
     },
     {
       "package": "com.premier.customer",

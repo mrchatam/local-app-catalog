@@ -71,6 +71,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=pl.nask.mobywatel&gl=JP&hl=en"
+    },
+    {
+      "package": "us.mitene",
+      "label": "FamilyAlbum - Photo Sharing",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-10",
+      "evidence": "https://play.google.com/store/apps/details?id=us.mitene&gl=JP&hl=en"
     }
   ]
 }
