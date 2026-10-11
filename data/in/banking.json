@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.iexceed.ib.digitalbankingprod&gl=IN&hl=en"
     },
     {
+      "package": "com.indusind.indie",
+      "label": "IndusInd Bank: Savings A/C, FD",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-11",
+      "evidence": "https://play.google.com/store/apps/details?id=com.indusind.indie&gl=IN&hl=en"
+    },
+    {
       "package": "com.naviapp",
       "label": "Navi: UPI, Payments, Insurance",
       "category": "banking",
@@ -101,6 +111,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.trackmyphones.upipaymentannouncer&gl=IN&hl=en"
+    },
+    {
+      "package": "com.whizdm.moneyview.loans",
+      "label": "Moneyview: UPI, Personal Loans",
+      "category": "banking",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-11",
+      "evidence": "https://play.google.com/store/apps/details?id=com.whizdm.moneyview.loans&gl=IN&hl=en"
     },
     {
       "package": "in.org.npci.upiapp",

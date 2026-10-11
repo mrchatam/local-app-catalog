@@ -73,6 +73,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=BR&hl=en"
     },
     {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-11",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=BR&hl=en"
+    },
+    {
       "package": "com.mercadolibre",
       "label": "Mercado Livre: Compras e 10.10",
       "category": "shopping",
@@ -101,6 +111,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.ubuy&gl=BR&hl=en"
+    },
+    {
+      "package": "com.voghion.app",
+      "label": "Voghion - Online shopping app",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-11",
+      "evidence": "https://play.google.com/store/apps/details?id=com.voghion.app&gl=BR&hl=en"
     },
     {
       "package": "com.worten.app",
