@@ -39,6 +39,18 @@
       "verified_at": "2026-10-08"
     },
     {
+      "package": "com.app.emvnfccard.emv.nfc.creditcardreader",
+      "label": "Credit Card : Wallet & NFC",
+      "category": "banking",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-11",
+      "evidence": "https://myket.ir/app/com.app.emvnfccard.emv.nfc.creditcardreader",
+      "store": "myket",
+      "verified_at": "2026-10-11"
+    },
+    {
       "package": "com.citydi.hplus",
       "label": "همراه شهر پلاس",
       "category": "banking",
