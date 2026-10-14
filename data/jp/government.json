@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGTMTM&gl=JP&hl=en"
     },
     {
+      "package": "com.square_enix.android_googleplay.RSRS",
+      "label": "ロマンシング サガ リ･ユニバース",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-14",
+      "evidence": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.RSRS&gl=JP&hl=en"
+    },
+    {
       "package": "jp.co.craftegg.band",
       "label": "バンドリ！ ガールズバンドパーティ！",
       "category": "government",

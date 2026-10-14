@@ -15,6 +15,18 @@
       "verified_at": "2026-10-08"
     },
     {
+      "package": "com.airplanecooking.chef.kitchen.restaurant.diner",
+      "label": "Cooking Go® Airplane Game",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-14",
+      "evidence": "https://myket.ir/app/com.airplanecooking.chef.kitchen.restaurant.diner",
+      "store": "myket",
+      "verified_at": "2026-10-14"
+    },
+    {
       "package": "com.oxiwyle.modernage2",
       "label": "MA 2 – President Simulator",
       "category": "government",
@@ -49,6 +61,18 @@
       "evidence": "https://myket.ir/app/com.windyty.android",
       "store": "myket",
       "verified_at": "2026-10-08"
+    },
+    {
+      "package": "com.zabanshenas",
+      "label": "آموزش زبان انگلیسی زبانشناس",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-14",
+      "evidence": "https://myket.ir/app/com.zabanshenas",
+      "store": "myket",
+      "verified_at": "2026-10-14"
     },
     {
       "package": "org.wikipedia",

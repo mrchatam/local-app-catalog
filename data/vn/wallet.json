@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=id.dana&gl=VN&hl=en"
     },
     {
+      "package": "mm.com.wavemoney.wavepay",
+      "label": "WavePay APP by Wave Money",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-14",
+      "evidence": "https://play.google.com/store/apps/details?id=mm.com.wavemoney.wavepay&gl=VN&hl=en"
+    },
+    {
       "package": "net.one97.paytm",
       "label": "Paytm: Secure UPI Payments",
       "category": "wallet",
