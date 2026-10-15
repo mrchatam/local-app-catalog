@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=BR&hl=en"
     },
     {
+      "package": "com.freereels.app",
+      "label": "FreeReels - Dramas & Reels",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-15",
+      "evidence": "https://play.google.com/store/apps/details?id=com.freereels.app&gl=BR&hl=en"
+    },
+    {
       "package": "com.globo.globotv",
       "label": "Globoplay",
       "category": "streaming",
@@ -41,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.globo.globotv&gl=BR&hl=en"
+    },
+    {
+      "package": "com.gocinefilmeseseries",
+      "label": "GoCine - Filmes em casa",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-15",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gocinefilmeseseries&gl=BR&hl=en"
     },
     {
       "package": "com.google.android.videos",
@@ -111,6 +131,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.vidangel.thechosen&gl=BR&hl=en"
+    },
+    {
+      "package": "com.viewlift.hoichoi",
+      "label": "hoichoi - Movies & Web Series",
+      "category": "streaming",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-15",
+      "evidence": "https://play.google.com/store/apps/details?id=com.viewlift.hoichoi&gl=BR&hl=en"
     },
     {
       "package": "tv.pluto.android",
