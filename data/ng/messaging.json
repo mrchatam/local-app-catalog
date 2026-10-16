@@ -3,6 +3,26 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.convextech.chatdip",
+      "label": "ChatDip Messenger",
+      "category": "messaging",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-16",
+      "evidence": "https://play.google.com/store/apps/details?id=com.convextech.chatdip&gl=NG&hl=en"
+    },
+    {
+      "package": "com.unearby.sayhi",
+      "label": "SayHi Chat Meet Dating People",
+      "category": "messaging",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-16",
+      "evidence": "https://play.google.com/store/apps/details?id=com.unearby.sayhi&gl=NG&hl=en"
+    },
+    {
       "package": "mingle.android.mingle2",
       "label": "Mingle2: Dating, Chat & Meet",
       "category": "messaging",
