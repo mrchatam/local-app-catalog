@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.hellogroup.HelloFinSurv&gl=ZA&hl=en"
     },
     {
+      "package": "com.mukuru.customer.android",
+      "label": "Mukuru: Send Money Transfers",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-16",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mukuru.customer.android&gl=ZA&hl=en"
+    },
+    {
       "package": "com.sozap.badmen",
       "label": "Armed Heist: Shooting gun game",
       "category": "banking",
@@ -51,6 +61,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.sozap.badmen&gl=ZA&hl=en"
+    },
+    {
+      "package": "es.lacaixa.mobile.android.newwapicon",
+      "label": "CaixaBankNow・Mobile banking",
+      "category": "banking",
+      "country": "ZA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-16",
+      "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=ZA&hl=en"
     }
   ]
 }
