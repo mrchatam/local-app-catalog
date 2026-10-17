@@ -31,6 +31,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.town.towncar&gl=KR&hl=en"
+    },
+    {
+      "package": "io.mobinity.locker",
+      "label": "T locker 또타라커 - 지하철 물품보관전달함",
+      "category": "rideshare",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-17",
+      "evidence": "https://play.google.com/store/apps/details?id=io.mobinity.locker&gl=KR&hl=en"
     }
   ]
 }
