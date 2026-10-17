@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGTMTM&gl=JP&hl=en"
     },
     {
+      "package": "com.sega.pjsekai",
+      "label": "プロジェクトセカイ カラフルステージ！ feat. 初音ミク",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-17",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sega.pjsekai&gl=JP&hl=en"
+    },
+    {
       "package": "jp.co.craftegg.band",
       "label": "バンドリ！ ガールズバンドパーティ！",
       "category": "government",
@@ -71,6 +81,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=pl.nask.mobywatel&gl=JP&hl=en"
+    },
+    {
+      "package": "us.mitene",
+      "label": "FamilyAlbum - Photo Sharing",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-17",
+      "evidence": "https://play.google.com/store/apps/details?id=us.mitene&gl=JP&hl=en"
     }
   ]
 }
