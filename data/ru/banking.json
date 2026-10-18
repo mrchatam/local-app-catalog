@@ -3,6 +3,18 @@
   "category": "banking",
   "apps": [
     {
+      "package": "com.luckyskeletonstudios.idlebanktycoon",
+      "label": "Idle Bank Tycoon: Money Empire",
+      "category": "banking",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-18",
+      "evidence": "https://www.rustore.ru/catalog/app/com.luckyskeletonstudios.idlebanktycoon",
+      "store": "rustore",
+      "verified_at": "2026-10-18"
+    },
+    {
       "package": "ru.sberbankmobile",
       "label": "Сбербанк Онлайн",
       "category": "banking",
