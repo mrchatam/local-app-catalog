@@ -3,6 +3,16 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.cisco.wx2.android",
+      "label": "Webex",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-19",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cisco.wx2.android&gl=EG&hl=en"
+    },
+    {
       "package": "com.hwsj.chat",
       "label": "Timo - Chat Near & Real Friend",
       "category": "messaging",
@@ -11,6 +21,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.hwsj.chat&gl=EG&hl=en"
+    },
+    {
+      "package": "com.talkin.learn",
+      "label": "Talkin: Global Friends & Chat",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-19",
+      "evidence": "https://play.google.com/store/apps/details?id=com.talkin.learn&gl=EG&hl=en"
     }
   ]
 }
