@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.alllatestnews.philippinesnews&gl=PH&hl=en"
     },
     {
+      "package": "com.smart.consumer.app",
+      "label": "Smart",
+      "category": "government",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.smart.consumer.app&gl=PH&hl=en"
+    },
+    {
       "package": "com.strzelba.cities_of_philippines",
       "label": "Cities of Philippines",
       "category": "government",

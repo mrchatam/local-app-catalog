@@ -43,6 +43,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.naviapp&gl=SA&hl=en"
     },
     {
+      "package": "com.rblbank.mobank",
+      "label": "RBL MyBank",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.rblbank.mobank&gl=SA&hl=en"
+    },
+    {
+      "package": "com.ruya.bank",
+      "label": "ruya bank",
+      "category": "banking",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ruya.bank&gl=SA&hl=en"
+    },
+    {
       "package": "com.techlogix.mobilinkcustomer",
       "label": "JazzCash - Your Mobile Account",
       "category": "banking",

@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
     },
     {
+      "package": "br.com.koin",
+      "label": "Koin: Crédito e Pix parcelado",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-20",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.koin&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.meupag",
       "label": "Banco will: Cartão de crédito",
       "category": "banking",
