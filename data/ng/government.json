@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=NG&hl=en"
     },
     {
+      "package": "com.x8bit.bitwarden",
+      "label": "Bitwarden Password Manager",
+      "category": "government",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&gl=NG&hl=en"
+    },
+    {
       "package": "mega.privacy.android.app",
       "label": "MEGA",
       "category": "government",

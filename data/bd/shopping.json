@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.cartup.user&gl=BD&hl=en"
     },
     {
+      "package": "com.chaldal.poached",
+      "label": "Chaldal: Online Grocery",
+      "category": "shopping",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=com.chaldal.poached&gl=BD&hl=en"
+    },
+    {
       "package": "com.daraz.android",
       "label": "Daraz Online Shopping App",
       "category": "shopping",

@@ -113,6 +113,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.ril.ajio&gl=IN&hl=en"
     },
     {
+      "package": "com.ril.tira",
+      "label": "Tira: Online Beauty Shopping",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ril.tira&gl=IN&hl=en"
+    },
+    {
       "package": "com.shopping.limeroad",
       "label": "LimeRoad: Online Fashion Shop",
       "category": "shopping",

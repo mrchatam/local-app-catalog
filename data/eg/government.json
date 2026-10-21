@@ -33,6 +33,36 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.efinance.khadamatmisr&gl=EG&hl=en"
     },
     {
+      "package": "com.elmashriqandkhraman.bookinglab",
+      "label": "fohoos (Booking lab)",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=com.elmashriqandkhraman.bookinglab&gl=EG&hl=en"
+    },
+    {
+      "package": "com.healthtag",
+      "label": "HealthTag - كارت الصحة",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=com.healthtag&gl=EG&hl=en"
+    },
+    {
+      "package": "mr.got.citoyens.platforme",
+      "label": "KHIDMATY",
+      "category": "government",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-21",
+      "evidence": "https://play.google.com/store/apps/details?id=mr.got.citoyens.platforme&gl=EG&hl=en"
+    },
+    {
       "package": "ps.moi.servicescitizens",
       "label": "Citizens' Services",
       "category": "government",
