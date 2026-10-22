@@ -3,6 +3,16 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.cisco.wx2.android",
+      "label": "Webex",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cisco.wx2.android&gl=EG&hl=en"
+    },
+    {
       "package": "com.hwsj.chat",
       "label": "Timo - Chat Near & Real Friend",
       "category": "messaging",
@@ -11,6 +21,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.hwsj.chat&gl=EG&hl=en"
+    },
+    {
+      "package": "omegle.tv",
+      "label": "OmeTV – Video Chat Alternative",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=omegle.tv&gl=EG&hl=en"
     }
   ]
 }

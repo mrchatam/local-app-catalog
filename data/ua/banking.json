@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=UA&hl=en"
     },
     {
+      "package": "com.bKash.customerapp",
+      "label": "bKash",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bKash.customerapp&gl=UA&hl=en"
+    },
+    {
       "package": "com.bbva.bbvacontigo",
       "label": "BBVA Spain | Online Banking",
       "category": "banking",
@@ -23,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=UA&hl=en"
     },
     {
+      "package": "com.fuib.android.spot.online",
+      "label": "PUMB－Mobile Banking App",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fuib.android.spot.online&gl=UA&hl=en"
+    },
+    {
       "package": "es.lacaixa.mobile.android.newwapicon",
       "label": "CaixaBankNow・Mobile banking",
       "category": "banking",
@@ -31,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=UA&hl=en"
+    },
+    {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=UA&hl=en"
     },
     {
       "package": "team.opay.pay",

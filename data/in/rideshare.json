@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.disha.quickride&gl=IN&hl=en"
     },
     {
+      "package": "com.droptaxi.clientappnew",
+      "label": "droptaxi",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.droptaxi.clientappnew&gl=IN&hl=en"
+    },
+    {
       "package": "com.eaglefleet.redtaxi",
       "label": "RedTaxi: Book Cab, Auto & Bike",
       "category": "rideshare",
@@ -31,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.gozocabs.client&gl=IN&hl=en"
+    },
+    {
+      "package": "com.humblemobile.consumer",
+      "label": "DriveU: Hire Driver for Car",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.humblemobile.consumer&gl=IN&hl=en"
     },
     {
       "package": "com.olacabs.customer",
