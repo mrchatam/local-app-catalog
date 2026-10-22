@@ -83,6 +83,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.markaz.app&gl=TR&hl=en"
     },
     {
+      "package": "com.solidict.ebebek",
+      "label": "ebebek Anne & Bebek Alışveriş",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.solidict.ebebek&gl=TR&hl=en"
+    },
+    {
       "package": "com.zzkko",
       "label": "SHEIN-Shopping Online",
       "category": "shopping",
