@@ -11,6 +11,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=PK&hl=en"
+    },
+    {
+      "package": "com.storyreel.tv.android",
+      "label": "StoryReel: Drama Shorts & TV",
+      "category": "streaming",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-23",
+      "evidence": "https://play.google.com/store/apps/details?id=com.storyreel.tv.android&gl=PK&hl=en"
     }
   ]
 }

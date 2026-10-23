@@ -3,6 +3,26 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.camsea.videochat",
+      "label": "Camsea - Video Chat",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-23",
+      "evidence": "https://play.google.com/store/apps/details?id=com.camsea.videochat&gl=EG&hl=en"
+    },
+    {
+      "package": "com.cisco.wx2.android",
+      "label": "Webex",
+      "category": "messaging",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-23",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cisco.wx2.android&gl=EG&hl=en"
+    },
+    {
       "package": "com.hwsj.chat",
       "label": "Timo - Chat Near & Real Friend",
       "category": "messaging",

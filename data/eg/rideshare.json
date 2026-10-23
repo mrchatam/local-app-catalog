@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.didiglobal.passenger&gl=EG&hl=en"
     },
     {
+      "package": "com.eldokan.misrpharmacies",
+      "label": "Misr Pharmacies -صيدليات مصر",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-23",
+      "evidence": "https://play.google.com/store/apps/details?id=com.eldokan.misrpharmacies&gl=EG&hl=en"
+    },
+    {
       "package": "com.gettaxi.android",
       "label": "Gett- Corporate Ground Travel",
       "category": "rideshare",
