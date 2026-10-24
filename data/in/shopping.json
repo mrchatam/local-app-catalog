@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=IN&hl=en"
     },
     {
+      "package": "com.flipkart.seller",
+      "label": "Flipkart Seller : Sell Online",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-24",
+      "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.seller&gl=IN&hl=en"
+    },
+    {
       "package": "com.fsn.nds",
       "label": "Nykaa Fashion – Shopping App",
       "category": "shopping",
@@ -141,6 +151,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=fc.admin.fcexpressadmin&gl=IN&hl=en"
+    },
+    {
+      "package": "libasdelhinew.android.app",
+      "label": "Libas: Fashion Shopping App",
+      "category": "shopping",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-24",
+      "evidence": "https://play.google.com/store/apps/details?id=libasdelhinew.android.app&gl=IN&hl=en"
     },
     {
       "package": "live.citymall.customer.prod",
