@@ -3,6 +3,16 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.migo.mobile",
+      "label": "MIGO Live-Voice and Video Chat",
+      "category": "messaging",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.migo.mobile&gl=PK&hl=en"
+    },
+    {
       "package": "com.thankyo.hwgame",
       "label": "StreamKar - Live Stream & Chat",
       "category": "messaging",
@@ -31,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.unearby.sayhi&gl=PK&hl=en"
+    },
+    {
+      "package": "com.voicechat.live.group",
+      "label": "YoHo: Group voice chat",
+      "category": "messaging",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.voicechat.live.group&gl=PK&hl=en"
     }
   ]
 }

@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.buscape.MainPack&gl=BR&hl=en"
     },
     {
+      "package": "br.com.cea.appb2c",
+      "label": "C&A: Comprar Roupas",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.cea.appb2c&gl=BR&hl=en"
+    },
+    {
       "package": "com.alibaba.intl.android.apps.poseidon",
       "label": "Alibaba.com - B2B marketplace",
       "category": "shopping",

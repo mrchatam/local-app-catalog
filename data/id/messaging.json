@@ -1,0 +1,16 @@
+{
+  "country": "ID",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "com.gagasoft.ranchat",
+      "label": "Random Chat - Stranger Chat",
+      "category": "messaging",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gagasoft.ranchat&gl=ID&hl=en"
+    }
+  ]
+}
