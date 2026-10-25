@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
     },
     {
+      "package": "br.com.koin",
+      "label": "Koin: Crédito e Pix parcelado",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.koin&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.meupag",
       "label": "Banco will: Cartão de crédito",
       "category": "banking",
@@ -61,6 +71,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=br.com.meupag&gl=BR&hl=en"
+    },
+    {
+      "package": "br.com.meutudo",
+      "label": "meutudo. Empréstimo CLT e INSS",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.meutudo&gl=BR&hl=en"
     },
     {
       "package": "br.com.neon",
@@ -83,6 +103,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=BR&hl=en"
     },
     {
+      "package": "com.conceptispuzzles.blockapix",
+      "label": "Block-a-Pix: Block Puzzle",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.blockapix&gl=BR&hl=en"
+    },
+    {
       "package": "com.conceptispuzzles.picapix",
       "label": "Pic-a-Pix: Nonogram Color",
       "category": "banking",
@@ -91,6 +121,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.picapix&gl=BR&hl=en"
+    },
+    {
+      "package": "com.conceptispuzzles.pixomania",
+      "label": "Pix-o-Mania: Pixel Logic",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.pixomania&gl=BR&hl=en"
+    },
+    {
+      "package": "com.fansfolio.alarm",
+      "label": "Pix Alarm: Photo Alarm Clock",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fansfolio.alarm&gl=BR&hl=en"
     },
     {
       "package": "com.pashapuma.pixminimal.iconpack",
@@ -131,6 +181,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=io.cloudwalk.infinitepaydash&gl=BR&hl=en"
+    },
+    {
+      "package": "pt.bancobest.android.mobilebanking",
+      "label": "Best Bank",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-25",
+      "evidence": "https://play.google.com/store/apps/details?id=pt.bancobest.android.mobilebanking&gl=BR&hl=en"
     }
   ]
 }
