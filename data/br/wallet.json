@@ -1,0 +1,16 @@
+{
+  "country": "BR",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-26",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=BR&hl=en"
+    }
+  ]
+}
