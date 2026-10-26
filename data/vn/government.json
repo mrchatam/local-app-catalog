@@ -1,0 +1,26 @@
+{
+  "country": "VN",
+  "category": "government",
+  "apps": [
+    {
+      "package": "vn.com.encapital.arrow",
+      "label": "Entrade X by DNSE: Stocks",
+      "category": "government",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-26",
+      "evidence": "https://play.google.com/store/apps/details?id=vn.com.encapital.arrow&gl=VN&hl=en"
+    },
+    {
+      "package": "vn.com.vetc.app",
+      "label": "VETC",
+      "category": "government",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-26",
+      "evidence": "https://play.google.com/store/apps/details?id=vn.com.vetc.app&gl=VN&hl=en"
+    }
+  ]
+}

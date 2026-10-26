@@ -3,6 +3,18 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.binance.dev",
+      "label": "Binance: Buy Bitcoin & Crypto",
+      "category": "wallet",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-26",
+      "evidence": "https://myket.ir/app/com.binance.dev",
+      "store": "myket",
+      "verified_at": "2026-10-26"
+    },
+    {
       "package": "com.ncwallet",
       "label": "NC Wallet: Crypto Without Fees",
       "category": "wallet",
