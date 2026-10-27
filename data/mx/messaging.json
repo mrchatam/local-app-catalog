@@ -3,6 +3,16 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "com.messenger.sms.messages",
+      "label": "Messages - SMS Texting App",
+      "category": "messaging",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.messenger.sms.messages&gl=MX&hl=en"
+    },
+    {
       "package": "network.loki.messenger",
       "label": "Session - Private Messenger",
       "category": "messaging",

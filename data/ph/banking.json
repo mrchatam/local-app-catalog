@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&gl=PH&hl=en"
     },
     {
+      "package": "com.mobile.legends",
+      "label": "Mobile Legends: Bang Bang",
+      "category": "banking",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.mobile.legends&gl=PH&hl=en"
+    },
+    {
       "package": "com.paymaya",
       "label": "Maya",
       "category": "banking",

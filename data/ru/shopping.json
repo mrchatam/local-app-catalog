@@ -1,0 +1,18 @@
+{
+  "country": "RU",
+  "category": "shopping",
+  "apps": [
+    {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-27",
+      "evidence": "https://www.rustore.ru/catalog/app/com.ebay.mobile",
+      "store": "rustore",
+      "verified_at": "2026-10-27"
+    }
+  ]
+}

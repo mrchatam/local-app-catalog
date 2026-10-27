@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=MX&hl=en"
     },
     {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=MX&hl=en"
+    },
+    {
       "package": "com.mychime.waveremit.app",
       "label": "Sendwave Wallet",
       "category": "banking",
