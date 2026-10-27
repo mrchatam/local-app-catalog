@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.bnc.finance&gl=ID&hl=en"
     },
     {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "banking",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-27",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=ID&hl=en"
+    },
+    {
       "package": "id.co.bri.brimo",
       "label": "BRImo",
       "category": "banking",
