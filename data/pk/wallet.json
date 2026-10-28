@@ -3,6 +3,16 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.king.candycrushsaga",
+      "label": "Candy Crush Saga",
+      "category": "wallet",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-28",
+      "evidence": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga&gl=PK&hl=en"
+    },
+    {
       "package": "com.wallet.crypto.trustapp",
       "label": "Trust: Crypto & Bitcoin Wallet",
       "category": "wallet",

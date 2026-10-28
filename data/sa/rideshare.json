@@ -3,6 +3,16 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "com.AppRocks.now.prayer",
+      "label": "براير ناو : مواقيت الصلاة الان",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-28",
+      "evidence": "https://play.google.com/store/apps/details?id=com.AppRocks.now.prayer&gl=SA&hl=en"
+    },
+    {
       "package": "com.KuraimiBank",
       "label": "Kuraimi Jawal Application",
       "category": "rideshare",

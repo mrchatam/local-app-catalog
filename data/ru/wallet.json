@@ -1,0 +1,18 @@
+{
+  "country": "RU",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.binance.dev",
+      "label": "Binance: Buy Bitcoin & Crypto",
+      "category": "wallet",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-28",
+      "evidence": "https://www.rustore.ru/catalog/app/com.binance.dev",
+      "store": "rustore",
+      "verified_at": "2026-10-28"
+    }
+  ]
+}
