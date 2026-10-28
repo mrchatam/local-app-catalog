@@ -23,6 +23,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.jivosite.mobile&gl=BD&hl=en"
     },
     {
+      "package": "com.talkin.learn",
+      "label": "Talkin: Global Friends & Chat",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-28",
+      "evidence": "https://play.google.com/store/apps/details?id=com.talkin.learn&gl=BD&hl=en"
+    },
+    {
+      "package": "in.mohalla.sharechat",
+      "label": "ShareChat Status, Video & Live",
+      "category": "messaging",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-28",
+      "evidence": "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&gl=BD&hl=en"
+    },
+    {
       "package": "mingle.android.mingle2",
       "label": "Mingle2: Dating, Chat & Meet",
       "category": "messaging",
