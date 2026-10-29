@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.hashcove.thecove&gl=IN&hl=en"
     },
     {
+      "package": "com.meri_panchayat",
+      "label": "Meri Panchayat",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meri_panchayat&gl=IN&hl=en"
+    },
+    {
       "package": "in.gov.ecourts.eCourtsServices",
       "label": "eCourts Services",
       "category": "government",

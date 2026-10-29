@@ -3,6 +3,16 @@
   "category": "government",
   "apps": [
     {
+      "package": "com.windyty.android",
+      "label": "Windy.com - Weather Forecast",
+      "category": "government",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=com.windyty.android&gl=MX&hl=en"
+    },
+    {
       "package": "mx.com.cosmocolor.movapp",
       "label": "Licencia Digital EDOMEX",
       "category": "government",

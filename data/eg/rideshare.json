@@ -3,6 +3,16 @@
   "category": "rideshare",
   "apps": [
     {
+      "package": "com.YovoGames.taxi2",
+      "label": "Taxi for kids",
+      "category": "rideshare",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=com.YovoGames.taxi2&gl=EG&hl=en"
+    },
+    {
       "package": "com.didiglobal.passenger",
       "label": "DiDi Rider: book your rides",
       "category": "rideshare",

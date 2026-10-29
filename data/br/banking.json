@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
     },
     {
+      "package": "br.com.koin",
+      "label": "Koin: Crédito e Pix parcelado",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.koin&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.meupag",
       "label": "Banco will: Cartão de crédito",
       "category": "banking",
@@ -73,6 +83,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.neon&gl=BR&hl=en"
     },
     {
+      "package": "co.stone.banking.mobile.flagship",
+      "label": "Stone: Maquininha e Conta PJ",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=co.stone.banking.mobile.flagship&gl=BR&hl=en"
+    },
+    {
       "package": "com.bbva.bbvacontigo",
       "label": "BBVA Spain | Online Banking",
       "category": "banking",
@@ -91,6 +111,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.picapix&gl=BR&hl=en"
+    },
+    {
+      "package": "com.fansfolio.alarm",
+      "label": "Pix Alarm: Photo Alarm Clock",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=com.fansfolio.alarm&gl=BR&hl=en"
     },
     {
       "package": "com.pashapuma.pixminimal.iconpack",
@@ -131,6 +161,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=io.cloudwalk.infinitepaydash&gl=BR&hl=en"
+    },
+    {
+      "package": "pt.bancobest.android.mobilebanking",
+      "label": "Best Bank",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=pt.bancobest.android.mobilebanking&gl=BR&hl=en"
     }
   ]
 }
