@@ -61,6 +61,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.pakdata.QuranMajeed&gl=SA&hl=en"
+    },
+    {
+      "package": "com.sinyee.babybus.icecream",
+      "label": "Little Panda's Ice Cream Game",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sinyee.babybus.icecream&gl=SA&hl=en"
     }
   ]
 }

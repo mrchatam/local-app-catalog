@@ -93,6 +93,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=TR&hl=en"
     },
     {
+      "package": "ro.ing.mobile.banking.android.activity",
+      "label": "ING HomeBank",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-29",
+      "evidence": "https://play.google.com/store/apps/details?id=ro.ing.mobile.banking.android.activity&gl=TR&hl=en"
+    },
+    {
       "package": "team.opay.pay",
       "label": "OPay",
       "category": "banking",
