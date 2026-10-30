@@ -41,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=eu.smartpatient.mytherapy&gl=ID&hl=en"
+    },
+    {
+      "package": "id.co.bankbkemobile.digitalbank",
+      "label": "SeaBank",
+      "category": "government",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-30",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&gl=ID&hl=en"
     }
   ]
 }
