@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.io.owallet&gl=NG&hl=en"
     },
     {
+      "package": "com.ledger.live",
+      "label": "Ledger Wallet™ Crypto Wallet",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-31",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ledger.live&gl=NG&hl=en"
+    },
+    {
       "package": "com.mypaga.customer",
       "label": "Paga",
       "category": "wallet",
@@ -51,6 +61,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.transsnet.palmpay&gl=NG&hl=en"
+    },
+    {
+      "package": "io.iotex.iopay.gp",
+      "label": "ioPay Wallet: Trade & Predict",
+      "category": "wallet",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-31",
+      "evidence": "https://play.google.com/store/apps/details?id=io.iotex.iopay.gp&gl=NG&hl=en"
     },
     {
       "package": "io.safepal.wallet",
