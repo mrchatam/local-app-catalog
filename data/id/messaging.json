@@ -1,0 +1,16 @@
+{
+  "country": "ID",
+  "category": "messaging",
+  "apps": [
+    {
+      "package": "omegle.tv",
+      "label": "OmeTV – Video Chat Alternative",
+      "category": "messaging",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-31",
+      "evidence": "https://play.google.com/store/apps/details?id=omegle.tv&gl=ID&hl=en"
+    }
+  ]
+}

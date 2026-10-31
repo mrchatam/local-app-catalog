@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=MX&hl=en"
     },
     {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-31",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=MX&hl=en"
+    },
+    {
       "package": "com.mercadolibre",
       "label": "Mercado Libre: Compras 10.10",
       "category": "shopping",
@@ -61,6 +71,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=mx.com.liverpool.shoppingapp&gl=MX&hl=en"
+    },
+    {
+      "package": "mx.elektra.appelektra",
+      "label": "Elektra: compras en línea",
+      "category": "shopping",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-10-31",
+      "evidence": "https://play.google.com/store/apps/details?id=mx.elektra.appelektra&gl=MX&hl=en"
     }
   ]
 }
