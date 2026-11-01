@@ -83,6 +83,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.markaz.app&gl=TR&hl=en"
     },
     {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-01",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=TR&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra - Fashion Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-01",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=TR&hl=en"
+    },
+    {
       "package": "com.zzkko",
       "label": "SHEIN-Shopping Online",
       "category": "shopping",

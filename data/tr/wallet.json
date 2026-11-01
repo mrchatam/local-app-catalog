@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer&gl=TR&hl=en"
     },
     {
+      "package": "com.wallet.crypto.trustapp",
+      "label": "Trust: Crypto & Bitcoin Wallet",
+      "category": "wallet",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-01",
+      "evidence": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&gl=TR&hl=en"
+    },
+    {
       "package": "id.dana",
       "label": "DANA Indonesia Digital Wallet",
       "category": "wallet",

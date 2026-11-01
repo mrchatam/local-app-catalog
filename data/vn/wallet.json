@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.mobikwik_new&gl=VN&hl=en"
     },
     {
+      "package": "com.moneybookers.skrillpayments.neteller",
+      "label": "Neteller – Fast Payments",
+      "category": "wallet",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-01",
+      "evidence": "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments.neteller&gl=VN&hl=en"
+    },
+    {
       "package": "com.naviapp",
       "label": "Navi: UPI, Payments, Insurance",
       "category": "wallet",
