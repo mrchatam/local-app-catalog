@@ -3,6 +3,26 @@
   "category": "messaging",
   "apps": [
     {
+      "package": "ai.character.app",
+      "label": "Character AI: Chat, Talk, Text",
+      "category": "messaging",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-02",
+      "evidence": "https://play.google.com/store/apps/details?id=ai.character.app&gl=SA&hl=en"
+    },
+    {
+      "package": "app.phound.app",
+      "label": "Phound: Calls, Chat & Meetings",
+      "category": "messaging",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-02",
+      "evidence": "https://play.google.com/store/apps/details?id=app.phound.app&gl=SA&hl=en"
+    },
+    {
       "package": "com.camsea.videochat",
       "label": "Camsea - Video Chat",
       "category": "messaging",
@@ -11,6 +31,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.camsea.videochat&gl=SA&hl=en"
+    },
+    {
+      "package": "com.dating.for.all",
+      "label": "FRND: Talk to Friends Online",
+      "category": "messaging",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-02",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dating.for.all&gl=SA&hl=en"
     },
     {
       "package": "com.talkin.learn",
