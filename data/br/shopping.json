@@ -43,6 +43,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=BR&hl=en"
     },
     {
+      "package": "com.dylvian.mango.activities",
+      "label": "MANGO - Online fashion",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dylvian.mango.activities&gl=BR&hl=en"
+    },
+    {
       "package": "com.ebay.mobile",
       "label": "eBay online shopping & selling",
       "category": "shopping",
@@ -73,6 +83,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=BR&hl=en"
     },
     {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=BR&hl=en"
+    },
+    {
       "package": "com.mercadolibre",
       "label": "Mercado Livre: Compras e 10.10",
       "category": "shopping",
@@ -81,6 +101,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.mercadolibre&gl=BR&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra - Fashion Shopping App",
+      "category": "shopping",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=BR&hl=en"
     },
     {
       "package": "com.tippingcanoe.pelando",
