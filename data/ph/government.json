@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.alllatestnews.philippinesnews&gl=PH&hl=en"
     },
     {
+      "package": "com.loans.lending.onlinelend.mabiliscash",
+      "label": "MabilisCash—Trusted Loan App",
+      "category": "government",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.loans.lending.onlinelend.mabiliscash&gl=PH&hl=en"
+    },
+    {
       "package": "com.strzelba.cities_of_philippines",
       "label": "Cities of Philippines",
       "category": "government",

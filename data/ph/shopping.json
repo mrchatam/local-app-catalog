@@ -13,6 +13,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.alibaba.intl.android.apps.poseidon&gl=PH&hl=en"
     },
     {
+      "package": "com.ebay.mobile",
+      "label": "eBay online shopping & selling",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ebay.mobile&gl=PH&hl=en"
+    },
+    {
+      "package": "com.omni.shop_sm",
+      "label": "ShopSM",
+      "category": "shopping",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-05",
+      "evidence": "https://play.google.com/store/apps/details?id=com.omni.shop_sm&gl=PH&hl=en"
+    },
+    {
       "package": "com.onlineshoppinghub.onlineshoppingphilippines",
       "label": "Philippines Online Shopping",
       "category": "shopping",
