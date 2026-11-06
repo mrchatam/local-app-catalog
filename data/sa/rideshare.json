@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.RedLineGames.Game49&gl=SA&hl=en"
     },
     {
+      "package": "com.beelabs.qrf.kg2",
+      "label": "Karim and Jana - Our World",
+      "category": "rideshare",
+      "country": "SA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-06",
+      "evidence": "https://play.google.com/store/apps/details?id=com.beelabs.qrf.kg2&gl=SA&hl=en"
+    },
+    {
       "package": "com.greentech.quran",
       "label": "Al Quran (Tafsir & by Word)",
       "category": "rideshare",
