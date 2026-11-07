@@ -13,6 +13,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=MX&hl=en"
     },
     {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-07",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=MX&hl=en"
+    },
+    {
       "package": "com.mychime.waveremit.app",
       "label": "Sendwave Wallet",
       "category": "banking",
@@ -61,6 +71,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.sec.android.easyMover&gl=MX&hl=en"
+    },
+    {
+      "package": "com.tenorshare.transfer",
+      "label": "iCareFone Transfer to iPhone",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-07",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tenorshare.transfer&gl=MX&hl=en"
     },
     {
       "package": "com.topremit.topremit",

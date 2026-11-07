@@ -41,6 +41,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.maleo.ojollife&gl=ID&hl=en"
+    },
+    {
+      "package": "com.myWhuushaja.Whuushaja",
+      "label": "Whuush Ojol & Delivery",
+      "category": "rideshare",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-07",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myWhuushaja.Whuushaja&gl=ID&hl=en"
     }
   ]
 }
