@@ -3,6 +3,18 @@
   "category": "government",
   "apps": [
     {
+      "package": "com.gnivts.selfemployed",
+      "label": "Мой Налог",
+      "category": "government",
+      "country": "RU",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-08",
+      "evidence": "https://www.rustore.ru/catalog/app/com.gnivts.selfemployed",
+      "store": "rustore",
+      "verified_at": "2026-11-08"
+    },
+    {
       "package": "ru.rtlabs.mobile.ebs.gosuslugi.android",
       "label": "Госуслуги Биометрия",
       "category": "government",
