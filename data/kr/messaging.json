@@ -11,6 +11,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.nhn.android.band&gl=KR&hl=en"
+    },
+    {
+      "package": "com.nhnpixelcube.friendspop",
+      "label": "프렌즈팝",
+      "category": "messaging",
+      "country": "KR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.nhnpixelcube.friendspop&gl=KR&hl=en"
     }
   ]
 }

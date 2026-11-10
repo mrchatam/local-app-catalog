@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGTMTM&gl=JP&hl=en"
     },
     {
+      "package": "com.sega.pjsekai",
+      "label": "プロジェクトセカイ カラフルステージ！ feat. 初音ミク",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-10",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sega.pjsekai&gl=JP&hl=en"
+    },
+    {
       "package": "jp.co.craftegg.band",
       "label": "バンドリ！ ガールズバンドパーティ！",
       "category": "government",
