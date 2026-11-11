@@ -51,6 +51,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&gl=IN&hl=en"
+    },
+    {
+      "package": "mingle.android.mingle2",
+      "label": "Mingle2: Dating, Chat & Meet",
+      "category": "messaging",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-11",
+      "evidence": "https://play.google.com/store/apps/details?id=mingle.android.mingle2&gl=IN&hl=en"
     }
   ]
 }
