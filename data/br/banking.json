@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.jeitto.meujeitto&gl=BR&hl=en"
     },
     {
+      "package": "br.com.koin",
+      "label": "Koin: Crédito e Pix parcelado",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-11",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.koin&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.meupag",
       "label": "Banco will: Cartão de crédito",
       "category": "banking",
@@ -63,6 +73,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.meupag&gl=BR&hl=en"
     },
     {
+      "package": "br.com.meutudo",
+      "label": "meutudo. Empréstimo CLT e INSS",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-11",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.meutudo&gl=BR&hl=en"
+    },
+    {
       "package": "br.com.neon",
       "label": "Neon",
       "category": "banking",
@@ -71,6 +91,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=br.com.neon&gl=BR&hl=en"
+    },
+    {
+      "package": "co.stone.banking.mobile.flagship",
+      "label": "Stone: Maquininha e Conta PJ",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-11",
+      "evidence": "https://play.google.com/store/apps/details?id=co.stone.banking.mobile.flagship&gl=BR&hl=en"
     },
     {
       "package": "com.bbva.bbvacontigo",
@@ -91,6 +121,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.conceptispuzzles.picapix&gl=BR&hl=en"
+    },
+    {
+      "package": "com.liquidtecnologia.caiuopix",
+      "label": "Caiu o Pix?",
+      "category": "banking",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-11",
+      "evidence": "https://play.google.com/store/apps/details?id=com.liquidtecnologia.caiuopix&gl=BR&hl=en"
     },
     {
       "package": "com.pashapuma.pixminimal.iconpack",
