@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=EG&hl=en"
     },
     {
+      "package": "com.dylvian.mango.activities",
+      "label": "MANGO - Online fashion",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-12",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dylvian.mango.activities&gl=EG&hl=en"
+    },
+    {
       "package": "com.ebay.mobile",
       "label": "eBay online shopping & selling",
       "category": "shopping",
@@ -101,6 +111,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=EG&hl=en"
+    },
+    {
+      "package": "za.co.makro.shopping",
+      "label": "Makro Online Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-12",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.makro.shopping&gl=EG&hl=en"
     }
   ]
 }
