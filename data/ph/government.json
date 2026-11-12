@@ -21,6 +21,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.strzelba.cities_of_philippines&gl=PH&hl=en"
+    },
+    {
+      "package": "com.treasuryph.RTBApp",
+      "label": "Bureau of the Treasury PH",
+      "category": "government",
+      "country": "PH",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-12",
+      "evidence": "https://play.google.com/store/apps/details?id=com.treasuryph.RTBApp&gl=PH&hl=en"
     }
   ]
 }
