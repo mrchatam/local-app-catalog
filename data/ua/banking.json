@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=es.lacaixa.mobile.android.newwapicon&gl=UA&hl=en"
     },
     {
+      "package": "id.co.bri.brimo",
+      "label": "BRImo",
+      "category": "banking",
+      "country": "UA",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-13",
+      "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=UA&hl=en"
+    },
+    {
       "package": "team.opay.pay",
       "label": "OPay",
       "category": "banking",

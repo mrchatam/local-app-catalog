@@ -33,6 +33,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.linecorp.LGTMTM&gl=JP&hl=en"
     },
     {
+      "package": "com.sega.pjsekai",
+      "label": "プロジェクトセカイ カラフルステージ！ feat. 初音ミク",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-13",
+      "evidence": "https://play.google.com/store/apps/details?id=com.sega.pjsekai&gl=JP&hl=en"
+    },
+    {
       "package": "jp.co.craftegg.band",
       "label": "バンドリ！ ガールズバンドパーティ！",
       "category": "government",
@@ -53,6 +63,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=jp.co.cygames.umamusume&gl=JP&hl=en"
     },
     {
+      "package": "jp.co.mcdonalds.android",
+      "label": "McDonald's Japan",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-13",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.mcdonalds.android&gl=JP&hl=en"
+    },
+    {
       "package": "jp.co.mixi.monsterstrike",
       "label": "モンスターストライク",
       "category": "government",
@@ -63,6 +83,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=jp.co.mixi.monsterstrike&gl=JP&hl=en"
     },
     {
+      "package": "jp.konami.pawapuroapp",
+      "label": "実況パワフルプロ野球",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-13",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.konami.pawapuroapp&gl=JP&hl=en"
+    },
+    {
       "package": "pl.nask.mobywatel",
       "label": "mObywatel",
       "category": "government",
@@ -71,6 +101,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=pl.nask.mobywatel&gl=JP&hl=en"
+    },
+    {
+      "package": "us.mitene",
+      "label": "FamilyAlbum - Photo Sharing",
+      "category": "government",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-13",
+      "evidence": "https://play.google.com/store/apps/details?id=us.mitene&gl=JP&hl=en"
     }
   ]
 }
