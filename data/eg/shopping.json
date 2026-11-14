@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.banggood.client&gl=EG&hl=en"
     },
     {
+      "package": "com.dylvian.mango.activities",
+      "label": "MANGO - Online fashion",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-14",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dylvian.mango.activities&gl=EG&hl=en"
+    },
+    {
       "package": "com.ebay.mobile",
       "label": "eBay online shopping & selling",
       "category": "shopping",
@@ -43,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.flipkart.android&gl=EG&hl=en"
     },
     {
+      "package": "com.inditex.zara",
+      "label": "Zara",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-14",
+      "evidence": "https://play.google.com/store/apps/details?id=com.inditex.zara&gl=EG&hl=en"
+    },
+    {
       "package": "com.meesho.supply",
       "label": "Meesho: Online Shopping App",
       "category": "shopping",
@@ -61,6 +81,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=EG&hl=en"
+    },
+    {
+      "package": "com.namshi.android",
+      "label": "Namshi - Online Fashion Store",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-14",
+      "evidence": "https://play.google.com/store/apps/details?id=com.namshi.android&gl=EG&hl=en"
     },
     {
       "package": "com.ubuy",
