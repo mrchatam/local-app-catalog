@@ -3,6 +3,16 @@
   "category": "banking",
   "apps": [
     {
+      "package": "cn.xender",
+      "label": "Xender - Quick Share, Transfer",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-16",
+      "evidence": "https://play.google.com/store/apps/details?id=cn.xender&gl=MX&hl=en"
+    },
+    {
       "package": "com.acemoneytransfer.android",
       "label": "ACE Money Transfer Send Money",
       "category": "banking",
@@ -11,6 +21,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.acemoneytransfer.android&gl=MX&hl=en"
+    },
+    {
+      "package": "com.bbva.bbvacontigo",
+      "label": "BBVA Spain | Online Banking",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-16",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bbva.bbvacontigo&gl=MX&hl=en"
+    },
+    {
+      "package": "com.global66.cards",
+      "label": "Global66: Tu Cuenta Global",
+      "category": "banking",
+      "country": "MX",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-16",
+      "evidence": "https://play.google.com/store/apps/details?id=com.global66.cards&gl=MX&hl=en"
     },
     {
       "package": "com.mychime.waveremit.app",
