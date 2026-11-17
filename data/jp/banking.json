@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.binance.dev&gl=JP&hl=en"
     },
     {
+      "package": "com.esunbank",
+      "label": "玉山行動銀行",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-17",
+      "evidence": "https://play.google.com/store/apps/details?id=com.esunbank&gl=JP&hl=en"
+    },
+    {
       "package": "es.lacaixa.mobile.android.newwapicon",
       "label": "CaixaBankNow・Mobile banking",
       "category": "banking",
@@ -111,6 +121,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=JP&hl=en"
+    },
+    {
+      "package": "ro.ing.mobile.banking.android.activity",
+      "label": "ING HomeBank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-17",
+      "evidence": "https://play.google.com/store/apps/details?id=ro.ing.mobile.banking.android.activity&gl=JP&hl=en"
     },
     {
       "package": "team.opay.pay",
