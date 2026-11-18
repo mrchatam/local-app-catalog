@@ -1,0 +1,36 @@
+{
+  "country": "BR",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "com.blockabc.cctip",
+      "label": "Cwallet - Secure Crypto Wallet",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-18",
+      "evidence": "https://play.google.com/store/apps/details?id=com.blockabc.cctip&gl=BR&hl=en"
+    },
+    {
+      "package": "com.cards.wallet.cardsapp",
+      "label": "Wallet - Digital Wallet Card",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-18",
+      "evidence": "https://play.google.com/store/apps/details?id=com.cards.wallet.cardsapp&gl=BR&hl=en"
+    },
+    {
+      "package": "com.vita_wallet",
+      "label": "Vita Wallet",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-18",
+      "evidence": "https://play.google.com/store/apps/details?id=com.vita_wallet&gl=BR&hl=en"
+    }
+  ]
+}
