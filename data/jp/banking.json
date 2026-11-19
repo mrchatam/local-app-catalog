@@ -53,6 +53,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.binance.dev&gl=JP&hl=en"
     },
     {
+      "package": "com.transferwise.android",
+      "label": "Wise: International Transfers",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-19",
+      "evidence": "https://play.google.com/store/apps/details?id=com.transferwise.android&gl=JP&hl=en"
+    },
+    {
       "package": "es.lacaixa.mobile.android.newwapicon",
       "label": "CaixaBankNow・Mobile banking",
       "category": "banking",
@@ -103,6 +113,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=jp.co.bank77.bankingappli&gl=JP&hl=en"
     },
     {
+      "package": "jp.co.mcdonalds.android",
+      "label": "McDonald's Japan",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-19",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.mcdonalds.android&gl=JP&hl=en"
+    },
+    {
+      "package": "jp.co.softbank.OfficialApp",
+      "label": "My SoftBank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-19",
+      "evidence": "https://play.google.com/store/apps/details?id=jp.co.softbank.OfficialApp&gl=JP&hl=en"
+    },
+    {
       "package": "net.one97.paytm",
       "label": "Paytm: Secure UPI Payments",
       "category": "banking",
@@ -111,6 +141,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=JP&hl=en"
+    },
+    {
+      "package": "ro.ing.mobile.banking.android.activity",
+      "label": "ING HomeBank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-19",
+      "evidence": "https://play.google.com/store/apps/details?id=ro.ing.mobile.banking.android.activity&gl=JP&hl=en"
     },
     {
       "package": "team.opay.pay",
