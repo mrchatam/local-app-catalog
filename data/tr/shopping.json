@@ -73,6 +73,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.inomera.sm&gl=TR&hl=en"
     },
     {
+      "package": "com.lenskart.app",
+      "label": "Lenskart : Eyeglasses & More",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.lenskart.app&gl=TR&hl=en"
+    },
+    {
       "package": "com.markaz.app",
       "label": "Markaz: Pakistan Shopping App",
       "category": "shopping",
@@ -81,6 +91,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.markaz.app&gl=TR&hl=en"
+    },
+    {
+      "package": "com.meesho.supply",
+      "label": "Meesho: Online Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.meesho.supply&gl=TR&hl=en"
+    },
+    {
+      "package": "com.myntra.android",
+      "label": "Myntra - Fashion Shopping App",
+      "category": "shopping",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-20",
+      "evidence": "https://play.google.com/store/apps/details?id=com.myntra.android&gl=TR&hl=en"
     },
     {
       "package": "com.zzkko",

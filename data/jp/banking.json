@@ -113,6 +113,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=net.one97.paytm&gl=JP&hl=en"
     },
     {
+      "package": "ro.ing.mobile.banking.android.activity",
+      "label": "ING HomeBank",
+      "category": "banking",
+      "country": "JP",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-20",
+      "evidence": "https://play.google.com/store/apps/details?id=ro.ing.mobile.banking.android.activity&gl=JP&hl=en"
+    },
+    {
       "package": "team.opay.pay",
       "label": "OPay",
       "category": "banking",
