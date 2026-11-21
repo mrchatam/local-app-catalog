@@ -101,6 +101,26 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=EG&hl=en"
+    },
+    {
+      "package": "uk.co.next.android",
+      "label": "Next: Fashion & Clothing Store",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-21",
+      "evidence": "https://play.google.com/store/apps/details?id=uk.co.next.android&gl=EG&hl=en"
+    },
+    {
+      "package": "za.co.makro.shopping",
+      "label": "Makro Online Shopping",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-21",
+      "evidence": "https://play.google.com/store/apps/details?id=za.co.makro.shopping&gl=EG&hl=en"
     }
   ]
 }
