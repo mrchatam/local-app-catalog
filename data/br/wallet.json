@@ -1,0 +1,16 @@
+{
+  "country": "BR",
+  "category": "wallet",
+  "apps": [
+    {
+      "package": "br.com.pagmeia.app",
+      "label": "PagMeia Carteira de Estudante",
+      "category": "wallet",
+      "country": "BR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-22",
+      "evidence": "https://play.google.com/store/apps/details?id=br.com.pagmeia.app&gl=BR&hl=en"
+    }
+  ]
+}
