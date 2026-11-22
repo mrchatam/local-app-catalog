@@ -101,6 +101,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.zzkko&gl=EG&hl=en"
+    },
+    {
+      "package": "uk.co.next.android",
+      "label": "Next: Fashion & Clothing Store",
+      "category": "shopping",
+      "country": "EG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-22",
+      "evidence": "https://play.google.com/store/apps/details?id=uk.co.next.android&gl=EG&hl=en"
     }
   ]
 }

@@ -3,6 +3,16 @@
   "category": "streaming",
   "apps": [
     {
+      "package": "com.UCMobile.intl",
+      "label": "UC Browser-Safe, Fast, Private",
+      "category": "streaming",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.UCMobile.intl&gl=VN&hl=en"
+    },
+    {
       "package": "com.apple.atve.androidtv.appletv",
       "label": "Apple TV: Shows, Movies & More",
       "category": "streaming",
@@ -11,6 +21,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv&gl=VN&hl=en"
+    },
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "label": "Crunchyroll: Anime Streaming",
+      "category": "streaming",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid&gl=VN&hl=en"
     },
     {
       "package": "com.freereels.app",
@@ -71,6 +91,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&gl=VN&hl=en"
+    },
+    {
+      "package": "com.youku.international.phone",
+      "label": "YOUKU-Drama,Shorts,Show,Anime",
+      "category": "streaming",
+      "country": "VN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-22",
+      "evidence": "https://play.google.com/store/apps/details?id=com.youku.international.phone&gl=VN&hl=en"
     }
   ]
 }
