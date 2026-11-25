@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi&gl=IN&hl=en"
     },
     {
+      "package": "com.getcabin.smart",
+      "label": "getcab.in",
+      "category": "rideshare",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-25",
+      "evidence": "https://play.google.com/store/apps/details?id=com.getcabin.smart&gl=IN&hl=en"
+    },
+    {
       "package": "com.gozocabs.client",
       "label": "Gozo Cabs - Travel all India",
       "category": "rideshare",
