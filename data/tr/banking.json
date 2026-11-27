@@ -13,6 +13,26 @@
       "evidence": "https://play.google.com/store/apps/details?id=br.com.intermedium&gl=TR&hl=en"
     },
     {
+      "package": "capitec.acuity.mobile.prod",
+      "label": "Capitec Bank",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=capitec.acuity.mobile.prod&gl=TR&hl=en"
+    },
+    {
+      "package": "com.bKash.customerapp",
+      "label": "bKash",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.bKash.customerapp&gl=TR&hl=en"
+    },
+    {
       "package": "com.bbva.bbvacontigo",
       "label": "BBVA Spain | Online Banking",
       "category": "banking",
@@ -43,6 +63,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.garanti.cepsubesi&gl=TR&hl=en"
     },
     {
+      "package": "com.paymaya",
+      "label": "Maya – savings, loans, cards​",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.paymaya&gl=TR&hl=en"
+    },
+    {
       "package": "com.pozitron.iscep",
       "label": "İşCep",
       "category": "banking",
@@ -61,6 +91,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-09-30",
       "evidence": "https://play.google.com/store/apps/details?id=com.tmobtech.halkbank&gl=TR&hl=en"
+    },
+    {
+      "package": "com.ykb.avm",
+      "label": "World Mobil",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.ykb.avm&gl=TR&hl=en"
     },
     {
       "package": "es.lacaixa.mobile.android.newwapicon",
@@ -91,6 +131,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=id.co.bri.brimo&gl=TR&hl=en"
+    },
+    {
+      "package": "ro.ing.mobile.banking.android.activity",
+      "label": "ING HomeBank",
+      "category": "banking",
+      "country": "TR",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=ro.ing.mobile.banking.android.activity&gl=TR&hl=en"
     },
     {
       "package": "team.opay.pay",

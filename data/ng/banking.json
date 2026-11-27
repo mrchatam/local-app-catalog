@@ -21,6 +21,56 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=com.africhange.Africhange&gl=NG&hl=en"
+    },
+    {
+      "package": "com.binance.dev",
+      "label": "Binance: Buy Bitcoin & Crypto",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.binance.dev&gl=NG&hl=en"
+    },
+    {
+      "package": "com.buildbrothers.ussdbanking",
+      "label": "USSD Banking Nigeria",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.buildbrothers.ussdbanking&gl=NG&hl=en"
+    },
+    {
+      "package": "com.gojek.gopay",
+      "label": "GoPay: Transfer, Payment, QRIS",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gojek.gopay&gl=NG&hl=en"
+    },
+    {
+      "package": "com.monicang",
+      "label": "Monica: Crypto to Naira, Bills",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.monicang&gl=NG&hl=en"
+    },
+    {
+      "package": "com.tekzat.bankcodes",
+      "label": "Nigeria Bank Codes",
+      "category": "banking",
+      "country": "NG",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.tekzat.bankcodes&gl=NG&hl=en"
     }
   ]
 }

@@ -15,6 +15,30 @@
       "verified_at": "2026-10-08"
     },
     {
+      "package": "com.gojek.gopay",
+      "label": "GoPay: Transfer, Payment, QRIS",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://myket.ir/app/com.gojek.gopay",
+      "store": "myket",
+      "verified_at": "2026-11-27"
+    },
+    {
+      "package": "com.ndemiccreations.rebelinc",
+      "label": "Rebel Inc.",
+      "category": "government",
+      "country": "IR",
+      "confidence": "verified",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://myket.ir/app/com.ndemiccreations.rebelinc",
+      "store": "myket",
+      "verified_at": "2026-11-27"
+    },
+    {
       "package": "com.oxiwyle.modernage2",
       "label": "MA 2 – President Simulator",
       "category": "government",

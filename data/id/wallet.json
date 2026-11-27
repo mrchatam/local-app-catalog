@@ -3,6 +3,16 @@
   "category": "wallet",
   "apps": [
     {
+      "package": "com.gojek.gopay",
+      "label": "GoPay: Transfer, Payment, QRIS",
+      "category": "wallet",
+      "country": "ID",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.gojek.gopay&gl=ID&hl=en"
+    },
+    {
       "package": "com.gojek.gopaymerchant",
       "label": "GoPay Merchant: QRIS",
       "category": "wallet",

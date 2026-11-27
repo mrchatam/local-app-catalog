@@ -23,6 +23,16 @@
       "evidence": "https://play.google.com/store/apps/details?id=com.hashcove.thecove&gl=IN&hl=en"
     },
     {
+      "package": "dell.com.allindiaitr",
+      "label": "All India ITR, Tax Filing App",
+      "category": "government",
+      "country": "IN",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=dell.com.allindiaitr&gl=IN&hl=en"
+    },
+    {
       "package": "in.gov.ecourts.eCourtsServices",
       "label": "eCourts Services",
       "category": "government",
