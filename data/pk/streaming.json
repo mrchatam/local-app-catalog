@@ -3,6 +3,16 @@
   "category": "streaming",
   "apps": [
     {
+      "package": "com.dazzleo.qissa",
+      "label": "Qissa: Pakistani Drama Serials",
+      "category": "streaming",
+      "country": "PK",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-27",
+      "evidence": "https://play.google.com/store/apps/details?id=com.dazzleo.qissa&gl=PK&hl=en"
+    },
+    {
       "package": "com.storymatrix.drama",
       "label": "DramaBox - Stream Drama Shorts",
       "category": "streaming",
