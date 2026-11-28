@@ -3,6 +3,16 @@
   "category": "government",
   "apps": [
     {
+      "package": "com.customs.tariff.bangladesh",
+      "label": "Customs Tariff Bangladesh",
+      "category": "government",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-28",
+      "evidence": "https://play.google.com/store/apps/details?id=com.customs.tariff.bangladesh&gl=BD&hl=en"
+    },
+    {
       "package": "net.wsapps.alllawsofbangladesh",
       "label": "All Laws Of Bangladesh",
       "category": "government",
@@ -11,6 +21,16 @@
       "added_by": "@local-app-catalog",
       "added_at": "2026-10-08",
       "evidence": "https://play.google.com/store/apps/details?id=net.wsapps.alllawsofbangladesh&gl=BD&hl=en"
+    },
+    {
+      "package": "org.passport2earning.bangladesh.twa",
+      "label": "P2E Bangladesh",
+      "category": "government",
+      "country": "BD",
+      "confidence": "community",
+      "added_by": "@local-app-catalog",
+      "added_at": "2026-11-28",
+      "evidence": "https://play.google.com/store/apps/details?id=org.passport2earning.bangladesh.twa&gl=BD&hl=en"
     }
   ]
 }
